@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 1489593941}
   - component: {fileID: 1489593940}
   m_Layer: 0
-  m_Name: LogoStartSceneEmpty
+  m_Name: LogoStartSceneChange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
