@@ -5,9 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/StartingScenes/LogoStartScene.unity
+    guid: a765c4b63ef1d3f4eb831f322f568ffa
+  - enabled: 1
+    path: Assets/Scenes/StartingScenes/ChooseContrastMenu.unity
+    guid: 295e4797c364cda49bf40a4c5900b688
+  - enabled: 1
+    path: Assets/Scenes/StartingScenes/MainMenuContrast.unity
+    guid: 2ed7283f7aafa1048b8b42d104a1850d
+  - enabled: 1
+    path: Assets/Scenes/Settings/SettingsMain.unity
+    guid: eaf24cc3011c310429bb8c2846eaa96f
+  - enabled: 1
+    path: Assets/Scenes/Settings/SettingsBrightness.unity
+    guid: db99710bc3de5e6408f90bd13ee137a1
+  - enabled: 1
+    path: Assets/Scenes/Settings/SettingsChooseVolume.unity
+    guid: 9b7777cabbf55f540aec2d282beb03a1
+  - enabled: 1
+    path: Assets/Scenes/Settings/SettingsGeneralVolume.unity
+    guid: d03fc3e69955dda4a8c7437c65762861
+  - enabled: 1
+    path: Assets/Scenes/Settings/SettingsNarratorVolume.unity
+    guid: eed5ee4e925736c4193d23b80fb84adf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
