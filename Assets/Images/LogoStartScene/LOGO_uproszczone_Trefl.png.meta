@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LOGO_uproszczone_Trefl_0: 4886414504996133189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
