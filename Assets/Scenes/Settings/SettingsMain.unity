@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 677588992}
   - component: {fileID: 677588991}
   - component: {fileID: 677588990}
+  - component: {fileID: 677588993}
+  - component: {fileID: 677588994}
   m_Layer: 5
   m_Name: BrightnessButton
   m_TagString: Untagged
@@ -239,6 +241,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677588988}
   m_CullTransparentMesh: 1
+--- !u!114 &677588993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677588988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: SettingsBrightness
+--- !u!114 &677588994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677588988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95731a0e86fa9f4d86b44e7cb4aeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastImage: {fileID: 7028616704906629411, guid: f581d520e25a4e24db7c045a1239b8fb, type: 3}
+  noContrastImage: {fileID: 7028616704906629411, guid: c10b76b5f7cf2c74aa4329712f5f2de9, type: 3}
 --- !u!1 &837617299
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +280,8 @@ GameObject:
   - component: {fileID: 837617303}
   - component: {fileID: 837617302}
   - component: {fileID: 837617301}
+  - component: {fileID: 837617304}
+  - component: {fileID: 837617305}
   m_Layer: 5
   m_Name: VolumeButton
   m_TagString: Untagged
@@ -359,6 +390,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837617299}
   m_CullTransparentMesh: 1
+--- !u!114 &837617304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837617299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: SettingsChooseVolume
+--- !u!114 &837617305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837617299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95731a0e86fa9f4d86b44e7cb4aeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastImage: {fileID: 8288426215254106694, guid: 3527fc1ef8475b3488ce774f5583bc6c, type: 3}
+  noContrastImage: {fileID: 8288426215254106694, guid: 43a72393ecc48da48bb32b4cee2e1067, type: 3}
 --- !u!1 &1219251104
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +704,8 @@ GameObject:
   - component: {fileID: 1970472020}
   - component: {fileID: 1970472019}
   - component: {fileID: 1970472018}
+  - component: {fileID: 1970472021}
+  - component: {fileID: 1970472022}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -754,6 +814,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970472016}
   m_CullTransparentMesh: 1
+--- !u!114 &1970472021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970472016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: MainMenu
+--- !u!114 &1970472022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970472016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95731a0e86fa9f4d86b44e7cb4aeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastImage: {fileID: -855298285791758126, guid: 73b73aa80fdab114b9c55ed53366be26, type: 3}
+  noContrastImage: {fileID: -855298285791758126, guid: 435d48dea401d4b47aa91d8117c8bac8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

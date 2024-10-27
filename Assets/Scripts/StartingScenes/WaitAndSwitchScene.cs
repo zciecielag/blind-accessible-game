@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class WaitAndSwitchScene : MonoBehaviour
 {
-
     [SerializeField]
     private string sceneNameLoad;
 
