@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 462035685}
   - component: {fileID: 462035684}
   - component: {fileID: 462035683}
+  - component: {fileID: 462035686}
+  - component: {fileID: 462035687}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -239,6 +241,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462035681}
   m_CullTransparentMesh: 1
+--- !u!114 &462035686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462035681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: SettingsMain
+--- !u!114 &462035687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462035681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95731a0e86fa9f4d86b44e7cb4aeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastImage: {fileID: -855298285791758126, guid: 73b73aa80fdab114b9c55ed53366be26, type: 3}
+  noContrastImage: {fileID: -855298285791758126, guid: 435d48dea401d4b47aa91d8117c8bac8, type: 3}
 --- !u!1 &547859647
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +280,8 @@ GameObject:
   - component: {fileID: 547859651}
   - component: {fileID: 547859650}
   - component: {fileID: 547859649}
+  - component: {fileID: 547859652}
+  - component: {fileID: 547859653}
   m_Layer: 5
   m_Name: GeneralVolumeButton
   m_TagString: Untagged
@@ -359,6 +390,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547859647}
   m_CullTransparentMesh: 1
+--- !u!114 &547859652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547859647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: SettingsGeneralVolume
+--- !u!114 &547859653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547859647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95731a0e86fa9f4d86b44e7cb4aeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastImage: {fileID: 3465286685962602723, guid: 089270499cbc3754281ab9cc80c2770e, type: 3}
+  noContrastImage: {fileID: 4130640169021434097, guid: 654f79cdc9c69a94eab5cc56f68c5a08, type: 3}
 --- !u!1 &825312510
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +508,8 @@ GameObject:
   - component: {fileID: 1377965263}
   - component: {fileID: 1377965262}
   - component: {fileID: 1377965261}
+  - component: {fileID: 1377965264}
+  - component: {fileID: 1377965265}
   m_Layer: 5
   m_Name: NarratorVolumeButton
   m_TagString: Untagged
@@ -558,6 +618,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377965259}
   m_CullTransparentMesh: 1
+--- !u!114 &1377965264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377965259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: SettingsNarratorVolume
+--- !u!114 &1377965265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377965259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95731a0e86fa9f4d86b44e7cb4aeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastImage: {fileID: 4130640169021434097, guid: 858486f9075d9324882022137085651b, type: 3}
+  noContrastImage: {fileID: 3465286685962602723, guid: e1483c053678e2842a42f84822541549, type: 3}
 --- !u!1 &1490160274
 GameObject:
   m_ObjectHideFlags: 0

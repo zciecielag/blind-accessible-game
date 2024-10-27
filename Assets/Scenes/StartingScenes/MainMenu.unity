@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 2118018}
   - component: {fileID: 2118017}
   - component: {fileID: 2118020}
+  - component: {fileID: 2118021}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -254,6 +255,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: 6937817954938267909, guid: fda985ee8db88094e93575c65f398a08, type: 3}
   noContrastImage: {fileID: 6937817954938267909, guid: e1326df775a0c6b46adc5f9700505dae, type: 3}
+--- !u!114 &2118021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: PrototypeSelection
 --- !u!1 &490187181
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +385,7 @@ GameObject:
   - component: {fileID: 536622252}
   - component: {fileID: 536622251}
   - component: {fileID: 536622254}
+  - component: {fileID: 536622255}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -493,6 +508,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: -6470460504253458178, guid: a0564f383d5afeb4db2823600a7b3d24, type: 3}
   noContrastImage: {fileID: -6470460504253458178, guid: 119d8a20af9915a40836292ece29f727, type: 3}
+--- !u!114 &536622255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536622249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: SettingsMain
 --- !u!1 &1274969820
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +534,7 @@ GameObject:
   - component: {fileID: 1274969823}
   - component: {fileID: 1274969822}
   - component: {fileID: 1274969825}
+  - component: {fileID: 1274969826}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -628,6 +657,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: -855298285791758126, guid: 73b73aa80fdab114b9c55ed53366be26, type: 3}
   noContrastImage: {fileID: -855298285791758126, guid: 435d48dea401d4b47aa91d8117c8bac8, type: 3}
+--- !u!114 &1274969826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274969820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameLoad: ChooseContrastMenu
 --- !u!1 &1455422049
 GameObject:
   m_ObjectHideFlags: 0
