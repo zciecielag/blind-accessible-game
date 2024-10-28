@@ -11,9 +11,6 @@ public class WaitAndSwitchScene : MonoBehaviour
 
     void Awake()
     {
-        //Important thing to remember: Starting a coroutine doesn't
-        //pause the whole script, it just waits inside the coroutine,
-        //so the next instruction has to be put INSIDE the IEnumerator \/
         StartCoroutine(waiting());
     }
 
