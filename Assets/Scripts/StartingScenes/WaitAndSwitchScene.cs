@@ -9,11 +9,6 @@ public class WaitAndSwitchScene : MonoBehaviour
     [SerializeField]
     private string sceneNameLoad;
 
-    void Start()
-    {
-        
-    }
-
     void Awake()
     {
         //Important thing to remember: Starting a coroutine doesn't
@@ -22,14 +17,9 @@ public class WaitAndSwitchScene : MonoBehaviour
         StartCoroutine(waiting());
     }
 
-    void Update()
-    {
-        
-    }
-
     IEnumerator waiting()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(sceneName:sceneNameLoad);
     }
 }

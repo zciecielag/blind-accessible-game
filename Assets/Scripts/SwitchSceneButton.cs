@@ -1,9 +1,10 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SwitchScene : MonoBehaviour
+public class SwitchSceneButton : MonoBehaviour
 {
 
     [SerializeField]
@@ -15,13 +16,14 @@ public class SwitchScene : MonoBehaviour
         button.onClick.AddListener(loadScene);
     }
 
-    void Update()
-    {
-        
-    }
-
     void loadScene()
     {
+        StartCoroutine(sceneLoadAndButtonSound()); 
+    }
+
+    IEnumerator sceneLoadAndButtonSound()
+    {
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(sceneName: sceneNameLoad);
     }
 
