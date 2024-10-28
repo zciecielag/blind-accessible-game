@@ -618,6 +618,7 @@ GameObject:
   - component: {fileID: 1690061148}
   - component: {fileID: 1690061147}
   - component: {fileID: 1690061150}
+  - component: {fileID: 1690061151}
   m_Layer: 5
   m_Name: LowerVolumeButton
   m_TagString: Untagged
@@ -687,7 +688,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1690061148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1124811973}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1690061148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +753,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: -4178046375966092550, guid: f8ccd113483111f4a9770faf7821e568, type: 3}
   noContrastImage: {fileID: -4178046375966092550, guid: c461c6a75bdefa941aa63f98f3dc6638, type: 3}
+--- !u!114 &1690061151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690061145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1d0179a14efbf478e688697d4f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upOrDown: 0
 --- !u!1 &2025413919
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +858,7 @@ GameObject:
   - component: {fileID: 2109949443}
   - component: {fileID: 2109949442}
   - component: {fileID: 2109949445}
+  - component: {fileID: 2109949446}
   m_Layer: 5
   m_Name: UpVolumeButton
   m_TagString: Untagged
@@ -901,7 +928,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2109949443}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1124811973}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2109949443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,6 +993,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: 4113829005332862926, guid: 807ddeba7970c3140a6eff102c543961, type: 3}
   noContrastImage: {fileID: 4113829005332862926, guid: 7809d667638a7d24ca6001925af454fe, type: 3}
+--- !u!114 &2109949446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109949440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1d0179a14efbf478e688697d4f3227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upOrDown: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
