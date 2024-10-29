@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827511049}
   - component: {fileID: 827511048}
+  - component: {fileID: 827511050}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: ButtonClickSound
@@ -248,6 +249,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827511050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827511047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac64338eea5bab43974540aa38b72ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &926968126
 GameObject:
   m_ObjectHideFlags: 0
