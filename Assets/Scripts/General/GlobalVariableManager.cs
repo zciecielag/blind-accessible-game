@@ -1,7 +1,7 @@
 public class GlobalVariableManager
 {
     private static bool contrastOrNoContrastGlobal;
-    private static float generalVolume = 0.1f;
+    private static float generalVolume = 0.2f;
     private static float narratorVolume;
 
     public bool GetContrastStatus()
