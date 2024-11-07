@@ -2,6 +2,8 @@ public class GlobalVariableManager
 {
     private static bool contrastOrNoContrastGlobal;
     private static float generalVolume = 0.2f;
+
+    private static bool isVolumeChanged = false;
     private static float narratorVolume;
 
     public bool GetContrastStatus()
@@ -32,5 +34,15 @@ public class GlobalVariableManager
     public void SetNarratorVolume(float volume)
     {
         narratorVolume = volume;
+    }
+
+    public bool GetIsVolumeChanged()
+    {
+        return isVolumeChanged;
+    }
+
+    public void SetIsVolumeChanged(bool isVolumeChangedB)
+    {
+        isVolumeChanged = isVolumeChangedB;
     }
 }

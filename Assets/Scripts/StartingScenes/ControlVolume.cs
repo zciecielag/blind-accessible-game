@@ -36,6 +36,10 @@ public class ControlVolume : MonoBehaviour
         }
         if (upOrDown)
         {
+            // globalVariableManager.SetGeneralVolumeChange(0.1f);
+            // globalVariableManager.SetIsVolumeChanged(true);
+            // Debug.Log(globalVariableManager.GetGeneralVolumeChange());
+            // Debug.Log(globalVariableManager.GetIsVolumeChanged());
             if (canChangeUp && (volume+0.1 <= 1))
             {
                 volume = volume + 0.1;
@@ -44,6 +48,10 @@ public class ControlVolume : MonoBehaviour
             }
         } else 
         {
+            // globalVariableManager.SetGeneralVolumeChange(-0.1f);
+            // globalVariableManager.SetIsVolumeChanged(true);
+            // Debug.Log(globalVariableManager.GetGeneralVolumeChange());
+            // Debug.Log(globalVariableManager.GetIsVolumeChanged());
             if (canChangeDown && (volume-0.1 >= 0.0))
             {
                 volume = volume - 0.1;
