@@ -560,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tilesheet_itchio_0: -1488598660360441788
+      tilesheet_itchio_1: 2276944811049246939
+      tilesheet_itchio_10: 1600825472322798456
+      tilesheet_itchio_11: 8889764028832277950
+      tilesheet_itchio_12: -4059248819142760296
+      tilesheet_itchio_13: -5163372054294369156
+      tilesheet_itchio_14: -6517327924689253967
+      tilesheet_itchio_15: -8383769464570673754
+      tilesheet_itchio_16: -4542398125690366727
+      tilesheet_itchio_2: 3123929089499740218
+      tilesheet_itchio_3: -7274815392391220767
+      tilesheet_itchio_4: 3634000498373047458
+      tilesheet_itchio_5: 3700462386012292322
+      tilesheet_itchio_6: 953963691129929948
+      tilesheet_itchio_7: -6540952109784745672
+      tilesheet_itchio_8: -5079682934364185913
+      tilesheet_itchio_9: 8694363249485169738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
