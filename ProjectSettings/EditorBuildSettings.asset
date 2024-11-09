@@ -47,6 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings/SettingsChooseGeneralVolume.unity
     guid: efa1eab0d1c00bf48853f01b36416fec
+  - enabled: 1
+    path: Assets/Scenes/Game/PlayableScenes/Scene.01.01.Hall.unity
+    guid: b1944b20acc826d4bb1dbe65de8c5c40
+  - enabled: 1
+    path: Assets/Scenes/StartingScenes/SelectGameOrPrototype.unity
+    guid: 4d51525fd8b9fc54fba820a621fe25b1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

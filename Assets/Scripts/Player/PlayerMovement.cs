@@ -3,10 +3,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private float movementSpeed = 5f;
+    [SerializeField] private float movementSpeed = 5f;
     private float horizontal;
-    private float jumpPower = 16f;
     private bool isFacingRight = true;
+    [SerializeField] private Joystick movementJoystick;
     [SerializeField] private Rigidbody2D rigidbody2D;
 
     void Start()
@@ -17,14 +17,20 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = movementJoystick.Direction.x;
 
         Flip();
     }
 
     private void FixedUpdate() 
     {
-        rigidbody2D.linearVelocity = new Vector2(horizontal * movementSpeed, rigidbody2D.linearVelocityY);
+        if(movementJoystick.Direction.y != 0 || movementJoystick.Direction.x != 0)
+        {
+            rigidbody2D.linearVelocity = new Vector2(movementJoystick.Direction.x * movementSpeed, movementJoystick.Direction.y * movementSpeed);
+        } else
+        {
+            rigidbody2D.linearVelocity = Vector2.zero;
+        }
     }
 
     private void Flip()
