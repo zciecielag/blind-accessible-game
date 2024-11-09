@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1124811974}
   - component: {fileID: 1124811973}
-  - component: {fileID: 1124811975}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: ButtonClickSound
@@ -146,7 +145,7 @@ AudioSource:
   m_GameObject: {fileID: 1124811972}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 718b78c0ed0efe842a83823ab8976d17, type: 3}
   m_Resource: {fileID: 8300000, guid: 718b78c0ed0efe842a83823ab8976d17, type: 3}
   m_PlayOnAwake: 0
@@ -249,18 +248,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1124811975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124811972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac64338eea5bab43974540aa38b72ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1323271827
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +663,6 @@ GameObject:
   - component: {fileID: 1690061148}
   - component: {fileID: 1690061147}
   - component: {fileID: 1690061150}
-  - component: {fileID: 1690061151}
   - component: {fileID: 1690061152}
   m_Layer: 5
   m_Name: LowerVolumeButton
@@ -824,18 +810,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: -4178046375966092550, guid: f8ccd113483111f4a9770faf7821e568, type: 3}
   noContrastImage: {fileID: -4178046375966092550, guid: c461c6a75bdefa941aa63f98f3dc6638, type: 3}
---- !u!114 &1690061151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690061145}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1d0179a14efbf478e688697d4f3227, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1690061152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -941,7 +915,6 @@ GameObject:
   - component: {fileID: 2109949443}
   - component: {fileID: 2109949442}
   - component: {fileID: 2109949445}
-  - component: {fileID: 2109949446}
   - component: {fileID: 2109949447}
   m_Layer: 5
   m_Name: UpVolumeButton
@@ -1089,18 +1062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contrastImage: {fileID: 4113829005332862926, guid: 807ddeba7970c3140a6eff102c543961, type: 3}
   noContrastImage: {fileID: 4113829005332862926, guid: 7809d667638a7d24ca6001925af454fe, type: 3}
---- !u!114 &2109949446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109949440}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1d0179a14efbf478e688697d4f3227, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2109949447
 MonoBehaviour:
   m_ObjectHideFlags: 0

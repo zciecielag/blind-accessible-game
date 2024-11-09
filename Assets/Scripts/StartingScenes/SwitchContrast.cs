@@ -24,7 +24,6 @@ public class SwitchContrast : MonoBehaviour
     void DoSwitchContrastAndLoadNext()
     {
         globalVariableManager.SetContrastStatus(contrastOrNoContrast);
-        Debug.Log("Current contrast status: " + globalVariableManager.GetContrastStatus());
         SceneManager.LoadScene(sceneName: "MainMenu");
     }
 }
