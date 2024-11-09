@@ -11,11 +11,11 @@ public class CheckIfOnPlayableArea : MonoBehaviour
     //Kasia
     //Masz racje tu, mozna sprobowac dodac game field i wtedy dopiero sprawdzac collision z tym(latwiej by tak bylo mi sie wydaje
     private AudioSource objectSound;
-    bool isPlaying;
+    //bool isPlaying;
     private void Awake()
     {
         objectSound = GetComponent<AudioSource>();//pobieramy dzwieki
-        isPlaying = false;
+        //isPlaying = false;
         //AudioSource circleSound = GameObject.FindGameObjectWithTag("Circle").GetComponent<AudioSource>();
     }
     //problem, dzwieki sie mieszaja duzo i ciezko grac
@@ -24,7 +24,7 @@ public class CheckIfOnPlayableArea : MonoBehaviour
         //co się dzieje kiedy wchodzimy w kolizję
         if (other.gameObject.name == "GameField")
         {
-            isPlaying = true;
+            //isPlaying = true;
             objectSound.Play();
         }
     }
@@ -34,7 +34,7 @@ public class CheckIfOnPlayableArea : MonoBehaviour
         //co się dzieje kiedy wychodzimy z tej kolizji
         if (other.gameObject.name == "GameField")
         {
-            isPlaying = false;
+            //isPlaying = false;
             objectSound.Stop();
         }
     }
