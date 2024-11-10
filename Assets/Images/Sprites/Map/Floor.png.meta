@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: faa4937b30f85774dbc5d01d8be6e225
+guid: d2f053735e59a4644a803af22e89769e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -80221241149755627
-    second: Grass_Sample_0
+      213: 199249360466117110
+    second: Floor_0
+  - first:
+      213: 8586074191503405527
+    second: Floor_1
+  - first:
+      213: -4880280114624847625
+    second: Floor_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,23 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grass_Sample_0
+      name: Floor_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 704
-        height: 320
+        x: 1
+        y: 7
+        width: 45
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51fe3d9c43ff2eef0800000000000000
-      internalID: -80221241149755627
+      spriteID: 6f18e48dc30e3c200800000000000000
+      internalID: 199249360466117110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 7
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1b5b77cfcd72770800000000000000
+      internalID: 8586074191503405527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 7
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f02263b713c54cb0800000000000000
+      internalID: -4880280114624847625
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 14c323664cee481408b09f12d6bbd975
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Grass_Sample_0: -80221241149755627
+      Floor_0: 199249360466117110
+      Floor_1: 8586074191503405527
+      Floor_2: -4880280114624847625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

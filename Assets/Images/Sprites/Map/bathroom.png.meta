@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: faa4937b30f85774dbc5d01d8be6e225
+guid: 11b3c53b17d0a4447a2a6f1d0bc4bcb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -80221241149755627
-    second: Grass_Sample_0
+      213: -3521427111303423466
+    second: bathroom_0
+  - first:
+      213: 6983358275279283047
+    second: bathroom_1
+  - first:
+      213: 1169091165138729141
+    second: bathroom_2
+  - first:
+      213: 3300606671451264670
+    second: bathroom_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grass_Sample_0
+      name: bathroom_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 704
-        height: 320
+        x: 20
+        y: 15
+        width: 27
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51fe3d9c43ff2eef0800000000000000
-      internalID: -80221241149755627
+      spriteID: 61a545813b0612fc0800000000000000
+      internalID: -3521427111303423466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bathroom_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7636e491a5fd9e060800000000000000
+      internalID: 6983358275279283047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bathroom_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 19
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b834287832793010800000000000000
+      internalID: 1169091165138729141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bathroom_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 31
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e961323c74c1ecd20800000000000000
+      internalID: 3300606671451264670
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Grass_Sample_0: -80221241149755627
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -9,9 +10,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Joystick movementJoystick;
     [SerializeField] private Rigidbody2D rigidbody2D;
 
+    [SerializeField] private GameObject spawnPoint;
+
     void Start()
     {
-        
+        transform.position = spawnPoint.transform.position;
     }
 
 

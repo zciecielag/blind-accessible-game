@@ -17,7 +17,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
     IEnumerator waiting()
     {   
         audioSource.Play();
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(0.8f);
         SceneManager.LoadScene(sceneName:sceneToLoad);
     }
 }
