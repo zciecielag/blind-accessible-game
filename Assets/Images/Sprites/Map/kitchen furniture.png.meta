@@ -88,7 +88,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,7 +126,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -585,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kitchen furniture_0: 3046888988599484266
+      kitchen furniture_1: 1878398965820589095
+      kitchen furniture_10: -1683005219298632839
+      kitchen furniture_11: -5455636417756725786
+      kitchen furniture_12: 9068249596526497873
+      kitchen furniture_13: 3928881748540514113
+      kitchen furniture_14: -4788156495114150691
+      kitchen furniture_15: -2709475663377260720
+      kitchen furniture_16: 3898153763674491809
+      kitchen furniture_17: 9202745413517776460
+      kitchen furniture_2: -3831682197508860893
+      kitchen furniture_3: 848309299042173597
+      kitchen furniture_4: -9141356920826016398
+      kitchen furniture_5: 3203400805533635631
+      kitchen furniture_6: -4780177331702791066
+      kitchen furniture_7: 5702937607647065266
+      kitchen furniture_8: -5856148308496317552
+      kitchen furniture_9: -3855480223983584212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

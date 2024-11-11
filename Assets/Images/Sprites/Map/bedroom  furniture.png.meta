@@ -535,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bedroom  furniture_0: -5480362834849646238
+      bedroom  furniture_1: 7506954752621724635
+      bedroom  furniture_10: 2907325480648573476
+      bedroom  furniture_11: -8284094840383887695
+      bedroom  furniture_12: -6332936653837918718
+      bedroom  furniture_13: 3972203421831115589
+      bedroom  furniture_14: 2719067199188135274
+      bedroom  furniture_15: -4451042253241260691
+      bedroom  furniture_2: -3687795553985462599
+      bedroom  furniture_3: 6997415133165570877
+      bedroom  furniture_4: -3560239193492586277
+      bedroom  furniture_5: -3696841610461253485
+      bedroom  furniture_6: -8000903353947535977
+      bedroom  furniture_7: 8650739984363925074
+      bedroom  furniture_8: 4808918065892951580
+      bedroom  furniture_9: 3421466130985756623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
