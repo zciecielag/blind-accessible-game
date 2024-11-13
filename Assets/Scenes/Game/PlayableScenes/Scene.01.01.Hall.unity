@@ -3253,6 +3253,7 @@ GameObject:
   - component: {fileID: 1643838888}
   - component: {fileID: 1643838887}
   - component: {fileID: 1643838886}
+  - component: {fileID: 1643838890}
   - component: {fileID: 1643838889}
   m_Layer: 0
   m_Name: Telephone
@@ -3389,6 +3390,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1639dd0d21beadb489ab619364102a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1643838890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643838885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 21300000, guid: 39f308806bea5094cb81fbc8f0f9de5e, type: 3}
+  noContrastSprite: {fileID: 8743254899273296879, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 1643838887}
 --- !u!1 &1695559867
 GameObject:
   m_ObjectHideFlags: 0
