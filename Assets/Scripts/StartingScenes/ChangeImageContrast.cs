@@ -12,6 +12,24 @@ public class ChangeImageContrast : MonoBehaviour
 
     void Start()
     {
+        changeContrast();
+    }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void changeContrast()
+    {
         if (targetSpriteRenderer != null)
         {
             if (globalVariableManager.GetContrastStatus())
@@ -26,20 +44,6 @@ public class ChangeImageContrast : MonoBehaviour
         else
         {
             Debug.LogError("Brak sprite renderer");
-        }
-    }
-
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - musicSource
+  - ButtonClickSound
+  - Object
+  - Button
   layers:
   - Default
   - TransparentFX

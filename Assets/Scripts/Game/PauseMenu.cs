@@ -4,7 +4,11 @@ public class PauseMenu : MonoBehaviour
 {
 
     public GameObject pauseMenu;
+
+    public GameObject settingsMenu;
     public static bool isPaused;
+
+    public GameObject joystick;
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -27,11 +31,14 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
+        joystick.SetActive(false);
     }
 
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
+        settingsMenu.SetActive(false);
+        joystick.SetActive(true);
         Time.timeScale = 1f;
         isPaused = false;
     }
@@ -48,7 +55,14 @@ public class PauseMenu : MonoBehaviour
 
     public void GoToSettings()
     {
-        //TODO - Dodatkowy panel w UI z ustawieniami, żeby gra była zapauzowana ale nadal można było zmienić volume, narrator, contrast itd.
+        pauseMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+
+    public void GoToPauseMenu()
+    {
+        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
     }
 
     public void QuitGame()

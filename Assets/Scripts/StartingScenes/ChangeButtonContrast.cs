@@ -12,6 +12,11 @@ public class ChangeButtonContrast : MonoBehaviour
 
     void Start()
     {
+        changeContrast();
+    }
+
+    public void changeContrast()
+    {
         var buttonImage = gameObject.GetComponent<Image>();
         if (globalVariableManager.GetContrastStatus())
         {
@@ -20,12 +25,5 @@ public class ChangeButtonContrast : MonoBehaviour
         {
             buttonImage.sprite = noContrastImage;
         }
-        
-    }
-
-
-    void Update()
-    {
-        
     }
 }
