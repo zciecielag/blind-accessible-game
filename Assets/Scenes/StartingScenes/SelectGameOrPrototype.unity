@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameLoad: Scene.01.01.Hall
+  sceneNameLoad: SaveMenu
 --- !u!1 &1017620189
 GameObject:
   m_ObjectHideFlags: 0

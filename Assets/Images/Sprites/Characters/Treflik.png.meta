@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Treflik_0: 3602293770237535414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
