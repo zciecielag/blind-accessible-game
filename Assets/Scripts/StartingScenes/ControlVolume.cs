@@ -45,4 +45,9 @@ public class ControlVolume : MonoBehaviour
             musicMixer.SetFloat("vol", currentVolume);
         }
     }
+
+    public void SetVolume(float volume)
+    {
+        musicMixer.SetFloat("vol", volume);
+    }
 }
