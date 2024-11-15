@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartingScenes/SelectGameOrPrototype.unity
     guid: 4d51525fd8b9fc54fba820a621fe25b1
   - enabled: 1
+    path: Assets/Scenes/StartingScenes/SaveMenu.unity
+    guid: b4e1876a37d14f2448e85b335f7447fe
+  - enabled: 1
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.01.Hall.unity
     guid: b1944b20acc826d4bb1dbe65de8c5c40
   - enabled: 1
