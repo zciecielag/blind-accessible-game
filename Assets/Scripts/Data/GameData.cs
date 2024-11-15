@@ -10,10 +10,11 @@ public class GameData
     //Tutaj bedziemy zapisywac praktycznie wszystkie potrzebne zmienne do progresji gry
     //Np. ostatnia pozycja gracza, stan ekwipunku, stan questow, ogolnie wszystko
     public string currentSceneName;
+    public GameObject currentlyHeldObject;
     //public Vector2 playerPostion;
     public GameData()
     {
         this.currentSceneName = "Scene.01.01.Hall";
-        
+        this.currentlyHeldObject = null;
     }
 }
