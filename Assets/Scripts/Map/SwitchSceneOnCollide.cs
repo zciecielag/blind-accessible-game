@@ -8,19 +8,33 @@ public class SwitchSceneOnCollide : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
 
     private GameData gameData;
+    FadeInOut fadeInOut;
 
+    void Start()
+    {
+        fadeInOut = FindObjectOfType<FadeInOut>();
+    }
+
+    public IEnumerator SwitchScene()
+    {
+        fadeInOut.FadeIn();
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(sceneName: sceneToLoad);
+
+    }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player")
         {
-            StartCoroutine(waiting());
+            StartCoroutine(SwitchScene());
+            //StartCoroutine(waiting());
         }
     }
 
-    IEnumerator waiting()
-    {   
-        audioSource.Play();
-        yield return new WaitForSeconds(0.8f);
-        gameData.currentSceneName = sceneToLoad;
-        SceneManager.LoadScene(sceneName:sceneToLoad);
-    }
+    //IEnumerator waiting()
+    //{   
+    //    audioSource.Play();
+    //    yield return new WaitForSeconds(0.8f);
+    //    gameData.currentSceneName = sceneToLoad;
+    //    SceneManager.LoadScene(sceneName:sceneToLoad);
+    //}
 }

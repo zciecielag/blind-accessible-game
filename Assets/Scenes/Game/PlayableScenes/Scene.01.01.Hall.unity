@@ -8231,6 +8231,27 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1395508978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 821129467365314432, guid: 7372a260b8978fd478e1fc0ddc1cf93b, type: 3}
+  m_PrefabInstance: {fileID: 4670530154905035824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1395508981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395508978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966db5be13c992c45bf43caeb02b3699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasgroup: {fileID: 0}
+  fadein: 0
+  fadeout: 0
+  TimeToFade: 0
 --- !u!1 &1401710896
 GameObject:
   m_ObjectHideFlags: 0
@@ -15755,8 +15776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1666c8e489647a48b9e6df0fda88154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActIndex: 0
-  currentSubQuestIndex: 0
   questTextDescription: {fileID: 1345026233}
 --- !u!1 &1921563342
 GameObject:
@@ -16798,7 +16817,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 821129467365314432, guid: 7372a260b8978fd478e1fc0ddc1cf93b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1395508981}
   m_SourcePrefab: {fileID: 100100000, guid: 7372a260b8978fd478e1fc0ddc1cf93b, type: 3}
 --- !u!1001 &7654127849719012957
 PrefabInstance:
