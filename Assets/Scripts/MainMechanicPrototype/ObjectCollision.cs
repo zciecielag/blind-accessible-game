@@ -29,7 +29,7 @@ public class ObjectCollision : MonoBehaviour
         pressInput = FindFirstObjectByType<GrabObject>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         //co się dzieje kiedy wchodzimy w kolizję z kotkiem
         if (other.tag == "Circle")
@@ -50,6 +50,7 @@ public class ObjectCollision : MonoBehaviour
             if(HealthManager.health <= 0)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                HealthManager.health = 3;
             }
             else
             {

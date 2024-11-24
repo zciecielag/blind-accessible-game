@@ -1,28 +1,22 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SwitchLane : MonoBehaviour
 {
-
-    private GameObject character;
-
     //true - lewy przycisk
     //false - prawy przycisk
     public bool leftOrRight;
+    public AudioSource failureSound;
+    public AudioSource switchLaneSound;
 
+    public GameObject character;
     //Instancja GlobalVariableManager będzie w każdym skrypcie gdzie chcemy użyć globalnych wartości w nim zapisanych
     private GlobalVariableManager globalVariableManager = new GlobalVariableManager();
+    private bool doubleTouch = false;
 
-    public AudioSource failureSound;
-
-    public AudioSource switchLaneSound;
-    
-    void Start()
-    {
-        //Bierzemy obiekt kotka żeby móc z nim coś potem robić
-        character = GameObject.FindGameObjectWithTag("Character");
-        this.GetComponent<Button>().onClick.AddListener(DoSwitchLane);
-    }
+    private float touchDelay = 0.2f;
+    private float lastMove = -Mathf.Infinity;
 
     //Ogólnie tu gdzieś trzeba zrobić algorytm który sprawdza czy 2 przyciski (tory) są naciśnięte dokładnie w tym samym czasie
     //I wtedy np. zrobić global variable bool jakiś na true, i wtedy wykorzystać to w skrypcie z kolizją że tak, gracz ma naciśnięte 2 na raz i chce złapać
@@ -32,41 +26,68 @@ public class SwitchLane : MonoBehaviour
     //bo to jest akcja łapania obiektu
     //Ewentualnie osobny skrypt jeszcze na to
 
-    private void DetectBothPressed()
+    void Update()
     {
-
-    }
-
-    private void DoSwitchLane() {
-        if (leftOrRight)
+        if (Input.touchCount > 0)
         {
-            if (character.transform.position.x == -4.8f)
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began && Time.time >= lastMove)
             {
-                Debug.Log("Can't move further left");
-                failureSound.Play();
+                StartCoroutine(WaitForDoubleTouch(touch));
             }
+        }
+    }
+    private IEnumerator WaitForDoubleTouch(Touch initialTouch)
+    {
+        doubleTouch = true;
+        yield return new WaitForSeconds(touchDelay);
+
+        if(Input.touchCount > 1) 
+        { 
+        }
+        else// nie wykryto drugiego przyciśnięcia = zmień miejsce
+        {
+            float screenWidth = Screen.width;
+            if(initialTouch.position.x < screenWidth/2)  // dotkniecie lewej strony
+            {
+                SwitchToLeftLine();
+            } 
             else
             {
-                switchLaneSound.Play();
-                //Ruszamy kotka w lewo, czas jest max więc od razu się rusza
-                character.transform.position = new Vector3(-4.8f, -3.92f, 1f*Time.deltaTime);
+                SwitchToRightLine();
             }
-            
+        }
+        doubleTouch = false; //reset flagi
+        lastMove = Time.time;
+    }
+
+    private void SwitchToLeftLine()
+    {
+        if (character.transform.position.x == -4.8f)
+        {
+            Debug.Log("Can't move further left");
+            failureSound.Play();
         }
         else
         {
-            if (character.transform.position.x == 5.1f)
-            {
-                Debug.Log("Can't move further right");
-                failureSound.Play();
-            }
-            else
-            {
-                switchLaneSound.Play();
-                //Ruszamy kotka w prawo, czas jest max więc od razu się rusza
-                character.transform.position = new Vector3(5.1f, -3.92f, 1f*Time.deltaTime);
-            }
+            switchLaneSound.Play();
+            //Ruszamy kotka w lewo, czas jest max więc od razu się rusza
+            character.transform.position = new Vector3(-4.8f, -3.92f, 1f * Time.deltaTime);
         }
-        
+    }
+
+    private void SwitchToRightLine()
+    {
+        if (character.transform.position.x == 5.1f)
+        {
+            Debug.Log("Can't move further right");
+            failureSound.Play();
+        }
+        else
+        {
+            switchLaneSound.Play();
+            //Ruszamy kotka w prawo, czas jest max więc od razu się rusza
+            character.transform.position = new Vector3(5.1f, -3.92f, 1f * Time.deltaTime);
+        }
     }
 }
