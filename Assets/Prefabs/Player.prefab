@@ -308,3 +308,4 @@ MonoBehaviour:
   movementSpeed: 6
   movementJoystick: {fileID: 0}
   rigidbody2D: {fileID: 353499244684264756}
+  spawnPoint: {fileID: 0}
