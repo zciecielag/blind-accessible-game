@@ -1,4 +1,0 @@
-repository "blind-accessible-game@Asakasaa@cloud"
-  path "/"
-    br "/main"
-    co "/main"
