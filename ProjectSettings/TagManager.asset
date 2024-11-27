@@ -8,6 +8,7 @@ TagManager:
   - ButtonClickSound
   - Object
   - Button
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -25,6 +25,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player")
         {
+            GameDataManager.Instance.LoadGame();
             StartCoroutine(SwitchScene());
             //StartCoroutine(waiting());
         }
