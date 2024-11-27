@@ -13,7 +13,7 @@ public class QuestData
                     1, false, false, 1, "Schowaj telefon do ekwipunku"
                 ),
                 new SubQuest(
-                    2, false, false, 1, ""
+                    2, false, false, 1, "Przynies telefon trefliku"
                 )
             }
         ),

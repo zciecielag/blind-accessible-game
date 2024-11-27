@@ -16,7 +16,7 @@ public class InventoryInteractionObject : MonoBehaviour
             InventoryManager.Instance.AddToInventory(gameObject);
             ActManager.Instance.CompleteSubQuest(questId);
             gameObject.SetActive(false);
-
+            
             //Po deaktywacji obiektu nie mozna zaczac coroutine, wiec uzywamy kamery do czekania
             MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
             camMono.StartCoroutine(ShowDoneTextAndHide());
