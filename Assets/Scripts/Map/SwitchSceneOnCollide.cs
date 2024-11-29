@@ -12,7 +12,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
 
     void Start()
     {
-        fadeInOut = FindObjectOfType<FadeInOut>();
+        fadeInOut = FindFirstObjectByType<FadeInOut>();
     }
 
     public IEnumerator SwitchScene()
@@ -25,7 +25,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player")
         {
-            GameDataManager.Instance.LoadGame();
+            GameDataManager.Instance.SaveGame();
             StartCoroutine(SwitchScene());
             //StartCoroutine(waiting());
         }

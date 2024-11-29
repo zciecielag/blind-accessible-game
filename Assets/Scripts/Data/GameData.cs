@@ -11,17 +11,14 @@ public class GameData
     //Np. ostatnia pozycja gracza, stan ekwipunku, stan questow, ogolnie wszystko
     public string currentSceneName;
     public GameObject currentlyHeldObject;
-
-    //TODO: nie dziala zapisywanie listy aktow do jsona :<<<<
-    public List<Act> actProgress;
-    //public Vector2 playerPostion;
+    
+    public int currentActId;
+    public int currentSubQuestId;
     public GameData()
     {
         this.currentSceneName = "Scene.01.01.Hall";
         this.currentlyHeldObject = null;
-
-        var acts = QuestData.allActs;
-        acts[0].isActive = true;
-        this.actProgress = acts;
+        this.currentActId = 0;
+        this.currentSubQuestId = 0;
     }
 }
