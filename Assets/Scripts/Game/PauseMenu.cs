@@ -76,4 +76,10 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
         #endif
     }
+
+    //debug
+    public void NewGame()
+    {
+        GameDataManager.Instance.NewGame();
+    }
 }

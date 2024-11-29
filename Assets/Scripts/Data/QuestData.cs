@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Klasa w ktorej ustalamy poczatkowe wartosci dla wszystkich aktow i questow
+[System.Serializable]
 public class QuestData
 {
     public static List<Act> allActs = new()
@@ -13,7 +14,7 @@ public class QuestData
                     1, false, false, 1, "Schowaj telefon do ekwipunku"
                 ),
                 new SubQuest(
-                    2, false, false, 1, "Przynies telefon trefliku"
+                    2, false, false, 1, "Przynies telefon Treflikowi"
                 )
             }
         ),
