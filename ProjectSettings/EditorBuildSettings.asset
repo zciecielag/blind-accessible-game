@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartingScenes/SaveMenu.unity
     guid: b4e1876a37d14f2448e85b335f7447fe
   - enabled: 1
+    path: Assets/Scenes/Game/Cutscenes/Cutscene.01.StartCutscene.unity
+    guid: d56d00742fd45534fa040d98543f73c6
+  - enabled: 1
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.01.Hall.unity
     guid: b1944b20acc826d4bb1dbe65de8c5c40
   - enabled: 1
