@@ -16,7 +16,7 @@ public class GameData
     public int currentSubQuestId;
     public GameData()
     {
-        this.currentSceneName = "Scene.01.01.Hall";
+        this.currentSceneName = "Cutscene.01.StartCutscene";
         this.currentlyHeldObject = null;
         this.currentActId = 0;
         this.currentSubQuestId = 0;
