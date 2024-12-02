@@ -49,8 +49,7 @@ public class ActManager : MonoBehaviour, IGameDataManager
                     {
                         subquests[j].isActive = true;
                         this.currentQuestId = questId;
-                        questTextDescription.text = subquests[j].description;
-                        Debug.Log(subquests[j].description);
+                        if (questTextDescription != null) { questTextDescription.text = subquests[j].description; }
                         break;
                     }
                 }
@@ -83,7 +82,7 @@ public class ActManager : MonoBehaviour, IGameDataManager
                         {
                             subquests[j+1].isActive = true;
                             this.currentQuestId = subquests[j+1].id;
-                            questTextDescription.text = subquests[j+1].description;
+                            if (questTextDescription != null) { questTextDescription.text = subquests[j+1].description; }
                             //currentSubQuest = currentSubQuests[j+1];
                         }
                         else

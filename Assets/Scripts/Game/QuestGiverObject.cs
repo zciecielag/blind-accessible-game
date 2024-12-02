@@ -11,6 +11,7 @@ public class QuestGiverObject : MonoBehaviour
         if (other.tag == "Player" && canGive)
         {
             ActManager.Instance.AcquireQuest(actId, questId);
+            //trigger dialogue
             canGive = false;
         }
     }
