@@ -8024,6 +8024,8 @@ MonoBehaviour:
   - "Masz racj\u0119, co\u015B dziwnego dzieje si\u0119 w kuchni. Lepiej p\xF3jd\u017Amy
     to sprawdzi\u0107."
   textSpeed: 0.05
+  activateObjects: []
+  deactivateObjects: []
 --- !u!114 &867789509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9736,8 +9738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2cb40b1d4b2644e8a45c816735256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questId: 1
   actId: 0
+  questId: 1
   scene: Scene.01.01.Hall
 --- !u!1 &1897060700
 GameObject:
@@ -9870,6 +9872,8 @@ MonoBehaviour:
   dialogueLines:
   - "Miaaaa\u0142...."
   textSpeed: 0.05
+  activateObjects: []
+  deactivateObjects: []
 --- !u!114 &1937887160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10041,6 +10045,8 @@ MonoBehaviour:
     wr\xF3ci do domu z ich znajomymi, Mama Treflik i jej dzieci musz\u0105 przygotowa\u0107
     przyj\u0119cie niespodziank\u0119. Tak wi\u0119c zaczyna si\u0119 przygoda."
   textSpeed: 0.05
+  activateObjects: []
+  deactivateObjects: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

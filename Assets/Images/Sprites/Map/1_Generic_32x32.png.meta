@@ -4072,7 +4072,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Generic_32x32_154
+      name: Doa
       rect:
         serializedVersion: 2
         x: 319
@@ -4191,7 +4191,6 @@ TextureImporter:
       1_Generic_32x32_151: -2088178668183904129
       1_Generic_32x32_152: -3121552066911338046
       1_Generic_32x32_153: -4492260169117211799
-      1_Generic_32x32_154: 2297581245597546449
       1_Generic_32x32_155: 2792717650020540789
       1_Generic_32x32_16: 6009138183885921670
       1_Generic_32x32_17: 4105814935641196745
@@ -4285,6 +4284,7 @@ TextureImporter:
       1_Generic_32x32_97: -4350673933192149042
       1_Generic_32x32_98: -2197610708972847871
       1_Generic_32x32_99: 6394787012434261205
+      Doa: 2297581245597546449
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

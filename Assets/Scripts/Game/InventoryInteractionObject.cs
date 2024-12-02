@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,15 +13,26 @@ public class InventoryInteractionObject : MonoBehaviour
     private float doubleTapTime = 0.6f;
     private int countTap;
 
+    private bool collisionActive = false;
+
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Entered inventory object collision");
         if (other.tag == "Player" && canBeTaken)
         {
+            collisionActive = true;
             StartCoroutine(waitForTap());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.tag == "Player" && canBeTaken)
+        {
+            collisionActive = false;
+            countTap = 0;
+            StopAllCoroutines();
         }
     }
 
@@ -63,16 +75,16 @@ public class InventoryInteractionObject : MonoBehaviour
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 countTap++;
-                StartCoroutine(CheckDoubleTap());
+                if (collisionActive) {StartCoroutine(CheckDoubleTap());} else { collisionActive = false; }
             } 
             else 
             {
-                StartCoroutine(waitForTap());
+                if (collisionActive) {StartCoroutine(waitForTap());} else { collisionActive = false; }
             }
         }
         else
         {
-            StartCoroutine(waitForTap());
+            if (collisionActive) {StartCoroutine(waitForTap());} else { collisionActive = false; }
         }
     }
 
@@ -82,14 +94,14 @@ public class InventoryInteractionObject : MonoBehaviour
 
         if (countTap == 1)
         {
-            Debug.Log("SingleTap");
-            StartCoroutine(waitForTap());
+            Debug.Log("Single");
+            if (collisionActive) {StartCoroutine(waitForTap());} else { collisionActive = false; }
         }
         else if (countTap == 2)
         {
-            Debug.Log("DoubleTap");
+            Debug.Log("Double");
             countTap = 0;
-            AddToInventory();
+            if (collisionActive) {AddToInventory();} else { collisionActive = false; }
         }
     }
 

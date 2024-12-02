@@ -10,6 +10,7 @@ public class GameSceneManager : MonoBehaviour, IGameDataManager
     public void LoadData(GameData data)
     {
         this.currentSceneName = data.currentSceneName;
+        if (SceneManager.GetActiveScene().name != currentSceneName) { SceneManager.LoadScene(currentSceneName); }
     }
 
     public void SaveData(ref GameData data)
