@@ -14,7 +14,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        transform.position = spawnPoint.transform.position;
+        if (spawnPoint != null && spawnPoint.activeSelf == true)
+        {
+            transform.position = spawnPoint.transform.position;
+        }
     }
 
 

@@ -10,6 +10,9 @@ public class DialogueBox : MonoBehaviour
 
     private int index;
 
+    public GameObject[] activateObjects;
+    public GameObject[] deactivateObjects;
+
     private void OnEnable()
     {
         StartDialogue();
@@ -17,6 +20,14 @@ public class DialogueBox : MonoBehaviour
 
     private void StartDialogue()
     {
+        if (deactivateObjects != null)
+        {
+            foreach (GameObject a in deactivateObjects)
+            {
+                a.SetActive(false);
+                Debug.Log(a.activeSelf);
+            }
+        }
         index = 0;
         dialogueText.text = string.Empty;
         StartCoroutine(TypeDialogue());
@@ -34,8 +45,28 @@ public class DialogueBox : MonoBehaviour
 
     IEnumerator WaitAndNextLine()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         NextLineOfDialogue();
+    }
+
+    IEnumerator WaitAndEnd()
+    {
+        yield return new WaitForSeconds(1.0f);
+        if (activateObjects != null)
+        {
+            foreach (GameObject a in activateObjects)
+            {
+                a.SetActive(true);
+            }
+        }
+        if (deactivateObjects != null)
+        {
+            foreach (GameObject a in deactivateObjects)
+            {
+                a.SetActive(true);
+            }
+        }
+        gameObject.SetActive(false);
     }
 
     private void NextLineOfDialogue()
@@ -45,6 +76,10 @@ public class DialogueBox : MonoBehaviour
             index++;
             dialogueText.text = string.Empty;
             StartCoroutine(TypeDialogue());
+        }
+        else
+        {
+            StartCoroutine(WaitAndEnd());
         }
     }
 }

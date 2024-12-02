@@ -59,6 +59,7 @@ public class GameDataManager : MonoBehaviour
         }
 
         fileDataManager.Save(gameData);
+        Debug.Log("Saved");
     }
 
     public GameData GetGameData()

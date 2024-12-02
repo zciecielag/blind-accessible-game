@@ -19,6 +19,6 @@ public class GameData
         this.currentSceneName = "Cutscene.01.StartCutscene";
         this.currentlyHeldObject = null;
         this.currentActId = 0;
-        this.currentSubQuestId = 0;
+        this.currentSubQuestId = 1;
     }
 }

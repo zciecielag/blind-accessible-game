@@ -23,4 +23,9 @@ public class GameSceneManager : MonoBehaviour, IGameDataManager
         this.currentSceneName = SceneManager.GetActiveScene().name;
     }
 
+    public void ChangeName(string name)
+    {
+        this.currentSceneName = name;
+    }
+
 }
