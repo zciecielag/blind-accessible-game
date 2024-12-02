@@ -25,7 +25,6 @@ public class DialogueBox : MonoBehaviour
             foreach (GameObject a in deactivateObjects)
             {
                 a.SetActive(false);
-                Debug.Log(a.activeSelf);
             }
         }
         index = 0;
