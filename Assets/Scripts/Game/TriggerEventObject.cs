@@ -19,6 +19,7 @@ public class TriggerEventObject : MonoBehaviour
                 }
             }
             canInteract = false;
+            gameObject.GetComponent<AudioSource>().Stop();
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }

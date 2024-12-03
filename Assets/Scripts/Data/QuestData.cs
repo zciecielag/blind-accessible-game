@@ -22,6 +22,9 @@ public class QuestData
                 ),
                 new SubQuest(
                     4, false, false, 0, "Kliknij przycisk 'W jakim pokoju jestem?' i usłysz kwestię jeszcze raz."
+                ),
+                new SubQuest(
+                    5, false, false, 0, "Przejdź do kuchni."
                 )
             }
         ),

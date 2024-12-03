@@ -46,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: CameraBackground
+    uniqueID: 4173120589
+    locked: 0
   - name: Background
     uniqueID: 2991501315
     locked: 0

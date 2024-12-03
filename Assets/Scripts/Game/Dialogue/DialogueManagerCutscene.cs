@@ -7,19 +7,25 @@ public class DialogueBox : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public string[] dialogueLines;
     public float textSpeed;
-
     private int index;
+    public bool completesQuest;
+    public int questId;
 
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
 
+    public Rigidbody2D playerRb;
+
     private void OnEnable()
     {
+        playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         StartDialogue();
     }
 
     private void StartDialogue()
     {
+        gameObject.GetComponent<AudioSource>().Play();
+
         if (deactivateObjects != null)
         {
             foreach (GameObject a in deactivateObjects)
@@ -27,8 +33,12 @@ public class DialogueBox : MonoBehaviour
                 a.SetActive(false);
             }
         }
+
         index = 0;
         dialogueText.text = string.Empty;
+
+        //nie dziala, rusza sie gracz
+        playerRb.linearVelocity = Vector2.zero;
         StartCoroutine(TypeDialogue());
     }
 
@@ -51,13 +61,18 @@ public class DialogueBox : MonoBehaviour
     IEnumerator WaitAndEnd()
     {
         yield return new WaitForSeconds(1.0f);
-        if (activateObjects != null)
+
+        if (gameObject.GetComponent<AudioSource>().isPlaying)
         {
-            foreach (GameObject a in activateObjects)
-            {
-                a.SetActive(true);
-            }
+            gameObject.GetComponent<AudioSource>().Stop();
         }
+
+        if (completesQuest)
+        {
+            ActManager.Instance.CompleteSubQuest(questId);
+            completesQuest = false;
+        }
+
         if (deactivateObjects != null)
         {
             foreach (GameObject a in deactivateObjects)
@@ -65,6 +80,18 @@ public class DialogueBox : MonoBehaviour
                 a.SetActive(true);
             }
         }
+
+        if (activateObjects != null)
+        {
+            foreach (GameObject a in activateObjects)
+            {
+                a.SetActive(true);
+            }
+            activateObjects = null;
+        }
+
+        InventoryManager.Instance.ShowInventory();
+
         gameObject.SetActive(false);
     }
 
