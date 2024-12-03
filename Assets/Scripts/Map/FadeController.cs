@@ -6,7 +6,7 @@ public class FadeController : MonoBehaviour
     FadeInOut fadeInOut;
     void Start()
     {
-        fadeInOut = FindObjectOfType<FadeInOut>();
+        fadeInOut = FindFirstObjectByType<FadeInOut>();
         fadeInOut.FadeOut();
     }
 }

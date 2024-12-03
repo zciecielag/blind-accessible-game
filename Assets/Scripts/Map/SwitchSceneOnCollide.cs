@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class SwitchSceneOnCollide : MonoBehaviour
 {
-    [SerializeField] private string sceneToLoad;
-    [SerializeField] private AudioSource audioSource;
-
-    private GameData gameData;
+    public string sceneToLoad;
+    public AudioSource audioSource;
     FadeInOut fadeInOut;
+    public bool canSwitch;
+    public GameObject[] activateObjects;
 
     void Start()
     {
@@ -18,6 +18,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
     public IEnumerator SwitchScene()
     {
         fadeInOut.FadeIn();
+        audioSource.Play();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneName: sceneToLoad);
 
@@ -25,10 +26,28 @@ public class SwitchSceneOnCollide : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player")
         {
-            GameDataManager.Instance.SaveGame();
-            StartCoroutine(SwitchScene());
-            //StartCoroutine(waiting());
+            if (canSwitch)
+            {
+                GameDataManager.Instance.SaveGame();
+                StartCoroutine(SwitchScene());
+                //StartCoroutine(waiting());
+            }
+            else
+            {
+                if (activateObjects != null)
+                {
+                    foreach (GameObject a in activateObjects)
+                    {
+                        a.SetActive(true);
+                    }
+                }
+            }
         }
+    }
+
+    private void blockEntrance()
+    {
+
     }
 
     //IEnumerator waiting()

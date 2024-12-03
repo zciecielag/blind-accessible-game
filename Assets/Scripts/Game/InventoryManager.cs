@@ -25,12 +25,21 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
     public void LoadData(GameData data)
     {
         this.currentlyHeldObject = data.currentlyHeldObject;
+        Debug.Log("Logged data inventory: " + currentlyHeldObject);
         if (currentlyHeldObject != null)
         {
             inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
             inventoryText.text = currentlyHeldObject.name;
         }
         
+    }
+    public void ShowInventory()
+    {
+        if (currentlyHeldObject != null)
+        {
+            inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
+            inventoryText.text = currentlyHeldObject.name;
+        }
     }
 
     public void SaveData(ref GameData data)

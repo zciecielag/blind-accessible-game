@@ -6,17 +6,17 @@ using Unity.Cinemachine;
 
 public class TreflikVoice : MonoBehaviour
 {
-    public AudioSource telephone;
+    //public AudioSource telephone;
     public AudioSource startGame;
     public static float time = 4f;
 
     private void Start()
     {
-        InvokeRepeating("PlaySound", 0.001f, time);
+        //InvokeRepeating("PlaySound", 0.001f, time);
     }
     void PlaySound()
     {
-        telephone.Play();
+        //telephone.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
