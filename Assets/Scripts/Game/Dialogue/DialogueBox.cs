@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class DialogueBox : MonoBehaviour
 {
+    public int actId;
+    public int questId;
+    public bool completesQuest;
+    public GameObject[] activateObjects;
+    public GameObject[] deactivateObjects;
+
+
     public TextMeshProUGUI dialogueText;
     public string[] dialogueLines;
     public float textSpeed;
     private int index;
-    public bool completesQuest;
-    public int questId;
-
-    public GameObject[] activateObjects;
-    public GameObject[] deactivateObjects;
-
     public Rigidbody2D playerRb;
 
     private void OnEnable()
     {
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        //nie dziala, rusza sie gracz
+        playerRb.linearVelocity = Vector2.zero;
+
         StartDialogue();
     }
 
@@ -36,9 +40,6 @@ public class DialogueBox : MonoBehaviour
 
         index = 0;
         dialogueText.text = string.Empty;
-
-        //nie dziala, rusza sie gracz
-        playerRb.linearVelocity = Vector2.zero;
         StartCoroutine(TypeDialogue());
     }
 

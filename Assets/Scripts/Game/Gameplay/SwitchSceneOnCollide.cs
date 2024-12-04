@@ -2,12 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SwitchSceneOnCollide : MonoBehaviour
+public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
 {
     public string sceneToLoad;
     public AudioSource audioSource;
     FadeInOut fadeInOut;
-    public bool canSwitch;
+    public bool isEnabled;
     public GameObject[] activateObjects;
 
     void Start()
@@ -24,13 +24,13 @@ public class SwitchSceneOnCollide : MonoBehaviour
 
     }
     private void OnTriggerEnter2D(Collider2D other) {
+        
         if (other.tag == "Player")
         {
-            if (canSwitch)
+            if (isEnabled)
             {
                 GameDataManager.Instance.SaveGame();
                 StartCoroutine(SwitchScene());
-                //StartCoroutine(waiting());
             }
             else
             {
@@ -45,16 +45,23 @@ public class SwitchSceneOnCollide : MonoBehaviour
         }
     }
 
-    private void blockEntrance()
+    public void LoadData(GameData data)
     {
-
+        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
+        {
+            this.isEnabled = data.enabledGameObjects[this.gameObject.tag];
+        }
     }
 
-    //IEnumerator waiting()
-    //{   
-    //    audioSource.Play();
-    //    yield return new WaitForSeconds(0.8f);
-    //    gameData.currentSceneName = sceneToLoad;
-    //    SceneManager.LoadScene(sceneName:sceneToLoad);
-    //}
+    public void SaveData(ref GameData data)
+    {
+        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
+        {
+            data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
+        }
+        else
+        {
+            data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
+        }
+    }
 }

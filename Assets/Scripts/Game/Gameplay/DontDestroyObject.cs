@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DontDestroyInventory : MonoBehaviour
+public class DontDestroyObject : MonoBehaviour
 {
 
     private void Awake()
@@ -15,7 +15,7 @@ public class DontDestroyInventory : MonoBehaviour
 
     public void ActivateDontDestroy()
     {
-        Debug.Log("Dont destroy inventory");
+        Debug.Log("Dont destroy");
         DontDestroyOnLoad(this.gameObject);
     }
 }

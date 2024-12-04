@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SwitchScene : MonoBehaviour
+public class SwitchSceneOnEnable : MonoBehaviour
 {
     public int actId;
     public int questId;

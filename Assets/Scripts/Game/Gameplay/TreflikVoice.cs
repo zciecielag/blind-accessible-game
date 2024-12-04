@@ -23,7 +23,7 @@ public class TreflikVoice : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            startGame.Play();
+            //startGame.Play();
         }
     }
 }

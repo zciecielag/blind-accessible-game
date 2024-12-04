@@ -7,9 +7,8 @@ public class ActManager : MonoBehaviour, IGameDataManager
 {
     public static ActManager Instance { get; private set; }
     public List<Act> allActs;
-
-    public int currentActId;
-    public int currentQuestId;
+    public int currentActId = 0;
+    public int currentQuestId = 0;
 
     public TextMeshProUGUI questTextDescription;
 

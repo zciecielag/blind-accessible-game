@@ -4,31 +4,35 @@ using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 
-public class InventoryInteractionObject : MonoBehaviour
+public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
 {
-
+    public int actId;
     public int questId;
+    public bool isEnabled;
     public GameObject doneText;
-    public bool canBeTaken;
-    private float doubleTapTime = 0.6f;
-    private int countTap;
-
-    private bool collisionActive = false;
-
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
 
+    private float doubleTapTime = 0.6f;
+    private int countTap;
+    private bool collisionActive = false;
+
+    private void OnEnable()
+    {
+        isEnabled = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && canBeTaken)
+        if (other.tag == "Player" && isEnabled)
         {
             collisionActive = true;
-            StartCoroutine(waitForTap());
+            StartCoroutine(WaitForTap());
         }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "Player" && canBeTaken)
+        if (other.tag == "Player" && isEnabled)
         {
             collisionActive = false;
             countTap = 0;
@@ -40,8 +44,11 @@ public class InventoryInteractionObject : MonoBehaviour
     {
         InventoryManager.Instance.AddToInventory(gameObject);
         ActManager.Instance.CompleteSubQuest(questId);
-        gameObject.GetComponent<DontDestroyInventory>().ActivateDontDestroy();
-        canBeTaken = false;
+        gameObject.GetComponent<DontDestroyObject>().ActivateDontDestroy();
+
+        isEnabled = false;
+        GameDataManager.Instance.SaveGame();
+
         gameObject.GetComponent<AudioSource>().Stop();
         gameObject.transform.localScale = new Vector3(0, 0, 0);
         
@@ -67,7 +74,7 @@ public class InventoryInteractionObject : MonoBehaviour
     }
     
     //Tapy sie nie rejestruja caly czas
-    IEnumerator waitForTap()
+    IEnumerator WaitForTap()
     {
         yield return new WaitForEndOfFrame();
         if (Input.touchCount == 1)
@@ -79,12 +86,12 @@ public class InventoryInteractionObject : MonoBehaviour
             } 
             else 
             {
-                if (collisionActive) {StartCoroutine(waitForTap());} else { collisionActive = false; }
+                if (collisionActive) {StartCoroutine(WaitForTap());} else { collisionActive = false; }
             }
         }
         else
         {
-            if (collisionActive) {StartCoroutine(waitForTap());} else { collisionActive = false; }
+            if (collisionActive) {StartCoroutine(WaitForTap());} else { collisionActive = false; }
         }
     }
 
@@ -95,7 +102,7 @@ public class InventoryInteractionObject : MonoBehaviour
         if (countTap == 1)
         {
             Debug.Log("Single");
-            if (collisionActive) {StartCoroutine(waitForTap());} else { collisionActive = false; }
+            if (collisionActive) {StartCoroutine(WaitForTap());} else { collisionActive = false; }
         }
         else if (countTap == 2)
         {
@@ -107,9 +114,33 @@ public class InventoryInteractionObject : MonoBehaviour
 
     private IEnumerator ShowDoneTextAndHide()
     {
-        doneText.SetActive(true);
-        yield return new WaitForSeconds(1.0f);
-        doneText.SetActive(false);
+        if (doneText != null)
+        {
+            doneText.SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+            doneText.SetActive(false);
+        }
     }
 
+    public void LoadData(GameData data)
+    {
+        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
+        {
+            this.isEnabled = data.enabledGameObjects[this.gameObject.tag];
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
+        {
+            Debug.Log("Contains key");
+            data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
+        }
+        else
+        {
+            Debug.Log("Creating new key");
+            data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
+        }
+    }
 }

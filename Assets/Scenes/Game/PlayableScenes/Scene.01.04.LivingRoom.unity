@@ -290,7 +290,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
@@ -356,11 +356,11 @@ GameObject:
   - component: {fileID: 45651108}
   m_Layer: 0
   m_Name: SwitchToKitchen
-  m_TagString: Untagged
+  m_TagString: SwitchToKITCHENfromLR
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &45651108
 AudioSource:
   m_ObjectHideFlags: 0
@@ -605,6 +605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 4
   sceneName: Scene.01.02.Kitchen
+  isEnabled: 0
+  activateObjects: []
 --- !u!1 &50655409
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +759,7 @@ GameObject:
   - component: {fileID: 55299456}
   m_Layer: 0
   m_Name: SwitchToHall
-  m_TagString: Untagged
+  m_TagString: SwitchToHALLFromLR
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -889,7 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.01.Hall
   audioSource: {fileID: 620805156}
-  canSwitch: 1
+  isEnabled: 0
   activateObjects: []
 --- !u!61 &55299459
 BoxCollider2D:
@@ -1169,7 +1171,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484424}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ShowSwitchContrast
         m_Mode: 1
@@ -7927,7 +7929,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: GoToPauseMenu
         m_Mode: 1
@@ -9517,18 +9519,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 436428542}
-  dialogueLines:
-  - "Tu s\u0105 schody na g\xF3r\u0119, \u015Bpi tam teraz Treflinka. Lepiej jej
-    nie przeszkadzajmy."
-  textSpeed: 0.05
-  completesQuest: 0
+  actId: 0
   questId: 0
+  completesQuest: 0
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
   - {fileID: 893355816}
   - {fileID: 616311139}
+  dialogueText: {fileID: 436428542}
+  dialogueLines:
+  - "Tu s\u0105 schody na g\xF3r\u0119, \u015Bpi tam teraz Treflinka. Lepiej jej
+    nie przeszkadzajmy."
+  textSpeed: 0.05
   playerRb: {fileID: 0}
 --- !u!114 &467085716
 MonoBehaviour:
@@ -9994,7 +9997,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484422}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -10229,7 +10232,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484424}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ContrastGoBack
         m_Mode: 1
@@ -10786,6 +10789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 1957254896}
+  isEnabled: 1
 --- !u!114 &616311142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13559,9 +13563,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OpenMenu
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13723,7 +13727,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1791836418}
         m_TargetAssemblyTypeName: ChangeContrastInGame, Assembly-CSharp
         m_MethodName: ToggleContrast
         m_Mode: 1
@@ -14491,7 +14495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484424}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: VolumeGoBack
         m_Mode: 1
@@ -14660,7 +14664,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: GoToSettings
         m_Mode: 1
@@ -14965,7 +14969,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -15065,8 +15069,8 @@ GameObject:
   - component: {fileID: 894564065}
   - component: {fileID: 894564064}
   m_Layer: 0
-  m_Name: SpawnPoint1
-  m_TagString: Untagged
+  m_Name: SpawnPoint
+  m_TagString: SpawnPointLR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15080,7 +15084,7 @@ Transform:
   m_GameObject: {fileID: 894564062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.39, y: 6.27, z: 0.04170491}
+  m_LocalPosition: {x: -0.23, y: -0.13, z: 0.04170491}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15100,6 +15104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 1349551802}
+  isEnabled: 1
 --- !u!61 &894564065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15308,7 +15313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484424}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: BrightnessGoBack
         m_Mode: 1
@@ -15594,18 +15599,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects:
+  - {fileID: 45651107}
+  deactivateObjects:
+  - {fileID: 245194077}
+  - {fileID: 893355816}
+  - {fileID: 616311139}
   dialogueText: {fileID: 1481855410}
   dialogueLines:
   - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. Teraz spr\xF3buj samodzielnie
     przej\u015B\u0107 do kuchni."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects: []
-  deactivateObjects:
-  - {fileID: 245194077}
-  - {fileID: 893355816}
-  - {fileID: 616311139}
   playerRb: {fileID: 0}
 --- !u!114 &1019249860
 MonoBehaviour:
@@ -15884,7 +15891,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: SaveGame
         m_Mode: 1
@@ -16474,7 +16481,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484424}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ShowVolumeModification
         m_Mode: 1
@@ -16607,7 +16614,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2139484424}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ShowBrightnessModification
         m_Mode: 1
@@ -17819,6 +17826,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects: []
+  deactivateObjects:
+  - {fileID: 245194077}
+  - {fileID: 893355816}
+  - {fileID: 616311139}
   dialogueText: {fileID: 1918499214}
   dialogueLines:
   - "Jeste\u015Bmy w salonie. Mi\u0119kka kanapa, a\u017C si\u0119 prosi, aby po\u0142o\u017Cy\u0107
@@ -17827,13 +17842,6 @@ MonoBehaviour:
     przy wej\u015Bciu do pokoju, aby us\u0142ysze\u0107 je jeszcze raz kliknij przycisk
     \"W jakim pokoju jestem?\" po prawej stronie ekranu."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects: []
-  deactivateObjects:
-  - {fileID: 245194077}
-  - {fileID: 893355816}
-  - {fileID: 616311139}
   playerRb: {fileID: 0}
 --- !u!114 &1349551806
 MonoBehaviour:
@@ -18098,7 +18106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1401840110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18163,9 +18171,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 692717533}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OpenMenu
+        m_MethodName: PauseGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18614,18 +18622,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 1614882004}
-  dialogueLines:
-  - "To s\u0105 drzwi przed dom, pr\xF3bujesz je otworzy\u0107, ale ani drgn\u0105.
-    Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
-  textSpeed: 0.05
-  completesQuest: 0
+  actId: 0
   questId: 0
+  completesQuest: 0
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
   - {fileID: 893355816}
   - {fileID: 616311139}
+  dialogueText: {fileID: 1614882004}
+  dialogueLines:
+  - "To s\u0105 drzwi przed dom, pr\xF3bujesz je otworzy\u0107, ale ani drgn\u0105.
+    Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
+  textSpeed: 0.05
   playerRb: {fileID: 0}
 --- !u!114 &1478447771
 MonoBehaviour:
@@ -19269,7 +19278,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 551160837}
         m_TargetAssemblyTypeName: ControlVolume, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -19771,7 +19780,7 @@ GameObject:
   - component: {fileID: 1593518402}
   m_Layer: 0
   m_Name: SwitchToOutside
-  m_TagString: Untagged
+  m_TagString: SwitchToOutsideFromLR
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19903,7 +19912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.01.Hall
   audioSource: {fileID: 620805156}
-  canSwitch: 0
+  isEnabled: 0
   activateObjects:
   - {fileID: 1478447767}
 --- !u!61 &1593518405
@@ -21858,7 +21867,7 @@ GameObject:
   - component: {fileID: 1944425493}
   m_Layer: 0
   m_Name: SwitchToUpstairs
-  m_TagString: Untagged
+  m_TagString: SwitchToUpstairsFromLR
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22008,7 +22017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.02.Kitchen
   audioSource: {fileID: 620805156}
-  canSwitch: 0
+  isEnabled: 0
   activateObjects:
   - {fileID: 467085712}
 --- !u!61 &1944425497
@@ -22241,19 +22250,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 1872615710}
-  dialogueLines:
-  - "Jeste\u015Bmy w salonie. Mi\u0119kka kanapa, a\u017C si\u0119 prosi, aby po\u0142o\u017Cy\u0107
-    si\u0119 i wygrzewa\u0107 w cieple kominka. "
-  textSpeed: 0.05
-  completesQuest: 1
+  actId: 0
   questId: 4
+  completesQuest: 1
   activateObjects:
   - {fileID: 1019249857}
   deactivateObjects:
   - {fileID: 245194077}
   - {fileID: 893355816}
   - {fileID: 616311139}
+  dialogueText: {fileID: 1872615710}
+  dialogueLines:
+  - "Jeste\u015Bmy w salonie. Mi\u0119kka kanapa, a\u017C si\u0119 prosi, aby po\u0142o\u017Cy\u0107
+    si\u0119 i wygrzewa\u0107 w cieple kominka. "
+  textSpeed: 0.05
   playerRb: {fileID: 0}
 --- !u!114 &1957254899
 MonoBehaviour:
@@ -22539,7 +22549,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2003105509}
         m_TargetAssemblyTypeName: ControlVolume, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -23362,8 +23372,8 @@ SceneRoots:
   - {fileID: 1513822136}
   - {fileID: 1817555033}
   - {fileID: 150996590}
-  - {fileID: 683310282}
   - {fileID: 624869125}
+  - {fileID: 683310282}
   - {fileID: 1117441230}
   - {fileID: 1463771775}
   - {fileID: 2143288836}

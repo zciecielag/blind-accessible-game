@@ -9,6 +9,20 @@ TagManager:
   - Object
   - Button
   - NPC
+  - Falling_Object
+  - SwitchToLRFromHall
+  - TriggerColliderCabinetHALL
+  - ScarfHALL
+  - SwitchToKITCHENfromLR
+  - SwitchToHALLFromLR
+  - SwitchToUpstairsFromLR
+  - SwitchToOutsideFromLR
+  - SpawnPointLR
+  - SpawnPointKITCHEN
+  - CabinetHALL
+  - RugHALL
+  - SwitchToPANTRYFromKITCHEN
+  - SwitchToLRFromKitchen
   layers:
   - Default
   - TransparentFX
