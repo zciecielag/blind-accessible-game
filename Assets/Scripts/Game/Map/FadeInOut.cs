@@ -7,12 +7,7 @@ public class FadeInOut : MonoBehaviour
     public bool fadein = false;
     public bool fadeout = false;
     public float TimeToFade;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (fadein == true)

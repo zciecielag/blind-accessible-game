@@ -1,31 +1,33 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class WhichRoomButtonBehaviour : MonoBehaviour, IGameDataManager
+public class TriggerEventObject : MonoBehaviour, IGameDataManager
 {
-    public GameObject[] activateObjects;
+    public int actId;
+    public int questId;
     public bool isEnabled;
+    public GameObject[] activateObjects;
+
     private void OnEnable()
     {
-        gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
         isEnabled = true;
     }
 
-    private void Start()
-    {
-        if (isEnabled)
-        {   
-            gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
-        }
-    }
-    private void PlayRoomReminder()
-    {
-        if (activateObjects != null)
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Player" && isEnabled)
         {
-            foreach (GameObject a in activateObjects)
+            ActManager.Instance.AcquireQuest(actId, questId);
+            if (activateObjects != null)
             {
-                a.SetActive(true);
+                foreach (GameObject a in activateObjects)
+                {
+                    a.SetActive(true);
+                }
             }
+
+            isEnabled = false;
+            GameDataManager.Instance.SaveGame();
+
+            gameObject.GetComponent<AudioSource>().Stop();
         }
     }
 

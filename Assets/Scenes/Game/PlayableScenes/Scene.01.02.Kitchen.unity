@@ -419,9 +419,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OpenMenu
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028107}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ContrastGoBack
         m_Mode: 1
@@ -1434,6 +1434,84 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &325881964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325881965}
+  - component: {fileID: 325881966}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325881965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325881964}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.95, y: 9.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 439274497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &325881966
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325881964}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.23846245, y: 0.47692537}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.4769249, y: 5.360461}
+  m_EdgeRadius: 0
 --- !u!1 &352419603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,6 +1997,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 116905658}
+  - {fileID: 325881965}
+  - {fileID: 472173834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &458768934
@@ -1996,6 +2076,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458768934}
   m_CullTransparentMesh: 1
+--- !u!1 &472173833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472173834}
+  - component: {fileID: 472173835}
+  m_Layer: 0
+  m_Name: Collider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472173834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472173833}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.43, y: -13.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 439274497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &472173835
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472173833}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.31474423, y: -0.56559277}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.2401633, y: 1.4446583}
+  m_EdgeRadius: 0
 --- !u!1 &502928906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,6 +2256,93 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &519234135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519234137}
+  - component: {fileID: 519234136}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &519234136
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519234135}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -121846707
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &519234137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519234135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.436, y: -4.3796, z: 0}
+  m_LocalScale: {x: 103.620056, y: 64.06293, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &522195798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2736,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028107}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: BrightnessGoBack
         m_Mode: 1
@@ -9057,7 +9302,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1539214419}
         m_TargetAssemblyTypeName: ChangeContrastInGame, Assembly-CSharp
         m_MethodName: ToggleContrast
         m_Mode: 1
@@ -9514,7 +9759,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
@@ -10404,6 +10649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 1411537968}
+  isEnabled: 0
 --- !u!114 &812823643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10589,7 +10835,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: SaveGame
         m_Mode: 1
@@ -11516,18 +11762,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 1514707303}
-  dialogueLines:
-  - "To s\u0105 drzwi przed dom, pr\xF3bujesz je otworzy\u0107, ale ani drgn\u0105.
-    Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
-  textSpeed: 0
-  completesQuest: 0
+  actId: 0
   questId: 0
+  completesQuest: 0
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
   - {fileID: 522195798}
   - {fileID: 812823641}
+  dialogueText: {fileID: 1514707303}
+  dialogueLines:
+  - "To s\u0105 drzwi przed dom, pr\xF3bujesz je otworzy\u0107, ale ani drgn\u0105.
+    Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
+  textSpeed: 0
   playerRb: {fileID: 0}
 --- !u!114 &1007593777
 MonoBehaviour:
@@ -12329,7 +12576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1127000072
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12394,9 +12641,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OpenMenu
+        m_MethodName: PauseGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12706,7 +12953,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 98275723}
         m_TargetAssemblyTypeName: ControlVolume, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -13520,18 +13767,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 780093600}
-  dialogueLines:
-  - "Jeste\u015Bmy w kuchni. Zapach przypraw przepe\u0142nia to pomieszczenie. Stary
-    grzejnik ogrzewa ca\u0142e pomieszczenie."
-  textSpeed: 0
-  completesQuest: 0
+  actId: 0
   questId: 0
+  completesQuest: 0
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
   - {fileID: 522195798}
   - {fileID: 812823641}
+  dialogueText: {fileID: 780093600}
+  dialogueLines:
+  - "Jeste\u015Bmy w kuchni. Zapach przypraw przepe\u0142nia to pomieszczenie. Stary
+    grzejnik ogrzewa ca\u0142e pomieszczenie."
+  textSpeed: 0
   playerRb: {fileID: 0}
 --- !u!114 &1411537971
 MonoBehaviour:
@@ -14095,7 +14343,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028105}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -14161,7 +14409,7 @@ GameObject:
   - component: {fileID: 1511675026}
   m_Layer: 0
   m_Name: SwitchToPantry
-  m_TagString: Untagged
+  m_TagString: SwitchToPANTRYFromKITCHEN
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14309,7 +14557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.01.Hall
   audioSource: {fileID: 2004979251}
-  canSwitch: 0
+  isEnabled: 0
   activateObjects:
   - {fileID: 1007593774}
 --- !u!61 &1511675029
@@ -14883,7 +15131,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -14949,7 +15197,7 @@ GameObject:
   - component: {fileID: 1575777869}
   m_Layer: 0
   m_Name: SwitchToLivingRoom
-  m_TagString: Untagged
+  m_TagString: SwitchToLRFromKitchen
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15097,9 +15345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.01.Hall
   audioSource: {fileID: 2004979251}
-  canSwitch: 1
-  activateObjects:
-  - {fileID: 0}
+  isEnabled: 0
+  activateObjects: []
 --- !u!61 &1575777872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15733,7 +15980,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
   m_Resource: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1.2
   Loop: 0
@@ -15831,8 +16078,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: MainScene
-  audioSource: {fileID: 0}
-  canSwitch: 0
+  audioSource: {fileID: 2004979251}
+  isEnabled: 1
   activateObjects: []
 --- !u!114 &1719470015
 MonoBehaviour:
@@ -15846,7 +16093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 449d36f1672210e41b8a4d15c36ceaa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  telephone: {fileID: 0}
   startGame: {fileID: 0}
 --- !u!1 &1719939647
 GameObject:
@@ -16281,7 +16527,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028107}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ShowSwitchContrast
         m_Mode: 1
@@ -17182,7 +17428,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028107}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: VolumeGoBack
         m_Mode: 1
@@ -17315,7 +17561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028107}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ShowVolumeModification
         m_Mode: 1
@@ -17848,7 +18094,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2137265500}
         m_TargetAssemblyTypeName: ControlVolume, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -20843,7 +21089,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 180028107}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ShowBrightnessModification
         m_Mode: 1
@@ -21308,7 +21554,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: GoToPauseMenu
         m_Mode: 1
@@ -21441,7 +21687,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 633920461}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: GoToSettings
         m_Mode: 1
@@ -22459,6 +22705,7 @@ SceneRoots:
   - {fileID: 1678338131}
   - {fileID: 385345315}
   - {fileID: 3189158695833536642}
+  - {fileID: 519234137}
   - {fileID: 881571788}
   - {fileID: 1325096960528766192}
   - {fileID: 1394485845}

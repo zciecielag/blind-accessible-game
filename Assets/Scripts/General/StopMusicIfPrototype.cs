@@ -12,7 +12,7 @@ public class StopMusicIfPrototype : MonoBehaviour
     void Update()
     {
         //Trzeba to bedzie zmienic na bardziej efektywne XD
-        if (SceneManager.GetActiveScene().name == "Game" || SceneManager.GetActiveScene().name == "MainScene" || SceneManager.GetActiveScene().name == "Scene.01.01.Hall")
+        if (SceneManager.GetActiveScene().name == "Game" || SceneManager.GetActiveScene().name == "MainScene" || SceneManager.GetActiveScene().name == "Cutscene.01.StartCutscene")
         {
             this.gameObject.GetComponent<AudioSource>().Pause();
             paused = true;

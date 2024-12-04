@@ -1,33 +1,26 @@
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class WhichRoomButtonBehaviour : MonoBehaviour, IGameDataManager
+public class TriggerDialogue : MonoBehaviour, IGameDataManager
 {
     public GameObject[] activateObjects;
     public bool isEnabled;
-    private void OnEnable()
-    {
-        gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
-        isEnabled = true;
-    }
 
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (isEnabled)
-        {   
-            gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
-        }
-    }
-    private void PlayRoomReminder()
-    {
-        if (activateObjects != null)
+        if (other.tag == "Player" && isEnabled)
         {
-            foreach (GameObject a in activateObjects)
+            if (activateObjects != null)
             {
-                a.SetActive(true);
+                foreach (GameObject a in activateObjects)
+                {
+                    a.SetActive(true);
+                }
+                isEnabled = false;
             }
         }
     }
+
 
     public void LoadData(GameData data)
     {

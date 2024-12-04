@@ -1,3 +1,4 @@
+using System.Data.Common;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,9 +31,9 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
         {
             inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
             inventoryText.text = currentlyHeldObject.name;
-        }
-        
+        } 
     }
+
     public void ShowInventory()
     {
         if (currentlyHeldObject != null)

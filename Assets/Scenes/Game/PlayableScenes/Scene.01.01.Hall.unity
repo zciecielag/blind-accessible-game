@@ -1391,6 +1391,93 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &215554856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215554858}
+  - component: {fileID: 215554857}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &215554857
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215554856}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -121846707
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &215554858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215554856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6, y: -1.7, z: 0}
+  m_LocalScale: {x: 111.48482, y: 70.61657, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216192514
 GameObject:
   m_ObjectHideFlags: 0
@@ -6119,6 +6206,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1844477717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &748763455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748763456}
+  - component: {fileID: 748763457}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &748763456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748763455}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1142546077}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &748763457
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748763455}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.3200307, y: -2.7118423}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.9095621, y: 6.4236846}
+  m_EdgeRadius: 0
 --- !u!1 &806443426
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,19 +6889,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects:
+  - {fileID: 1562562455}
+  deactivateObjects:
+  - {fileID: 2384867345152268757}
+  - {fileID: 1808525503}
   dialogueText: {fileID: 411569416}
   dialogueLines:
   - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot.
     Na szafce le\u017Cy szalik, kt\xF3ry przyda Ci si\u0119 jak b\u0119dziesz wychodzi\u0142
     na zewn\u0105trz. Aby go podnie\u015B\u0107, kliknij 2 razy w ekran."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects:
-  - {fileID: 1562562455}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
   playerRb: {fileID: 0}
 --- !u!114 &922340143
 MonoBehaviour:
@@ -8106,6 +8272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 516276538}
+  - {fileID: 748763456}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1148321311
@@ -8422,12 +8589,12 @@ GameObject:
   - component: {fileID: 1233144166}
   - component: {fileID: 1233144167}
   m_Layer: 0
-  m_Name: TriggerCollider
-  m_TagString: Untagged
+  m_Name: TriggerColliderCabinet
+  m_TagString: TriggerColliderCabinetHALL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1233144164
 Transform:
   m_ObjectHideFlags: 0
@@ -8496,14 +8663,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233144163}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20c182054147fc042a87fa349d5bbc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canInteract: 1
   actId: 0
   questId: 2
+  isEnabled: 0
   activateObjects:
   - {fileID: 922340140}
 --- !u!82 &1233144167
@@ -10130,7 +10297,7 @@ GameObject:
   - component: {fileID: 1562562463}
   m_Layer: 0
   m_Name: Szalik
-  m_TagString: Untagged
+  m_TagString: ScarfHALL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10147,9 +10314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ea13a607611894fa5ed10929fd7a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
   questId: 2
+  isEnabled: 0
   doneText: {fileID: 422819644}
-  canBeTaken: 1
   activateObjects:
   - {fileID: 2051311318}
   deactivateObjects: []
@@ -11180,6 +11348,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects:
+  - {fileID: 1233144163}
+  deactivateObjects:
+  - {fileID: 2384867345152268757}
+  - {fileID: 1808525503}
   dialogueText: {fileID: 568646872}
   dialogueLines:
   - "Aby si\u0119 poruszy\u0107, nale\u017Cy u\u017Cy\u0107 joysticka w lewym dolnym
@@ -11189,13 +11365,6 @@ MonoBehaviour:
     lewym g\xF3rnym rogu i wydaje d\u017Awi\u0119k {d\u017Awi\u0119k}. Ten d\u017Awi\u0119k
     b\u0119dzie oznacza\u0142 przedmioty, przy kt\xF3rych mo\u017Cesz co\u015B zrobi\u0107."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects:
-  - {fileID: 2023758995}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
   playerRb: {fileID: 0}
 --- !u!114 &1671802553
 MonoBehaviour:
@@ -17274,7 +17443,7 @@ GameObject:
   - component: {fileID: 1890184133}
   m_Layer: 0
   m_Name: Rug
-  m_TagString: Untagged
+  m_TagString: RugHALL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17407,9 +17576,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20c182054147fc042a87fa349d5bbc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canInteract: 1
   actId: 0
   questId: 1
+  isEnabled: 1
   activateObjects:
   - {fileID: 1671802551}
 --- !u!82 &1890184133
@@ -17746,6 +17915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 0}
+  isEnabled: 0
 --- !u!114 &1988840064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18125,7 +18295,6 @@ GameObject:
   - component: {fileID: 2023758997}
   - component: {fileID: 2023758996}
   - component: {fileID: 2023758998}
-  - component: {fileID: 2023758999}
   m_Layer: 0
   m_Name: Cabinet
   m_TagString: Untagged
@@ -18250,103 +18419,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.9600668, y: 1.8717697}
   m_EdgeRadius: 0
---- !u!82 &2023758999
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023758995}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 11
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &2037005929
 GameObject:
   m_ObjectHideFlags: 0
@@ -18571,6 +18643,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects:
+  - {fileID: 634717008010781193}
+  deactivateObjects:
+  - {fileID: 2384867345152268757}
+  - {fileID: 1808525503}
   dialogueText: {fileID: 1783954843}
   dialogueLines:
   - "\u015Awietnie, teraz jeste\u015B gotowy! Teraz musimy trafi\u0107 do salonu,
@@ -18579,13 +18659,6 @@ MonoBehaviour:
     do kt\xF3rego przechodzisz. Ws\u0142uchaj si\u0119 i wybierz dobrze. Aby przej\u015B\u0107,
     zbli\u017C si\u0119 do drzwi!"
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects:
-  - {fileID: 634717008010781193}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
   playerRb: {fileID: 0}
 --- !u!114 &2051311321
 MonoBehaviour:
@@ -19102,12 +19175,12 @@ GameObject:
   - component: {fileID: 5860116119584834262}
   - component: {fileID: 77576655}
   m_Layer: 0
-  m_Name: SwitchToSalon
-  m_TagString: Untagged
+  m_Name: SwitchToLivingRoom
+  m_TagString: SwitchToLRFromHall
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1011477301811152518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20227,6 +20300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 3
   sceneName: Scene.01.04.LivingRoom
+  isEnabled: 0
+  activateObjects:
+  - {fileID: 1988840061}
 --- !u!224 &8366848485868488371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20349,6 +20425,7 @@ SceneRoots:
   - {fileID: 863041558}
   - {fileID: 5078589603624245393}
   - {fileID: 1207602110}
+  - {fileID: 215554858}
   - {fileID: 1148321314}
   - {fileID: 5959035008026074626}
   - {fileID: 1349277526581937071}
