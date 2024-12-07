@@ -66,7 +66,6 @@ public class GameDataManager : MonoBehaviour
 
         foreach(IGameDataManager gameDataManager in gameDataManagers)
         {
-            Debug.Log(gameDataManager.ToString());
             gameDataManager.SaveData(ref gameData);
         }
 

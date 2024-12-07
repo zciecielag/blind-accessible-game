@@ -23,6 +23,13 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
         inventoryText.text = objectToAdd.name;
     }
 
+    public void RemoveFromInventory()
+    {
+        this.currentlyHeldObject = null;
+        inventoryItem.GetComponent<Image>().sprite = null;
+        inventoryText.text = "";
+    }
+
     public void LoadData(GameData data)
     {
         this.currentlyHeldObject = data.currentlyHeldObject;

@@ -28,6 +28,7 @@ public class TriggerEventObject : MonoBehaviour, IGameDataManager
             GameDataManager.Instance.SaveGame();
 
             gameObject.GetComponent<AudioSource>().Stop();
+            gameObject.SetActive(false);
         }
     }
 

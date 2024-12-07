@@ -18,13 +18,16 @@ public class QuestData
                     2, false, false, 0, "Spróbuj podnieść szalik naciskając dwukrotnie na ekran."
                 ),
                 new SubQuest(
-                    3, false, false, 0, "Poszukaj dźwięku salonu. Zbliż się do drzwi prowadzących do salonu, aby przejść dalej."
+                    3, false, false, 0, "Powieś szalik na wieszaku."
                 ),
                 new SubQuest(
-                    4, false, false, 0, "Kliknij przycisk 'W jakim pokoju jestem?' i usłysz kwestię jeszcze raz."
+                    4, false, false, 0, "Poszukaj dźwięku salonu. Zbliż się do drzwi prowadzących do salonu, aby przejść dalej."
                 ),
                 new SubQuest(
-                    5, false, false, 0, "Przejdź do kuchni."
+                    5, false, false, 0, "Kliknij przycisk 'W jakim pokoju jestem?' i usłysz kwestię jeszcze raz."
+                ),
+                new SubQuest(
+                    6, false, false, 0, "Przejdź do kuchni."
                 )
             }
         ),

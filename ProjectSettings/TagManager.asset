@@ -23,6 +23,7 @@ TagManager:
   - RugHALL
   - SwitchToPANTRYFromKITCHEN
   - SwitchToLRFromKitchen
+  - HangerTriggerHALL
   layers:
   - Default
   - TransparentFX
