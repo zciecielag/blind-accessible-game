@@ -10,11 +10,18 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
     public int questId;
     public bool isEnabled;
     public GameObject doneText;
+
+    public GameObject objectBeingChanged;
+    public Sprite unchangedSprite;
+    public Sprite changedSprite;
+
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
 
+    public bool addOrUse;
+
     private float doubleTapTime = 0.6f;
-    private int countTap;
+    private int countTap = 0;
     private bool collisionActive = false;
 
     private void OnEnable()
@@ -72,6 +79,41 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
             }
         }
     }
+
+    private void UseInventoryObject()
+    {
+        InventoryManager.Instance.RemoveFromInventory();
+        ActManager.Instance.CompleteSubQuest(questId);
+
+        isEnabled = false;
+        GameDataManager.Instance.SaveGame();
+
+        gameObject.GetComponent<AudioSource>().Stop();
+
+        if (changedSprite != null)
+        {
+            objectBeingChanged.GetComponent<SpriteRenderer>().sprite = changedSprite;
+        }
+
+        MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
+        camMono.StartCoroutine(ShowDoneTextAndHide());
+
+        if (activateObjects != null)
+        {
+            foreach (GameObject a in activateObjects)
+            {
+                a.SetActive(true);
+            }
+        }
+
+        if (deactivateObjects != null)
+        {
+            foreach (GameObject a in deactivateObjects)
+            {
+                a.SetActive(false);
+            }
+        }
+    }
     
     //Tapy sie nie rejestruja caly czas
     IEnumerator WaitForTap()
@@ -108,7 +150,17 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
         {
             Debug.Log("Double");
             countTap = 0;
-            if (collisionActive) {AddToInventory();} else { collisionActive = false; }
+            if (collisionActive) 
+            {
+                if (addOrUse)
+                {
+                    AddToInventory();
+                }
+                else
+                {
+                    UseInventoryObject();
+                }
+            } else { collisionActive = false; }
         }
     }
 

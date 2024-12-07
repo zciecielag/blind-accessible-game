@@ -2796,7 +2796,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Generic_32x32_96
+      name: Hanger
       rect:
         serializedVersion: 2
         x: 32
@@ -2818,13 +2818,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Generic_32x32_97
+      name: HangerWithObj
       rect:
         serializedVersion: 2
-        x: 63
-        y: 909
-        width: 64
-        height: 29
+        x: 64
+        y: 910
+        width: 31
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4280,11 +4280,11 @@ TextureImporter:
       1_Generic_32x32_93: 6603591770033227773
       1_Generic_32x32_94: -1929617682364305364
       1_Generic_32x32_95: 7340804294598552808
-      1_Generic_32x32_96: 7848023516834124207
-      1_Generic_32x32_97: -4350673933192149042
       1_Generic_32x32_98: -2197610708972847871
       1_Generic_32x32_99: 6394787012434261205
       Doa: 2297581245597546449
+      Hanger: 7848023516834124207
+      HangerWithObj: -4350673933192149042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
