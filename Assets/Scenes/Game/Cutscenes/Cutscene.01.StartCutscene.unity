@@ -300,9 +300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048dd96c77052254d8c7bff419c47b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGive: 1
   actId: 1
   questId: 1
+  isEnabled: 0
 --- !u!212 &133915575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ Transform:
   m_GameObject: {fileID: 199564164}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 0.3625, y: 0.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7643,8 +7643,8 @@ Transform:
   m_GameObject: {fileID: 742972341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: 0}
-  m_LocalScale: {x: 0.13599475, y: 0.12795591, z: 1}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: 0}
+  m_LocalScale: {x: 1.5913266, y: 1.7240815, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1465859984}
@@ -7673,6 +7673,7 @@ MonoBehaviour:
   movementSpeed: 6
   movementJoystick: {fileID: 0}
   rigidbody2D: {fileID: 742972346}
+  animator: {fileID: 0}
   spawnPoint: {fileID: 0}
 --- !u!61 &742972345
 BoxCollider2D:
@@ -7712,7 +7713,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8125, y: 11.25}
+    oldSize: {x: 1, y: 0.8125}
     newSize: {x: 12.8125, y: 11.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7791,7 +7792,7 @@ SpriteRenderer:
   m_SortingLayerID: 466898289
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1075993247170539406, guid: 3895fe9ba82807844b61d34cc98891f5, type: 3}
+  m_Sprite: {fileID: 6608407443132281427, guid: 454bd871f8bd0454085e279c7f7c5020, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7900,16 +7901,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects: []
+  deactivateObjects: []
   dialogueText: {fileID: 1753436532}
   dialogueLines:
   - "Masz racj\u0119, co\u015B dziwnego dzieje si\u0119 w kuchni. Lepiej p\xF3jd\u017Amy
     to sprawdzi\u0107."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects: []
-  deactivateObjects: []
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &867789509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8793,7 +8796,7 @@ Transform:
   m_GameObject: {fileID: 1511899529}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9555,15 +9558,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects: []
+  deactivateObjects: []
   dialogueText: {fileID: 1468276582}
   dialogueLines:
   - "Miaaaa\u0142...."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects: []
-  deactivateObjects: []
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1937887160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9821,6 +9826,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fd9fbcd924c1a49b01f5d9bb27f6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  activateObjects: []
+  deactivateObjects: []
   dialogueText: {fileID: 999428342}
   dialogueLines:
   - "To by\u0142 spokojny dzie\u0144. Rodzina Treflik\xF3w przyjecha\u0142a na par\u0119
@@ -9833,11 +9843,8 @@ MonoBehaviour:
     wr\xF3ci do domu z ich znajomymi, Mama Treflik i jej dzieci musz\u0105 przygotowa\u0107
     przyj\u0119cie niespodziank\u0119. Tak wi\u0119c zaczyna si\u0119 przygoda."
   textSpeed: 0.05
-  completesQuest: 0
-  questId: 0
-  activateObjects: []
-  deactivateObjects: []
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!82 &2022084233
 AudioSource:
   m_ObjectHideFlags: 0

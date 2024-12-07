@@ -1235,6 +1235,7 @@ GameObject:
   - component: {fileID: 150996593}
   - component: {fileID: 150996592}
   - component: {fileID: 150996591}
+  - component: {fileID: 150996596}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1251,8 +1252,8 @@ Transform:
   m_GameObject: {fileID: 150996589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: 0}
-  m_LocalScale: {x: 0.13599475, y: 0.12795591, z: 1}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: 0}
+  m_LocalScale: {x: 1.5913266, y: 1.7240815, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 620805154}
@@ -1281,6 +1282,7 @@ MonoBehaviour:
   movementSpeed: 5
   movementJoystick: {fileID: 245194078}
   rigidbody2D: {fileID: 150996594}
+  animator: {fileID: 150996596}
   spawnPoint: {fileID: 894564062}
 --- !u!61 &150996593
 BoxCollider2D:
@@ -1316,17 +1318,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.9988079, y: 0.044509172}
+  m_Offset: {x: -0.018681467, y: -0.009817213}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8125, y: 11.25}
+    oldSize: {x: 1, y: 0.8125}
     newSize: {x: 12.8125, y: 11.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.216791, y: 9.558649}
+  m_Size: {x: 1.0107623, y: 0.8579652}
   m_EdgeRadius: 0
 --- !u!50 &150996594
 Rigidbody2D:
@@ -1399,7 +1401,7 @@ SpriteRenderer:
   m_SortingLayerID: 466898289
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1075993247170539406, guid: 3895fe9ba82807844b61d34cc98891f5, type: 3}
+  m_Sprite: {fileID: 6608407443132281427, guid: 454bd871f8bd0454085e279c7f7c5020, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1410,6 +1412,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &150996596
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150996589}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e73af39a481d2d1498a89583076969a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &160064341
 GameObject:
   m_ObjectHideFlags: 0
@@ -8355,6 +8379,7 @@ MonoBehaviour:
   snapY: 0
   background: {fileID: 1972329376}
   handle: {fileID: 1261411037}
+  input: {x: 0, y: 0}
 --- !u!114 &245194079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9533,6 +9558,7 @@ MonoBehaviour:
     nie przeszkadzajmy."
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &467085716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15614,6 +15640,7 @@ MonoBehaviour:
     przej\u015B\u0107 do kuchni."
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1019249860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17843,6 +17870,7 @@ MonoBehaviour:
     \"W jakim pokoju jestem?\" po prawej stronie ekranu."
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1349551806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18636,6 +18664,7 @@ MonoBehaviour:
     Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1478447771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19182,7 +19211,7 @@ Transform:
   m_GameObject: {fileID: 1498040872}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19391,7 +19420,7 @@ Transform:
   m_GameObject: {fileID: 1513822133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 0.3625, y: 0.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22265,6 +22294,7 @@ MonoBehaviour:
     si\u0119 i wygrzewa\u0107 w cieple kominka. "
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1957254899
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,16 +1,21 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] private float movementSpeed = 5f;
+    public float movementSpeed = 5f;
     private float horizontal;
     private bool isFacingRight = true;
-    [SerializeField] private Joystick movementJoystick;
-    [SerializeField] private Rigidbody2D rigidbody2D;
+    public Joystick movementJoystick;
 
-    [SerializeField] private GameObject spawnPoint;
+    public Rigidbody2D rigidbody2D;
+    public Animator animator;
+
+    public GameObject spawnPoint;
+
+    private bool isMoving = true;
 
     void Start()
     {
@@ -25,17 +30,31 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = movementJoystick.Direction.x;
 
+        if (rigidbody2D.constraints == RigidbodyConstraints2D.FreezePosition)
+        {
+            isMoving = false;
+        }
+        else
+        {
+            isMoving = true;
+        }
+
         Flip();
     }
 
     private void FixedUpdate() 
     {
-        if(movementJoystick.Direction.y != 0 || movementJoystick.Direction.x != 0)
+        if((movementJoystick.Horizontal != 0 || movementJoystick.Vertical != 0) && isMoving)
         {
             rigidbody2D.linearVelocity = new Vector2(movementJoystick.Direction.x * movementSpeed, movementJoystick.Direction.y * movementSpeed);
+            animator.SetFloat("xVelocity", Math.Abs(rigidbody2D.linearVelocityX));
+            animator.SetFloat("yVelocity", rigidbody2D.linearVelocityY);
+            animator.SetBool("Moving", true);
         } else
         {
             rigidbody2D.linearVelocity = Vector2.zero;
+            animator.SetBool("Moving", false);
+            movementJoystick.input = Vector2.zero;
         }
     }
 

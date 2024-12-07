@@ -16,9 +16,11 @@ public class DialogueBox : MonoBehaviour
     public float textSpeed;
     private int index;
     public Rigidbody2D playerRb;
+    public GameObject player;
 
     private void OnEnable()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         //nie dziala, rusza sie gracz
         playerRb.linearVelocity = Vector2.zero;
@@ -29,6 +31,7 @@ public class DialogueBox : MonoBehaviour
     private void StartDialogue()
     {
         gameObject.GetComponent<AudioSource>().Play();
+        playerRb.constraints = RigidbodyConstraints2D.FreezePosition;
 
         if (deactivateObjects != null)
         {
@@ -92,6 +95,7 @@ public class DialogueBox : MonoBehaviour
         }
 
         InventoryManager.Instance.ShowInventory();
+        playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         gameObject.SetActive(false);
     }

@@ -6680,7 +6680,7 @@ Transform:
   m_GameObject: {fileID: 863041555}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6899,11 +6899,13 @@ MonoBehaviour:
   - {fileID: 1808525503}
   dialogueText: {fileID: 411569416}
   dialogueLines:
-  - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot.
-    Na szafce le\u017Cy szalik, kt\xF3ry przyda Ci si\u0119 jak b\u0119dziesz wychodzi\u0142
-    na zewn\u0105trz. Aby go podnie\u015B\u0107, kliknij 2 razy w ekran."
+  - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot."
+  - "Na szafce le\u017Cy szalik, kt\xF3ry przyda Ci si\u0119 jak b\u0119dziesz wychodzi\u0142
+    na zewn\u0105trz."
+  - "Aby go podnie\u015B\u0107, kliknij 2 razy w ekran."
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &922340143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8644,7 +8646,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.022357106, y: -0.9813218}
+  m_Offset: {x: 0.0017187595, y: -0.533731}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8654,7 +8656,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.1748095, y: 2.9626427}
+  m_Size: {x: 3.019073, y: 2.067461}
   m_EdgeRadius: 0
 --- !u!114 &1233144166
 MonoBehaviour:
@@ -10425,7 +10427,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.11397171, y: -2.727226}
+  m_Offset: {x: 0.11397219, y: -2.727226}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10435,7 +10437,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.222434, y: 6.5172114}
+  m_Size: {x: 6.337105, y: 6.5172114}
   m_EdgeRadius: 0
 --- !u!114 &1562562462
 MonoBehaviour:
@@ -11359,13 +11361,17 @@ MonoBehaviour:
   dialogueText: {fileID: 568646872}
   dialogueLines:
   - "Aby si\u0119 poruszy\u0107, nale\u017Cy u\u017Cy\u0107 joysticka w lewym dolnym
-    rogu ekranu. Aby poruszy\u0107 si\u0119 w g\xF3r\u0119, wystarczy go przeci\u0105gn\u0105\u0107
-    w g\xF3r\u0119! Proste, co nie? Reszta kierunk\xF3w dzia\u0142a tak samo."
-  - "Spr\xF3buj samemu, przejd\u017A si\u0119 do szafki, znajduje si\u0119 ona w
-    lewym g\xF3rnym rogu i wydaje d\u017Awi\u0119k {d\u017Awi\u0119k}. Ten d\u017Awi\u0119k
-    b\u0119dzie oznacza\u0142 przedmioty, przy kt\xF3rych mo\u017Cesz co\u015B zrobi\u0107."
+    rogu ekranu."
+  - "Aby poruszy\u0107 si\u0119 w g\xF3r\u0119, wystarczy go przeci\u0105gn\u0105\u0107
+    w g\xF3r\u0119!"
+  - "Proste, co nie? Reszta kierunk\xF3w dzia\u0142a tak samo."
+  - "Spr\xF3buj samemu! Przejd\u017A si\u0119 do szafki - znajduje si\u0119 ona w
+    lewym g\xF3rnym rogu i wydaje d\u017Awi\u0119k {d\u017Awi\u0119k}. "
+  - "Ten d\u017Awi\u0119k b\u0119dzie oznacza\u0142 przedmioty, przy kt\xF3rych mo\u017Cesz
+    co\u015B zrobi\u0107."
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1671802553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18653,13 +18659,16 @@ MonoBehaviour:
   - {fileID: 1808525503}
   dialogueText: {fileID: 1783954843}
   dialogueLines:
-  - "\u015Awietnie, teraz jeste\u015B gotowy! Teraz musimy trafi\u0107 do salonu,
-    b\u0119dziemy mogli przej\u015B\u0107 z niego do kuchni. Musisz znale\u017A\u0107
-    dobre drzwi w tym pokoju. Ka\u017Cde drzwi wydaj\u0105 d\u017Awi\u0119ki pomieszczenia
-    do kt\xF3rego przechodzisz. Ws\u0142uchaj si\u0119 i wybierz dobrze. Aby przej\u015B\u0107,
-    zbli\u017C si\u0119 do drzwi!"
+  - "\u015Awietnie, teraz jeste\u015B gotowy!"
+  - "Teraz musimy trafi\u0107 do salonu, b\u0119dziemy mogli przej\u015B\u0107 z
+    niego do kuchni. "
+  - "Musisz znale\u017A\u0107 dobre drzwi w tym pokoju. Ka\u017Cde drzwi wydaj\u0105
+    d\u017Awi\u0119ki pomieszczenia do kt\xF3rego przechodzisz."
+  - "Ws\u0142uchaj si\u0119 i wybierz dobrze. Aby przej\u015B\u0107, zbli\u017C si\u0119
+    do drzwi!"
   textSpeed: 0.05
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &2051311321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19871,17 +19880,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.9988079, y: 0.044509172}
+  m_Offset: {x: -0.023324013, y: -0.029443085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8125, y: 11.25}
+    oldSize: {x: 1, y: 0.8125}
     newSize: {x: 12.8125, y: 11.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.216791, y: 9.558649}
+  m_Size: {x: 1.0744112, y: 0.8706747}
   m_EdgeRadius: 0
 --- !u!114 &4751571607871253698
 MonoBehaviour:
@@ -19995,7 +20004,7 @@ Transform:
   m_GameObject: {fileID: 3971870681798237465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 0.3625, y: 0.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20039,6 +20048,7 @@ MonoBehaviour:
   snapY: 0
   background: {fileID: 7527996736170351192}
   handle: {fileID: 5229951789830198505}
+  input: {x: 0, y: 0}
 --- !u!1 &5455040609477143472
 GameObject:
   m_ObjectHideFlags: 0
@@ -20120,8 +20130,8 @@ Transform:
   m_GameObject: {fileID: 9205327401529381851}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6696, y: -0.01, z: 0}
-  m_LocalScale: {x: 0.13599475, y: 0.12795591, z: 1}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: 0}
+  m_LocalScale: {x: 1.5913266, y: 1.7240815, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8975313900350698883}
@@ -20212,7 +20222,7 @@ SpriteRenderer:
   m_SortingLayerID: 466898289
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1075993247170539406, guid: 3895fe9ba82807844b61d34cc98891f5, type: 3}
+  m_Sprite: {fileID: 6608407443132281427, guid: 454bd871f8bd0454085e279c7f7c5020, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20362,6 +20372,7 @@ MonoBehaviour:
   movementSpeed: 5
   movementJoystick: {fileID: 5340318584753942648}
   rigidbody2D: {fileID: 4915379782232514820}
+  animator: {fileID: 9205327401529381852}
   spawnPoint: {fileID: 516276537}
 --- !u!4 &8975313900350698883
 Transform:
@@ -20392,6 +20403,7 @@ GameObject:
   - component: {fileID: 4470855707939392052}
   - component: {fileID: 8727039261916187726}
   - component: {fileID: 2072660766}
+  - component: {fileID: 9205327401529381852}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -20399,6 +20411,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &9205327401529381852
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205327401529381851}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e73af39a481d2d1498a89583076969a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &9215164488081109940
 RectTransform:
   m_ObjectHideFlags: 0

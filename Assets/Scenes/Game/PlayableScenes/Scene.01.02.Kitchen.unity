@@ -9502,6 +9502,7 @@ MonoBehaviour:
   snapY: 0
   background: {fileID: 1855079355}
   handle: {fileID: 1316940682}
+  input: {x: 0, y: 0}
 --- !u!114 &649826715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11776,6 +11777,7 @@ MonoBehaviour:
     Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
   textSpeed: 0
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1007593777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13781,6 +13783,7 @@ MonoBehaviour:
     grzejnik ogrzewa ca\u0142e pomieszczenie."
   textSpeed: 0
   playerRb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1411537971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15748,7 +15751,7 @@ Transform:
   m_GameObject: {fileID: 1678338128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4177, y: -0.0265, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22335,8 +22338,8 @@ Transform:
   m_GameObject: {fileID: 4570848033542150441}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4177, y: -0.0265, z: 0}
-  m_LocalScale: {x: 0.17913593, y: 0.16547, z: 1}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: 0}
+  m_LocalScale: {x: 1.5913266, y: 1.7240815, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4350396005745819505}
@@ -22386,7 +22389,7 @@ SpriteRenderer:
   m_SortingLayerID: 466898289
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1075993247170539406, guid: 3895fe9ba82807844b61d34cc98891f5, type: 3}
+  m_Sprite: {fileID: 6608407443132281427, guid: 454bd871f8bd0454085e279c7f7c5020, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -22406,7 +22409,7 @@ Transform:
   m_GameObject: {fileID: 6712061016711957770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4177, y: -0.0265, z: -5}
+  m_LocalPosition: {x: -3.8077, y: -0.043, z: -5}
   m_LocalScale: {x: 0.3625, y: 0.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22427,6 +22430,7 @@ MonoBehaviour:
   movementSpeed: 6
   movementJoystick: {fileID: 649826714}
   rigidbody2D: {fileID: 353499245038119926}
+  animator: {fileID: 9140800888624365767}
   spawnPoint: {fileID: 116905657}
 --- !u!4 &4350396005745819505
 Transform:
@@ -22456,6 +22460,7 @@ GameObject:
   - component: {fileID: 353499245038119926}
   - component: {fileID: 9140800888624365766}
   - component: {fileID: 4165167297467532988}
+  - component: {fileID: 9140800888624365767}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -22686,18 +22691,40 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.9988079, y: 0.044509172}
+  m_Offset: {x: -0.03461401, y: -0.020366669}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8125, y: 11.25}
+    oldSize: {x: 1, y: 0.8125}
     newSize: {x: 12.8125, y: 11.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.216791, y: 9.558649}
+  m_Size: {x: 1.0257254, y: 0.86623704}
   m_EdgeRadius: 0
+--- !u!95 &9140800888624365767
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4570848033542150441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e73af39a481d2d1498a89583076969a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
