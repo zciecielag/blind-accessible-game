@@ -24,6 +24,7 @@ TagManager:
   - SwitchToPANTRYFromKITCHEN
   - SwitchToLRFromKitchen
   - HangerTriggerHALL
+  - SwitchToKITCHENFromLRQuest
   layers:
   - Default
   - TransparentFX

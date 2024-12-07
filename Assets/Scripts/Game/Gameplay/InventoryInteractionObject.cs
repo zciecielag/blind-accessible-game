@@ -20,7 +20,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
 
     public bool addOrUse;
 
-    private float doubleTapTime = 0.6f;
+    private float doubleTapTime = 0.5f;
     private int countTap = 0;
     private bool collisionActive = false;
 
@@ -50,7 +50,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
     private void AddToInventory()
     {
         InventoryManager.Instance.AddToInventory(gameObject);
-        ActManager.Instance.CompleteSubQuest(questId);
+        ActManager.Instance.CompleteSubQuest(actId, questId);
         gameObject.GetComponent<DontDestroyObject>().ActivateDontDestroy();
 
         isEnabled = false;
@@ -83,7 +83,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
     private void UseInventoryObject()
     {
         InventoryManager.Instance.RemoveFromInventory();
-        ActManager.Instance.CompleteSubQuest(questId);
+        ActManager.Instance.CompleteSubQuest(actId, questId);
 
         isEnabled = false;
         GameDataManager.Instance.SaveGame();

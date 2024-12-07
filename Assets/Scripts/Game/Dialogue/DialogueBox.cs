@@ -73,7 +73,7 @@ public class DialogueBox : MonoBehaviour
 
         if (completesQuest)
         {
-            ActManager.Instance.CompleteSubQuest(questId);
+            ActManager.Instance.CompleteSubQuest(actId, questId);
             completesQuest = false;
         }
 

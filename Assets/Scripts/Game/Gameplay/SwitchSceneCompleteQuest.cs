@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SwitchSceneCompleteQuest : MonoBehaviour, IGameDataManager
 {
+    public int actId;
     public int questId;
     public string sceneName;
     public bool isEnabled;
@@ -21,7 +22,7 @@ public class SwitchSceneCompleteQuest : MonoBehaviour, IGameDataManager
             gameObject.GetComponent<AudioSource>().Stop();
             if (questId > 0)
             {
-                ActManager.Instance.CompleteSubQuest(questId);
+                ActManager.Instance.CompleteSubQuest(actId, questId);
             }
             GameSceneManager.Instance.ChangeName(sceneName);
             isEnabled = false;

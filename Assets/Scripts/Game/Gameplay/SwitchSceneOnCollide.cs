@@ -10,7 +10,12 @@ public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
     public bool isEnabled;
     public GameObject[] activateObjects;
 
-    void Start()
+    private void OnEnable()
+    {
+        isEnabled = true;
+    }
+
+    private void Start()
     {
         fadeInOut = FindFirstObjectByType<FadeInOut>();
     }

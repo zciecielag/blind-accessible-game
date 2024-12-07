@@ -58,12 +58,14 @@ public class ActManager : MonoBehaviour, IGameDataManager
 
     //przechodzimy po wszystkich aktach i ich questach i zmieniamy potrzebne wartosci
     //TODO: usprawnic, brzydki for
-    public void CompleteSubQuest(int questId)
+    public void CompleteSubQuest(int actId, int questId)
     {
         for (int i = 0; i < allActs.Count; i++) {
             
-            if (allActs[i].isActive)
+            if (actId == allActs[i].id)
             {
+                allActs[i].isActive = true;
+                this.currentActId = actId;
                 var subquests = allActs[i].quests;
                 var act = allActs[i];
                 for (int j = 0; j < subquests.Count; j++)
@@ -79,10 +81,8 @@ public class ActManager : MonoBehaviour, IGameDataManager
 
                         if (j+1 <= subquests.Count - 1)
                         {
-                            subquests[j+1].isActive = true;
-                            this.currentQuestId = subquests[j+1].id;
-                            if (questTextDescription != null) { questTextDescription.text = subquests[j+1].description; }
-                            //currentSubQuest = currentSubQuests[j+1];
+                            AcquireQuest(i, questId+1);
+                            break;
                         }
                         else
                         {
@@ -94,7 +94,13 @@ public class ActManager : MonoBehaviour, IGameDataManager
 
                             if (i + 1 <= allActs.Count - 1)
                             {
-                                //currentAct = allActs[i+1];
+                                AcquireQuest(actId+1, 1);
+                                break;
+
+                            }
+                            else
+                            {
+                                Debug.Log("No more acts!");
                             }
                         }
                         break;
