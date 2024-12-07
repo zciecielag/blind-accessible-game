@@ -9,7 +9,7 @@ public class QuestData
     {
         //Samouczkowy akt
         new Act(
-            0, false, false, 0, new List<SubQuest>
+            0, false, false, 1, new List<SubQuest>
             {
                 new SubQuest(
                     1, false, false, 0, "Spróbuj podejść do szafki w lewym górnym rogu pokoju."
@@ -37,22 +37,34 @@ public class QuestData
             1, false, false, 1, new List<SubQuest>
             {
                 new SubQuest(
-                    1, false, false, 1, "Przejdź do kuchni"
+                    1, false, false, 1, "Podejdź do Treflików."
                 ),
                 new SubQuest(
-                    2, false, false, 1, "Przynies telefon Treflikowi"
-                )
-            }
-        ),
-
-        new Act(
-            2, false, false, 1, new List<SubQuest>
-            {
-                new SubQuest(
-                    1, false, false, 2, ""
+                    2, false, false, 1, "Znajdź i zabierz ze sobą miskę."
                 ),
                 new SubQuest(
-                    2, false, false, 2, ""
+                    3, false, false, 1, "Połóź miskę na stole."
+                ),
+                new SubQuest(
+                    4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
+                ),
+                //W tym queście musi być warunek spełniony, że jeśli rzecz w ekwipunku to ten klucz, to przechodzi do spiżarni.
+                new SubQuest(
+                    5, false, false, 1, "Wejdź do spiżarni."
+                ),
+                new SubQuest(
+                    6, false, false, 1, "Otwórz szafkę."
+                ),
+                new SubQuest(
+                    7, false, false, 1, "Weź miskę ze stołu."
+                ),
+                new SubQuest(
+                    8, false, false, 1, "Otwórz szafkę ponownie."
+                ),
+                //Teraz jest mini-gra
+                //Potem dostajemy miskę ze składnikami do eq
+                new SubQuest(
+                    9, false, false, 1, "Przynieś gotowe składniki Treflikom."
                 )
             }
         )

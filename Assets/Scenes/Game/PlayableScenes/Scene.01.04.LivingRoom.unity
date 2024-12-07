@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 45651108}
   m_Layer: 0
   m_Name: SwitchToKitchen
-  m_TagString: SwitchToKITCHENfromLR
+  m_TagString: SwitchToKITCHENFromLRQuest
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -603,7 +603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a10d4aada7eaf439201a7b212c52cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questId: 4
+  actId: 0
+  questId: 6
   sceneName: Scene.01.02.Kitchen
   isEnabled: 0
   activateObjects: []
@@ -9556,7 +9557,7 @@ MonoBehaviour:
   dialogueLines:
   - "Tu s\u0105 schody na g\xF3r\u0119, \u015Bpi tam teraz Treflinka. Lepiej jej
     nie przeszkadzajmy."
-  textSpeed: 0.05
+  textSpeed: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &467085716
@@ -15638,7 +15639,7 @@ MonoBehaviour:
   dialogueLines:
   - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. Teraz spr\xF3buj samodzielnie
     przej\u015B\u0107 do kuchni."
-  textSpeed: 0.05
+  textSpeed: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1019249860
@@ -17868,7 +17869,7 @@ MonoBehaviour:
   - "Tego typu kwestie b\u0119d\u0105 pojawia\u0107 si\u0119 tylko za pierwszym razem
     przy wej\u015Bciu do pokoju, aby us\u0142ysze\u0107 je jeszcze raz kliknij przycisk
     \"W jakim pokoju jestem?\" po prawej stronie ekranu."
-  textSpeed: 0.05
+  textSpeed: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1349551806
@@ -18662,7 +18663,7 @@ MonoBehaviour:
   dialogueLines:
   - "To s\u0105 drzwi przed dom, pr\xF3bujesz je otworzy\u0107, ale ani drgn\u0105.
     Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
-  textSpeed: 0.05
+  textSpeed: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1478447771
@@ -22280,7 +22281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actId: 0
-  questId: 4
+  questId: 5
   completesQuest: 1
   activateObjects:
   - {fileID: 1019249857}
@@ -22292,7 +22293,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015Bmy w salonie. Mi\u0119kka kanapa, a\u017C si\u0119 prosi, aby po\u0142o\u017Cy\u0107
     si\u0119 i wygrzewa\u0107 w cieple kominka. "
-  textSpeed: 0.05
+  textSpeed: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1957254899
