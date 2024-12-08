@@ -13,6 +13,7 @@ public class SwitchSceneCompleteQuest : MonoBehaviour, IGameDataManager
     {
         gameObject.GetComponent<AudioSource>().Play();
         isEnabled = true;
+        Debug.Log("got enabled");
     }
     
     private void OnTriggerEnter2D(Collider2D other) 

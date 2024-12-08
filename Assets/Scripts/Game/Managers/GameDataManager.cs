@@ -27,8 +27,11 @@ public class GameDataManager : MonoBehaviour
     private void Start() 
     {
         this.fileDataManager = new FileDataManager(Application.persistentDataPath, fileName);
-        //this.gameDataManagers = FindGameDataManagers();
         LoadGame();
+        if (CheckIfCanBeEnabled.Instance != null)
+        {
+            CheckIfCanBeEnabled.Instance.Check();
+        }
     }
 
     public void NewGame()
@@ -40,7 +43,7 @@ public class GameDataManager : MonoBehaviour
     public void LoadGame()
     {
         this.gameData = fileDataManager.Load();
-        Debug.Log(gameData.currentActId + gameData.currentSceneName + gameData.currentSubQuestId + gameData.currentlyHeldObject);
+        Debug.Log(gameData.currentActId + gameData.currentSceneName + gameData.currentActId + gameData.currentSubQuestId + gameData.currentlyHeldObject);
         this.gameDataManagers = FindGameDataManagers();
 
         if (this.gameData == null) 

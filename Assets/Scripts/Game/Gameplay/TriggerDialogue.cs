@@ -4,6 +4,7 @@ using UnityEngine;
 public class TriggerDialogue : MonoBehaviour, IGameDataManager
 {
     public GameObject[] activateObjects;
+    public GameObject[] deactivateObjects;
     public bool isEnabled;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -16,8 +17,16 @@ public class TriggerDialogue : MonoBehaviour, IGameDataManager
                 {
                     a.SetActive(true);
                 }
-                isEnabled = false;
             }
+
+            if (deactivateObjects != null)
+            {
+                foreach (GameObject a in deactivateObjects)
+                {
+                    a.SetActive(false);
+                }
+            }
+            isEnabled = false;
         }
     }
 

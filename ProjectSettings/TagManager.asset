@@ -25,6 +25,11 @@ TagManager:
   - SwitchToLRFromKitchen
   - HangerTriggerHALL
   - SwitchToKITCHENFromLRQuest
+  - TreflikiCollider1
+  - WhichRoomBtnKITCHEN
+  - WhichRoomBtnLR
+  - MiskaLR
+  - TreflikiCollider2
   layers:
   - Default
   - TransparentFX
