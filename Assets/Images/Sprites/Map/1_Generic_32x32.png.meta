@@ -2312,7 +2312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Generic_32x32_74
+      name: Miska
       rect:
         serializedVersion: 2
         x: 194
@@ -4256,7 +4256,6 @@ TextureImporter:
       1_Generic_32x32_71: -7189366689273377154
       1_Generic_32x32_72: 4708800822183577119
       1_Generic_32x32_73: 1432517206565773489
-      1_Generic_32x32_74: 1790103232169582999
       1_Generic_32x32_75: 336423246633097624
       1_Generic_32x32_76: 334899856192357574
       1_Generic_32x32_77: -754365657663669021
@@ -4285,6 +4284,7 @@ TextureImporter:
       Doa: 2297581245597546449
       Hanger: 7848023516834124207
       HangerWithObj: -4350673933192149042
+      Miska: 1790103232169582999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

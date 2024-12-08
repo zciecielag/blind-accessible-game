@@ -90,7 +90,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
 
         gameObject.GetComponent<AudioSource>().Stop();
 
-        if (changedSprite != null)
+        if (objectBeingChanged != null && changedSprite != null)
         {
             objectBeingChanged.GetComponent<SpriteRenderer>().sprite = changedSprite;
         }

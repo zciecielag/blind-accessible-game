@@ -22,10 +22,15 @@ public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
 
     public IEnumerator SwitchScene()
     {
-        fadeInOut.FadeIn();
+        if (fadeInOut != null)
+        {
+            fadeInOut.FadeIn();
+        }
         audioSource.Play();
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(sceneName: sceneToLoad);
+        GameSceneManager.Instance.ChangeName(sceneToLoad);
+        GameDataManager.Instance.SaveGame();
+        SceneManager.LoadScene(sceneToLoad);
 
     }
     private void OnTriggerEnter2D(Collider2D other) {

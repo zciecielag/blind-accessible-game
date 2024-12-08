@@ -43,7 +43,7 @@ public class QuestData
                     2, false, false, 1, "Znajdź i zabierz ze sobą miskę."
                 ),
                 new SubQuest(
-                    3, false, false, 1, "Połóź miskę na stole."
+                    3, false, false, 1, "Przynieś miskę Treflikom w kuchni."
                 ),
                 new SubQuest(
                     4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
