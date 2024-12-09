@@ -2151,7 +2151,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 649826712}
   - {fileID: 1127000071}
-  - {fileID: 0}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
   dialogueText: {fileID: 1411048615}
   dialogueLines:
@@ -9794,7 +9794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 56911121}
   settingsMenu: {fileID: 2060176922}
-  inventory: {fileID: 0}
+  inventory: {fileID: 1690848281}
   joystick: {fileID: 649826712}
 --- !u!1 &649826712
 GameObject:
@@ -11459,8 +11459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentlyHeldObject: {fileID: 0}
-  inventoryItem: {fileID: 0}
-  inventoryText: {fileID: 0}
+  inventoryItem: {fileID: 952813678}
+  inventoryText: {fileID: 1111936967}
 --- !u!1 &881571787
 GameObject:
   m_ObjectHideFlags: 0
@@ -12430,7 +12430,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 0}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
   dialogueText: {fileID: 1514707303}
   dialogueLines:
@@ -12716,7 +12716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentActId: 0
   currentQuestId: 0
-  questTextDescription: {fileID: 0}
+  questTextDescription: {fileID: 1625249906}
 --- !u!1 &1056883653
 GameObject:
   m_ObjectHideFlags: 0
@@ -14801,7 +14801,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 0}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
   dialogueText: {fileID: 780093600}
   dialogueLines:
@@ -16119,8 +16119,8 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
+  - {fileID: 1690848281}
   - {fileID: 1127000071}
-  - {fileID: 0}
   - {fileID: 812823641}
   dialogueText: {fileID: 1569285313}
   dialogueLines:

@@ -22,7 +22,6 @@ public class DialogueBox : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-        //nie dziala, rusza sie gracz
         playerRb.linearVelocity = Vector2.zero;
 
         StartDialogue();
