@@ -1540,7 +1540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentActId: 0
   currentQuestId: 0
-  questTextDescription: {fileID: 0}
+  questTextDescription: {fileID: 724503610}
 --- !u!1 &171357424
 GameObject:
   m_ObjectHideFlags: 0
@@ -8679,8 +8679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentlyHeldObject: {fileID: 0}
-  inventoryItem: {fileID: 0}
-  inventoryText: {fileID: 0}
+  inventoryItem: {fileID: 2058441279}
+  inventoryText: {fileID: 63607965}
 --- !u!1 &330710355
 GameObject:
   m_ObjectHideFlags: 0
@@ -9385,7 +9385,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   dialogueText: {fileID: 436428542}
   dialogueLines:
@@ -13670,7 +13670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1548070067}
   settingsMenu: {fileID: 748220700}
-  inventory: {fileID: 0}
+  inventory: {fileID: 1055899996}
   joystick: {fileID: 245194077}
 --- !u!4 &692717534
 Transform:
@@ -15568,7 +15568,7 @@ MonoBehaviour:
   - {fileID: 45651107}
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   - {fileID: 1401840109}
   dialogueText: {fileID: 1481855410}
@@ -17043,7 +17043,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   - {fileID: 1401840109}
   dialogueText: {fileID: 839525375}
@@ -18185,7 +18185,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   - {fileID: 1401840109}
   dialogueText: {fileID: 1918499214}
@@ -19072,7 +19072,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   dialogueText: {fileID: 1614882004}
   dialogueLines:
@@ -23286,7 +23286,7 @@ MonoBehaviour:
   - {fileID: 1019249857}
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   dialogueText: {fileID: 1872615710}
   dialogueLines:
