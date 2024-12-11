@@ -7800,9 +7800,9 @@ MonoBehaviour:
   - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot."
   - "Na szafce le\u017Cy szalik, kt\xF3ry trzeba odwiesi\u0107 na wieszak."
   - "Aby go podnie\u015B\u0107, kliknij 2 razy w ekran."
-  textSpeed: 0
-  playerRb: {fileID: 0}
-  player: {fileID: 0}
+  textSpeed: 0.05
+  playerRb: {fileID: 4915379782232514820}
+  player: {fileID: 9205327401529381851}
 --- !u!114 &922340143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10253,7 +10253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 0
   questId: 2
-  completesQuest: 1
+  completesQuest: 0
   activateObjects:
   - {fileID: 1753551695}
   deactivateObjects:
@@ -10266,9 +10266,9 @@ MonoBehaviour:
   - "Teraz musisz znale\u017A\u0107 wieszak, podej\u015B\u0107 do niego i odwiesi\u0107
     szalik."
   - "Szalik odwiesisz klikaj\u0105c ponownie 2 razy na ekran przy wieszaku. Do dzie\u0142a!"
-  textSpeed: 0
-  playerRb: {fileID: 0}
-  player: {fileID: 0}
+  textSpeed: 0.05
+  playerRb: {fileID: 4915379782232514820}
+  player: {fileID: 9205327401529381851}
 --- !u!114 &1260689240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13080,9 +13080,9 @@ MonoBehaviour:
     lewym g\xF3rnym rogu i wydaje d\u017Awi\u0119k {d\u017Awi\u0119k}. "
   - "Ten d\u017Awi\u0119k b\u0119dzie oznacza\u0142 przedmioty, przy kt\xF3rych mo\u017Cesz
     co\u015B zrobi\u0107."
-  textSpeed: 0
-  playerRb: {fileID: 0}
-  player: {fileID: 0}
+  textSpeed: 0.05
+  playerRb: {fileID: 4915379782232514820}
+  player: {fileID: 9205327401529381851}
 --- !u!114 &1671802553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20814,9 +20814,9 @@ MonoBehaviour:
     d\u017Awi\u0119ki pomieszczenia do kt\xF3rego przechodzisz."
   - "Ws\u0142uchaj si\u0119 i wybierz dobrze. Aby przej\u015B\u0107, zbli\u017C si\u0119
     do drzwi!"
-  textSpeed: 0
-  playerRb: {fileID: 0}
-  player: {fileID: 0}
+  textSpeed: 0.05
+  playerRb: {fileID: 4915379782232514820}
+  player: {fileID: 9205327401529381851}
 --- !u!114 &2051311321
 MonoBehaviour:
   m_ObjectHideFlags: 0

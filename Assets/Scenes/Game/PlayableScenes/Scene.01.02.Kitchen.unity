@@ -2161,7 +2161,7 @@ MonoBehaviour:
   - Przepraszamy, ale...
   - "Czy m\xF3g\u0142by\u015B mo\u017Ce nam pom\xF3c w szukaniu?"
   - "Kto wie, mo\u017Ce klucz znajdzie si\u0119 gdzie\u015B indziej w domu..."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &412207253
@@ -9794,7 +9794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 56911121}
   settingsMenu: {fileID: 2060176922}
-  inventory: {fileID: 1690848281}
+  inventory: {fileID: 0}
   joystick: {fileID: 649826712}
 --- !u!1 &649826712
 GameObject:
@@ -11459,8 +11459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentlyHeldObject: {fileID: 0}
-  inventoryItem: {fileID: 952813678}
-  inventoryText: {fileID: 1111936967}
+  inventoryItem: {fileID: 0}
+  inventoryText: {fileID: 0}
 --- !u!1 &881571787
 GameObject:
   m_ObjectHideFlags: 0
@@ -12430,7 +12430,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 1690848281}
+  - {fileID: 0}
   - {fileID: 812823641}
   dialogueText: {fileID: 1514707303}
   dialogueLines:
@@ -12716,7 +12716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentActId: 0
   currentQuestId: 0
-  questTextDescription: {fileID: 1625249906}
+  questTextDescription: {fileID: 0}
 --- !u!1 &1056883653
 GameObject:
   m_ObjectHideFlags: 0
@@ -14801,7 +14801,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 1690848281}
+  - {fileID: 0}
   - {fileID: 812823641}
   dialogueText: {fileID: 780093600}
   dialogueLines:
@@ -16119,8 +16119,8 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 1690848281}
   - {fileID: 1127000071}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
   dialogueText: {fileID: 1569285313}
   dialogueLines:
@@ -16130,7 +16130,7 @@ MonoBehaviour:
   - "Wygl\u0105da na to, \u017Ce musimy pom\xF3c im znale\u017A\u0107 misk\u0119. "
   - "Mo\u017Ce sprawdzimy, czy nie ma jej gdzie\u015B w domu?"
   - "Pami\u0119taj - szukaj przedmiot\xF3w po ich d\u017Awi\u0119ku!"
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1542476418

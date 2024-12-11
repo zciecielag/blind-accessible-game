@@ -15575,7 +15575,7 @@ MonoBehaviour:
   dialogueLines:
   - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. Teraz spr\xF3buj samodzielnie
     przej\u015B\u0107 do kuchni."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1019249860
@@ -17051,7 +17051,7 @@ MonoBehaviour:
   - 'Miska znaleziona. '
   - "Ale tutaj dzisiaj ba\u0142agan - przecie\u017C miska powinna by\u0107 w kuchni!"
   - "Lepiej zanie\u015Bmy j\u0105 teraz Treflikom."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1212883552
@@ -18195,7 +18195,7 @@ MonoBehaviour:
   - "Tego typu kwestie b\u0119d\u0105 pojawia\u0107 si\u0119 tylko za pierwszym razem
     przy wej\u015Bciu do pokoju, aby us\u0142ysze\u0107 je jeszcze raz kliknij przycisk
     \"W jakim pokoju jestem?\" po prawej stronie ekranu."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1349551806

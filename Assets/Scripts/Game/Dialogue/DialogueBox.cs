@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class DialogueBox : MonoBehaviour
@@ -25,6 +26,22 @@ public class DialogueBox : MonoBehaviour
         playerRb.linearVelocity = Vector2.zero;
 
         StartDialogue();
+    }
+    private void Update()
+    {
+        // Jeœli klikniêto przycisk myszy to pomija dialog
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (dialogueText.text == dialogueLines[index])
+            {
+                NextLineOfDialogue();
+            }
+            else
+            {
+                StopAllCoroutines();
+                dialogueText.text = dialogueLines[index];
+            }
+        }
     }
 
     private void StartDialogue()
