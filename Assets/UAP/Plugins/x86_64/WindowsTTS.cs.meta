@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 5127ffe284365b645890dde8f50a7982
+timeCreated: 1550250141
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Plugins/x86_64/WindowsTTS.cs
+  uploadId: 430133

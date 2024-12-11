@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1181cfcc82fec664faf7b2380fbc457f
+timeCreated: 1559859063
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/3D Objects Example/3D Object Example (Unity UI).unity
+  uploadId: 430133

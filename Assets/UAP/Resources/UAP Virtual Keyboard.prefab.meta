@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f8ac95d82d8e87d478907d04ea78521d
+timeCreated: 1559945618
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Resources/UAP Virtual Keyboard.prefab
+  uploadId: 430133

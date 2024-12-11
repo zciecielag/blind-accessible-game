@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6729df926c883994d8676acdee2688ae
+timeCreated: 1487980695
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/UI Navigation Example/NGUI Navigation Example (requires
+    NGUI).unity
+  uploadId: 430133

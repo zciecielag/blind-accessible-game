@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f77df02a5a876f04ca846e1f4ba372a7
+timeCreated: 1492011956
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Editor/UAP_Version.txt
+  uploadId: 430133
