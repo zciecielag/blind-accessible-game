@@ -23292,7 +23292,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015Bmy w salonie. Mi\u0119kka kanapa, a\u017C si\u0119 prosi, aby po\u0142o\u017Cy\u0107
     si\u0119 i wygrzewa\u0107 w cieple kominka. "
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1957254899
