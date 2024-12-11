@@ -7794,6 +7794,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
+  - {fileID: 43260223570994051}
   dialogueText: {fileID: 411569416}
   dialogueLines:
   - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot."
@@ -10258,6 +10259,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
+  - {fileID: 43260223570994051}
   dialogueText: {fileID: 854266948}
   dialogueLines:
   - "Super, podnios\u0142e\u015B szalik i zabra\u0142e\u015B go ze sob\u0105!"
@@ -13066,6 +13068,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
+  - {fileID: 43260223570994051}
   dialogueText: {fileID: 568646872}
   dialogueLines:
   - "Aby si\u0119 poruszy\u0107, nale\u017Cy u\u017Cy\u0107 joysticka w lewym dolnym
@@ -20801,6 +20804,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
+  - {fileID: 43260223570994051}
   dialogueText: {fileID: 1783954843}
   dialogueLines:
   - "Szalik odwieszony - \u015Bwietnie, teraz jeste\u015B gotowy!"

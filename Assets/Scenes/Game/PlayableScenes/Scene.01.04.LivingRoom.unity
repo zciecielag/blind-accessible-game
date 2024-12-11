@@ -1540,7 +1540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentActId: 0
   currentQuestId: 0
-  questTextDescription: {fileID: 0}
+  questTextDescription: {fileID: 724503610}
 --- !u!1 &171357424
 GameObject:
   m_ObjectHideFlags: 0
@@ -8679,8 +8679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentlyHeldObject: {fileID: 0}
-  inventoryItem: {fileID: 0}
-  inventoryText: {fileID: 0}
+  inventoryItem: {fileID: 2058441279}
+  inventoryText: {fileID: 63607965}
 --- !u!1 &330710355
 GameObject:
   m_ObjectHideFlags: 0
@@ -13670,7 +13670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1548070067}
   settingsMenu: {fileID: 748220700}
-  inventory: {fileID: 0}
+  inventory: {fileID: 1055899996}
   joystick: {fileID: 245194077}
 --- !u!4 &692717534
 Transform:

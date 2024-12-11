@@ -44,7 +44,7 @@ public class QuestData
                 ),
                 new SubQuest(
                     3, false, false, 1, "Przynieś miskę Treflikom w kuchni."
-                ),
+                ), 
                 new SubQuest(
                     4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
                 ),
