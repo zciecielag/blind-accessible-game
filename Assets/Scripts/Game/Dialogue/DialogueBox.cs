@@ -29,7 +29,7 @@ public class DialogueBox : MonoBehaviour
     }
     private void Update()
     {
-        // Jeœli klikniêto przycisk myszy to pomija dialog
+        // Jesli kliknieto przycisk myszy to pomija dialog
         if (Input.GetMouseButtonDown(0))
         {
             if (dialogueText.text == dialogueLines[index])
@@ -110,7 +110,10 @@ public class DialogueBox : MonoBehaviour
             activateObjects = null;
         }
 
-        InventoryManager.Instance.ShowInventory();
+        if (InventoryManager.Instance != null) 
+        {
+            InventoryManager.Instance.ShowInventory();
+        }
         playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         gameObject.SetActive(false);

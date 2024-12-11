@@ -43,7 +43,6 @@ public class GameDataManager : MonoBehaviour
     public void LoadGame()
     {
         this.gameData = fileDataManager.Load();
-        Debug.Log(gameData.currentActId + gameData.currentSceneName + gameData.currentActId + gameData.currentSubQuestId + gameData.currentlyHeldObject);
         this.gameDataManagers = FindGameDataManagers();
 
         if (this.gameData == null) 
