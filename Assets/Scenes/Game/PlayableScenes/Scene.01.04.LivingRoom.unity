@@ -9385,7 +9385,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   dialogueText: {fileID: 436428542}
   dialogueLines:
@@ -15568,14 +15568,14 @@ MonoBehaviour:
   - {fileID: 45651107}
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   - {fileID: 1401840109}
   dialogueText: {fileID: 1481855410}
   dialogueLines:
   - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. Teraz spr\xF3buj samodzielnie
     przej\u015B\u0107 do kuchni."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1019249860
@@ -17043,7 +17043,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   - {fileID: 1401840109}
   dialogueText: {fileID: 839525375}
@@ -17051,7 +17051,7 @@ MonoBehaviour:
   - 'Miska znaleziona. '
   - "Ale tutaj dzisiaj ba\u0142agan - przecie\u017C miska powinna by\u0107 w kuchni!"
   - "Lepiej zanie\u015Bmy j\u0105 teraz Treflikom."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1212883552
@@ -18185,7 +18185,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   - {fileID: 1401840109}
   dialogueText: {fileID: 1918499214}
@@ -18195,7 +18195,7 @@ MonoBehaviour:
   - "Tego typu kwestie b\u0119d\u0105 pojawia\u0107 si\u0119 tylko za pierwszym razem
     przy wej\u015Bciu do pokoju, aby us\u0142ysze\u0107 je jeszcze raz kliknij przycisk
     \"W jakim pokoju jestem?\" po prawej stronie ekranu."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1349551806
@@ -19072,7 +19072,7 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   dialogueText: {fileID: 1614882004}
   dialogueLines:
@@ -23286,7 +23286,7 @@ MonoBehaviour:
   - {fileID: 1019249857}
   deactivateObjects:
   - {fileID: 245194077}
-  - {fileID: 0}
+  - {fileID: 1055899996}
   - {fileID: 616311139}
   dialogueText: {fileID: 1872615710}
   dialogueLines:

@@ -2151,7 +2151,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 649826712}
   - {fileID: 1127000071}
-  - {fileID: 0}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
   dialogueText: {fileID: 1411048615}
   dialogueLines:
@@ -2161,7 +2161,7 @@ MonoBehaviour:
   - Przepraszamy, ale...
   - "Czy m\xF3g\u0142by\u015B mo\u017Ce nam pom\xF3c w szukaniu?"
   - "Kto wie, mo\u017Ce klucz znajdzie si\u0119 gdzie\u015B indziej w domu..."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &412207253
@@ -16120,7 +16120,7 @@ MonoBehaviour:
   deactivateObjects:
   - {fileID: 649826712}
   - {fileID: 1127000071}
-  - {fileID: 0}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
   dialogueText: {fileID: 1569285313}
   dialogueLines:
@@ -16130,7 +16130,7 @@ MonoBehaviour:
   - "Wygl\u0105da na to, \u017Ce musimy pom\xF3c im znale\u017A\u0107 misk\u0119. "
   - "Mo\u017Ce sprawdzimy, czy nie ma jej gdzie\u015B w domu?"
   - "Pami\u0119taj - szukaj przedmiot\xF3w po ich d\u017Awi\u0119ku!"
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1542476418
