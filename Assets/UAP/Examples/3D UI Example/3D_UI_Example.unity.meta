@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa897656e601a5c489cb84749eac8df9
+timeCreated: 1506968666
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/3D UI Example/3D_UI_Example.unity
+  uploadId: 430133

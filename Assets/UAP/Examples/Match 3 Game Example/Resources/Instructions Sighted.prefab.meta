@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d4d0da2d7b700614995702350bece547
+timeCreated: 1481907255
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/Match 3 Game Example/Resources/Instructions Sighted.prefab
+  uploadId: 430133

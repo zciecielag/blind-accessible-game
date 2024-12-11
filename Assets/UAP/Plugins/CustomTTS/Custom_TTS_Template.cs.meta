@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1aaa02297c24b2f4ebaa990f576588e5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Plugins/CustomTTS/Custom_TTS_Template.cs
+  uploadId: 430133

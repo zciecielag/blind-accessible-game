@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b9d2e186520f33f40bf93f7a8ae23f4e
+timeCreated: 1481245907
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/Match 3 Game Example/Animations/PauseIntro.anim
+  uploadId: 430133

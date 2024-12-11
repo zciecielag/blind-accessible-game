@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a28665d944623034089145620788b16b
+timeCreated: 1546974996
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Resources/UAP_InternalLocalization.txt
+  uploadId: 430133

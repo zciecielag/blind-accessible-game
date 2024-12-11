@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 72e1479c83ffda9439348d6f68c47b41
+timeCreated: 1487980695
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/UI Navigation Example/Unity UI Navigation Example.unity
+  uploadId: 430133

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ea487c5bb9b0de45945e32ece47c6a5
+timeCreated: 1481239781
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/Examples/Match 3 Game Example/Resources/Instructions.prefab
+  uploadId: 430133

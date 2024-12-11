@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0e2ba54463bde0f478b7d0b2fc2e6fbd
+timeCreated: 1492812344
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 87935
+  packageName: UI Accessibility Plugin (UAP)
+  packageVersion: 1.1.1
+  assetPath: Assets/UAP/UAP_QuickStartGuide.pdf
+  uploadId: 430133
