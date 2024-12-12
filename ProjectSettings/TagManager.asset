@@ -30,6 +30,9 @@ TagManager:
   - WhichRoomBtnLR
   - MiskaLR
   - TreflikiCollider2
+  - SwitchToLRFromHallQUEST
+  - WhichRoomBtnLRQUEST
+  - WhichRoomBtnHALL
   layers:
   - Default
   - TransparentFX

@@ -1,19 +1,37 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class SwitchSceneCompleteQuest : MonoBehaviour, IGameDataManager
 {
     public int actId;
     public int questId;
     public string sceneName;
+    public AudioSource audioSource;
     public bool isEnabled;
+    FadeInOut fadeInOut;
     public GameObject[] activateObjects;
 
     private void OnEnable()
     {
         gameObject.GetComponent<AudioSource>().Play();
         isEnabled = true;
-        Debug.Log("got enabled");
+        Debug.Log(gameObject.name + " got enabled");
+        fadeInOut = FindFirstObjectByType<FadeInOut>();
+    }
+
+    public IEnumerator SwitchScene()
+    {
+        if (fadeInOut != null)
+        {
+            fadeInOut.FadeIn();
+        }
+        audioSource.Play();
+        yield return new WaitForSeconds(1);
+        GameSceneManager.Instance.ChangeName(sceneName);
+        GameDataManager.Instance.SaveGame();
+        SceneManager.LoadScene(sceneName);
+
     }
     
     private void OnTriggerEnter2D(Collider2D other) 
@@ -36,8 +54,7 @@ public class SwitchSceneCompleteQuest : MonoBehaviour, IGameDataManager
                 }
             }
 
-            GameDataManager.Instance.SaveGame();
-            SceneManager.LoadScene(sceneName);
+            StartCoroutine(SwitchScene());
         }  
     }
 

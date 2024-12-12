@@ -10,6 +10,7 @@ public class DialogueBox : MonoBehaviour
     public bool completesQuest;
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
+    public GameObject[] deactivateObjectsPermanent;
 
 
     public TextMeshProUGUI dialogueText;
@@ -52,6 +53,14 @@ public class DialogueBox : MonoBehaviour
         if (deactivateObjects != null)
         {
             foreach (GameObject a in deactivateObjects)
+            {
+                a.SetActive(false);
+            }
+        }
+
+        if (deactivateObjectsPermanent != null)
+        {
+            foreach (GameObject a in deactivateObjectsPermanent)
             {
                 a.SetActive(false);
             }

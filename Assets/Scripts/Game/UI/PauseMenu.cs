@@ -10,6 +10,9 @@ public class PauseMenu : MonoBehaviour
     public static bool isPaused;
 
     public GameObject joystick;
+    public GameObject menuButton;
+    public GameObject whichRoomButton;
+    public GameObject whichRoomButtonQuest;
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -34,6 +37,15 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         joystick.SetActive(false);
         inventory.SetActive(false);
+        menuButton.SetActive(false);
+        if (whichRoomButton != null)
+        {
+            whichRoomButton.SetActive(false);
+        }
+        if (whichRoomButtonQuest != null && whichRoomButtonQuest.GetComponent<WhichRoomButtonBehaviour>().isEnabled)
+        {
+            whichRoomButton.SetActive(false);
+        }
     }
 
     public void ResumeGame()
@@ -42,6 +54,15 @@ public class PauseMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         joystick.SetActive(true);
         inventory.SetActive(true);
+        menuButton.SetActive(true);
+        if (whichRoomButton != null)
+        {
+            whichRoomButton.SetActive(true);
+        }
+        if (whichRoomButtonQuest != null && whichRoomButtonQuest.GetComponent<WhichRoomButtonBehaviour>().isEnabled)
+        {
+            whichRoomButton.SetActive(true);
+        }
         Time.timeScale = 1f;
         isPaused = false;
     }

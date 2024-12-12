@@ -1283,7 +1283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &285419337
 Transform:
   m_ObjectHideFlags: 0
@@ -9796,6 +9796,8 @@ MonoBehaviour:
   settingsMenu: {fileID: 2060176922}
   inventory: {fileID: 1690848281}
   joystick: {fileID: 649826712}
+  menuButton: {fileID: 1127000071}
+  whichRoomButton: {fileID: 812823641}
 --- !u!1 &649826712
 GameObject:
   m_ObjectHideFlags: 0
@@ -12430,8 +12432,9 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 0}
+  - {fileID: 1690848281}
   - {fileID: 812823641}
+  - {fileID: 1127000071}
   dialogueText: {fileID: 1514707303}
   dialogueLines:
   - "Tu jest spi\u017Carnia, ale drzwi s\u0105 zamkni\u0119te. Potrzebujesz klucza."
@@ -13758,6 +13761,7 @@ MonoBehaviour:
   isEnabled: 1
   activateObjects:
   - {fileID: 1542476414}
+  deactivateObjects: []
 --- !u!82 &1225382883
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14801,7 +14805,8 @@ MonoBehaviour:
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
-  - {fileID: 0}
+  - {fileID: 1690848281}
+  - {fileID: 1127000071}
   - {fileID: 812823641}
   dialogueText: {fileID: 780093600}
   dialogueLines:
@@ -16633,7 +16638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575777867}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7afdb1e8c7d78764cac18813d0b0aadb, type: 3}
   m_Name: 

@@ -6,6 +6,7 @@ public class TriggerEventObject : MonoBehaviour, IGameDataManager
     public int questId;
     public bool isEnabled;
     public GameObject[] activateObjects;
+    public GameObject[] deactivateObjects;
 
     private void OnEnable()
     {
@@ -16,11 +17,20 @@ public class TriggerEventObject : MonoBehaviour, IGameDataManager
         if (other.tag == "Player" && isEnabled)
         {
             ActManager.Instance.AcquireQuest(actId, questId);
+            
             if (activateObjects != null)
             {
                 foreach (GameObject a in activateObjects)
                 {
                     a.SetActive(true);
+                }
+            }
+
+            if (deactivateObjects != null)
+            {
+                foreach (GameObject a in deactivateObjects)
+                {
+                    a.SetActive(false);
                 }
             }
 

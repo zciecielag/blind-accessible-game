@@ -3,7 +3,6 @@ using UnityEngine;
 public class FadeInOut : MonoBehaviour
 {
     public CanvasGroup canvasgroup;
-   
     public bool fadein = false;
     public bool fadeout = false;
     public float TimeToFade;
