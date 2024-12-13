@@ -36,6 +36,10 @@ TagManager:
   - KeyPantryOUTSIDE
   - SwitchToLRFromOUTSIDE
   - WhichRoomBtnOUTSIDE
+  - SwitchToKITCHENFromOUTSIDE
+  - SwitchToPANTRYFromKITCHENQUEST
+  - SpawnPointPANTRY
+  - CupboardEventColliderPANTRY
   layers:
   - Default
   - TransparentFX

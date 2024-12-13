@@ -43,28 +43,25 @@ public class QuestData
                     2, false, false, 1, "Znajdź i zabierz ze sobą miskę."
                 ),
                 new SubQuest(
-                    3, false, false, 1, "Przynieś miskę Treflikom w kuchni."
+                    3, false, false, 1, "Przynieś miskę Treflikom w kuchni, klikając 2 razy na ekran przy Treflikach."
                 ), 
                 new SubQuest(
                     4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
                 ),
                 //W tym queście musi być warunek spełniony, że jeśli rzecz w ekwipunku to ten klucz, to przechodzi do spiżarni.
                 new SubQuest(
-                    5, false, false, 1, "Wejdź do spiżarni."
+                    5, false, false, 1, "Spróbuj teraz wejść do spiżarni."
                 ),
                 new SubQuest(
-                    6, false, false, 1, "Otwórz szafkę."
+                    6, false, false, 1, "Weź miskę ze stołu."
                 ),
                 new SubQuest(
-                    7, false, false, 1, "Weź miskę ze stołu."
-                ),
-                new SubQuest(
-                    8, false, false, 1, "Otwórz szafkę ponownie."
+                    7, false, false, 1, "Otwórz szafkę ponownie."
                 ),
                 //Teraz jest mini-gra
                 //Potem dostajemy miskę ze składnikami do eq
                 new SubQuest(
-                    9, false, false, 1, "Przynieś gotowe składniki Treflikom."
+                    8, false, false, 1, "Przynieś gotowe składniki Treflikom."
                 )
             }
         )

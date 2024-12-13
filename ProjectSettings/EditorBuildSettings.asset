@@ -68,6 +68,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.04.LivingRoom.unity
     guid: f01140df36dce9c40aa6d733b8be0819
+  - enabled: 1
+    path: Assets/Scenes/Game/PlayableScenes/Scene.01.05.Pantry.unity
+    guid: a2aff4f5f19d5344aa00964414acae94
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
