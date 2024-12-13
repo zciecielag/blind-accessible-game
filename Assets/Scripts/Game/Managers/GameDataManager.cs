@@ -14,6 +14,8 @@ public class GameDataManager : MonoBehaviour
     private List<IGameDataManager> gameDataManagers;
     public static GameDataManager Instance { get; private set; }
 
+    private CheckIfCanBeEnabled[] checkIfCanBeEnableds;
+
     private void Awake()
     {
         if (Instance != null)
@@ -28,9 +30,13 @@ public class GameDataManager : MonoBehaviour
     {
         this.fileDataManager = new FileDataManager(Application.persistentDataPath, fileName);
         LoadGame();
-        if (CheckIfCanBeEnabled.Instance != null)
+        checkIfCanBeEnableds = FindObjectsByType<CheckIfCanBeEnabled>(FindObjectsSortMode.None);
+        if (checkIfCanBeEnableds != null)
         {
-            CheckIfCanBeEnabled.Instance.Check();
+            foreach (CheckIfCanBeEnabled a in checkIfCanBeEnableds)
+            {
+                a.Check();
+            }
         }
     }
 

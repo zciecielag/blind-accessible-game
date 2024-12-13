@@ -8982,7 +8982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 381499778}
-  - component: {fileID: 381499779}
+  - component: {fileID: 381499780}
   m_Layer: 0
   m_Name: CanObjectsBeEnabled
   m_TagString: Untagged
@@ -9005,7 +9005,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1463771775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &381499779
+--- !u!114 &381499780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9018,8 +9018,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actId: 1
-  questId: 2
-  objectToEnable: {fileID: 1987748775}
+  questId: 4
+  objectToEnable: {fileID: 1593518401}
 --- !u!1 &402965450
 GameObject:
   m_ObjectHideFlags: 0
@@ -9911,6 +9911,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530277306}
   m_CullTransparentMesh: 1
+--- !u!1 &534221470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534221471}
+  - component: {fileID: 534221472}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &534221471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534221470}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1987748778}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &534221472
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534221470}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &545122428
 GameObject:
   m_ObjectHideFlags: 0
@@ -14193,6 +14271,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b76b9d374b92fb4a91e5492d9409668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &786500364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786500365}
+  - component: {fileID: 786500366}
+  m_Layer: 0
+  m_Name: CanObjectsBeEnabled (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786500365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786500364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1463771775}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786500366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786500364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49d7ce40a3a26641a0bfaa0d883dc9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actId: 1
+  questId: 2
+  objectToEnable: {fileID: 1987748775}
 --- !u!1 &791604985
 GameObject:
   m_ObjectHideFlags: 0
@@ -15725,8 +15850,8 @@ MonoBehaviour:
   deactivateObjectsPermanent: []
   dialogueText: {fileID: 1481855410}
   dialogueLines:
-  - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. Teraz spr\xF3buj samodzielnie
-    przej\u015B\u0107 do kuchni."
+  - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. "
+  - "Teraz spr\xF3buj samodzielnie przej\u015B\u0107 do kuchni."
   textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
@@ -19411,6 +19536,7 @@ Transform:
   - {fileID: 783821424}
   - {fileID: 345933581}
   - {fileID: 381499778}
+  - {fileID: 786500365}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478447767
@@ -19574,8 +19700,7 @@ MonoBehaviour:
   deactivateObjectsPermanent: []
   dialogueText: {fileID: 1614882004}
   dialogueLines:
-  - "To s\u0105 drzwi przed dom, pr\xF3bujesz je otworzy\u0107, ale ani drgn\u0105.
-    Wygl\u0105da na to, \u017Ce potrzebujesz klucza, aby tam p\xF3j\u015B\u0107."
+  - "To s\u0105 drzwi przed dom, ale na razie nie potrzebujemy i\u015B\u0107 na zewn\u0105trz."
   textSpeed: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
@@ -20989,7 +21114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afdb1e8c7d78764cac18813d0b0aadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Scene.01.01.Hall
+  sceneToLoad: Scene.01.03.Outside
   audioSource: {fileID: 620805156}
   isEnabled: 0
   activateObjects:
@@ -24494,7 +24619,8 @@ Transform:
   m_LocalPosition: {x: -10.86, y: -8.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 534221471}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1987748779

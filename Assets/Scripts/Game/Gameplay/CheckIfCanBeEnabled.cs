@@ -16,6 +16,15 @@ public class CheckIfCanBeEnabled : MonoBehaviour
     {
         if (ActManager.Instance.currentActId == actId && ActManager.Instance.currentQuestId == questId)
         {
+            if (objectToEnable.activeSelf == true)
+            {
+                Debug.Log("deactivating" + objectToEnable.name);
+                objectToEnable.SetActive(false);
+            }
+            Debug.Log("activating" + objectToEnable.name);
+            if (objectToEnable.GetComponent<SwitchSceneOnCollide>() != null) { 
+                objectToEnable.GetComponent<SwitchSceneOnCollide>().isEnabled = true; 
+            }
             objectToEnable.SetActive(true);
         }
     }

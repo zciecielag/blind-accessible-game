@@ -63,6 +63,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.02.Kitchen.unity
     guid: 753820d9cdc5d384ebcfa66eee461f5d
   - enabled: 1
+    path: Assets/Scenes/Game/PlayableScenes/Scene.01.03.Outside.unity
+    guid: ddf328ede051eee4c89fec911f245bf0
+  - enabled: 1
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.04.LivingRoom.unity
     guid: f01140df36dce9c40aa6d733b8be0819
   m_configObjects:

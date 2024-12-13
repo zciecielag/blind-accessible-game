@@ -33,6 +33,9 @@ TagManager:
   - SwitchToLRFromHallQUEST
   - WhichRoomBtnLRQUEST
   - WhichRoomBtnHALL
+  - KeyPantryOUTSIDE
+  - SwitchToLRFromOUTSIDE
+  - WhichRoomBtnOUTSIDE
   layers:
   - Default
   - TransparentFX
