@@ -8,6 +8,7 @@ public class DialogueBox : MonoBehaviour
     public int actId;
     public int questId;
     public bool completesQuest;
+    public bool skipDialogue;
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
     public GameObject[] deactivateObjectsPermanent;
@@ -31,7 +32,7 @@ public class DialogueBox : MonoBehaviour
     private void Update()
     {
         // Jesli kliknieto przycisk myszy to pomija dialog
-        if (Input.GetMouseButtonDown(0))
+        if (skipDialogue && Input.GetMouseButtonDown(0))
         {
             if (dialogueText.text == dialogueLines[index])
             {
