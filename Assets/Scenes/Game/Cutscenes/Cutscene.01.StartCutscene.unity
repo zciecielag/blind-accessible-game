@@ -308,8 +308,6 @@ GameObject:
   m_Component:
   - component: {fileID: 133915576}
   - component: {fileID: 133915575}
-  - component: {fileID: 133915574}
-  - component: {fileID: 133915573}
   m_Layer: 0
   m_Name: Rug
   m_TagString: Untagged
@@ -317,67 +315,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &133915573
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133915572}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.5625, y: 3.6571429}
-    newSize: {x: 3.5625, y: 3.6571429}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.5625, y: 3.6571429}
-  m_EdgeRadius: 0
---- !u!114 &133915574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133915572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 048dd96c77052254d8c7bff419c47b35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actId: 1
-  questId: 1
-  isEnabled: 0
 --- !u!212 &133915575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7979,8 +7916,10 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 0
   activateObjects: []
   deactivateObjects: []
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 1751080172}
   dialogueLines:
   - "Masz racj\u0119, co\u015B dziwnego dzieje si\u0119 w kuchni. Lepiej p\xF3jd\u017Amy
@@ -9637,8 +9576,10 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 0
   activateObjects: []
   deactivateObjects: []
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 1468276582}
   dialogueLines:
   - "Miaaaa\u0142...."
@@ -9905,8 +9846,10 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 0
   activateObjects: []
   deactivateObjects: []
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 999428342}
   dialogueLines:
   - "To by\u0142 spokojny dzie\u0144. Rodzina Treflik\xF3w przyjecha\u0142a na par\u0119

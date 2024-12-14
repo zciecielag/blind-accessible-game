@@ -7061,6 +7061,7 @@ MonoBehaviour:
   joystick: {fileID: 2384867345152268757}
   menuButton: {fileID: 43260223570994051}
   whichRoomButton: {fileID: 0}
+  whichRoomButtonQuest: {fileID: 0}
 --- !u!4 &743119539
 Transform:
   m_ObjectHideFlags: 0
@@ -7898,12 +7899,15 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects:
   - {fileID: 1562562455}
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
   - {fileID: 43260223570994051}
+  deactivateObjectsPermanent:
+  - {fileID: 1988840061}
   dialogueText: {fileID: 411569416}
   dialogueLines:
   - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot."
@@ -9646,12 +9650,14 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
   - {fileID: 43260223570994051}
   - {fileID: 1988840061}
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 2020052957}
   dialogueLines:
   - "Jeste\u015Bmy w przedpokoju. Przyjemny ch\u0142\xF3d panuje w pokoju, a typowy
@@ -10510,12 +10516,15 @@ MonoBehaviour:
   actId: 0
   questId: 2
   completesQuest: 0
+  skipDialogue: 1
   activateObjects:
   - {fileID: 1753551695}
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
   - {fileID: 43260223570994051}
+  deactivateObjectsPermanent:
+  - {fileID: 1988840061}
   dialogueText: {fileID: 854266948}
   dialogueLines:
   - "Super, podnios\u0142e\u015B szalik i zabra\u0142e\u015B go ze sob\u0105!"
@@ -13319,12 +13328,15 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects:
   - {fileID: 1233144163}
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
   - {fileID: 43260223570994051}
+  deactivateObjectsPermanent:
+  - {fileID: 1988840061}
   dialogueText: {fileID: 568646872}
   dialogueLines:
   - "Aby si\u0119 poruszy\u0107, nale\u017Cy u\u017Cy\u0107 joysticka w lewym dolnym
@@ -20673,14 +20685,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988840061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6c8c3e7ce06be47a51c097c249f522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 1181402251}
-  isEnabled: 1
+  isEnabled: 0
 --- !u!114 &1988840064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21547,12 +21559,15 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects:
   - {fileID: 634717008010781193}
   deactivateObjects:
   - {fileID: 2384867345152268757}
   - {fileID: 1808525503}
   - {fileID: 43260223570994051}
+  deactivateObjectsPermanent:
+  - {fileID: 1988840061}
   dialogueText: {fileID: 1783954843}
   dialogueLines:
   - "Szalik odwieszony - \u015Bwietnie, teraz jeste\u015B gotowy!"
@@ -23211,7 +23226,9 @@ MonoBehaviour:
   sceneName: Scene.01.04.LivingRoom
   audioSource: {fileID: 2534287496213903074}
   isEnabled: 0
-  activateObjects: []
+  activateObjects:
+  - {fileID: 1988840061}
+  - {fileID: 1889621643}
 --- !u!224 &8366848485868488371
 RectTransform:
   m_ObjectHideFlags: 0

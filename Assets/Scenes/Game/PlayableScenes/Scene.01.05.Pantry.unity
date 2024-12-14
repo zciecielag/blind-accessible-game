@@ -890,6 +890,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 0
   activateObjects: []
   deactivateObjects:
   - {fileID: 1215405160}
@@ -2036,6 +2037,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 1215405160}
@@ -11246,7 +11248,7 @@ GameObject:
   - component: {fileID: 1597840032}
   - component: {fileID: 1597840031}
   m_Layer: 5
-  m_Name: BlockCupboard
+  m_Name: BlockCupboardDialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11384,6 +11386,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 1215405160}

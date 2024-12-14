@@ -71,7 +71,7 @@ public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
         }
         else
         {
-            data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
+            data.enabledGameObjects.Add(this.gameObject.tag, this.isEnabled);
         }
     }
 }

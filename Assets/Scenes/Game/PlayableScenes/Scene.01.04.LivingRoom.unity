@@ -360,7 +360,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &45651108
 AudioSource:
   m_ObjectHideFlags: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
   actId: 0
   questId: 6
   sceneName: Scene.01.02.Kitchen
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 620805156}
   isEnabled: 0
   activateObjects:
   - {fileID: 1790241970}
@@ -9020,6 +9020,7 @@ MonoBehaviour:
   actId: 1
   questId: 4
   objectToEnable: {fileID: 1593518401}
+  objectToDisable: {fileID: 0}
 --- !u!1 &402965450
 GameObject:
   m_ObjectHideFlags: 0
@@ -9383,6 +9384,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
@@ -14318,6 +14320,7 @@ MonoBehaviour:
   actId: 1
   questId: 2
   objectToEnable: {fileID: 1987748775}
+  objectToDisable: {fileID: 0}
 --- !u!1 &791604985
 GameObject:
   m_ObjectHideFlags: 0
@@ -15196,7 +15199,6 @@ MonoBehaviour:
   activateObjects:
   - {fileID: 1349551802}
   deactivateObjects:
-  - {fileID: 1790241970}
   - {fileID: 1052706753}
   - {fileID: 14617294}
   - {fileID: 55299455}
@@ -15837,6 +15839,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects:
   - {fileID: 45651107}
   - {fileID: 55299455}
@@ -15847,7 +15850,8 @@ MonoBehaviour:
   - {fileID: 1055899996}
   - {fileID: 1401840109}
   - {fileID: 1128722327}
-  deactivateObjectsPermanent: []
+  deactivateObjectsPermanent:
+  - {fileID: 616311139}
   dialogueText: {fileID: 1481855410}
   dialogueLines:
   - "Dobra robota! Uko\u0144czy\u0142e\u015B samouczek. "
@@ -16651,6 +16655,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
@@ -17658,6 +17663,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
@@ -18801,6 +18807,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects:
   - {fileID: 616311139}
   deactivateObjects:
@@ -19691,6 +19698,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 245194077}
@@ -22138,7 +22146,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790241970}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7afdb1e8c7d78764cac18813d0b0aadb, type: 3}
   m_Name: 
@@ -24043,12 +24051,15 @@ MonoBehaviour:
   actId: 0
   questId: 5
   completesQuest: 1
+  skipDialogue: 1
   activateObjects:
   - {fileID: 1019249857}
   deactivateObjects:
   - {fileID: 245194077}
   - {fileID: 1055899996}
   - {fileID: 1401840109}
+  - {fileID: 1128722327}
+  - {fileID: 616311139}
   deactivateObjectsPermanent:
   - {fileID: 616311139}
   dialogueText: {fileID: 1872615710}

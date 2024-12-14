@@ -2235,6 +2235,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
@@ -12788,6 +12789,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
@@ -15210,6 +15212,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}
@@ -16530,6 +16533,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 649826712}

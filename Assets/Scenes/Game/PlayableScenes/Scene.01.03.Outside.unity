@@ -5950,6 +5950,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 1070439869}
@@ -12082,6 +12083,7 @@ MonoBehaviour:
   actId: 0
   questId: 0
   completesQuest: 0
+  skipDialogue: 1
   activateObjects: []
   deactivateObjects:
   - {fileID: 1070439869}
