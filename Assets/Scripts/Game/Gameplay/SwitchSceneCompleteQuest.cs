@@ -15,7 +15,6 @@ public class SwitchSceneCompleteQuest : MonoBehaviour
     {
         gameObject.GetComponent<AudioSource>().Play();
         gameObject.GetComponent<EnableableObject>().isEnabled = true;
-        Debug.Log(gameObject.name + " got enabled");
         fadeInOut = FindFirstObjectByType<FadeInOut>();
     }
 

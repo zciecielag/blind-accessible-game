@@ -12,6 +12,16 @@ public class SwitchSceneGameData : MonoBehaviour
     public void LoadGame()
     {
         GameDataManager.Instance.LoadGame();
-        SceneManager.LoadScene(sceneName: GameDataManager.Instance.GetGameData().currentSceneName);
+
+        if (GameDataManager.Instance.GetGameData().currentActId == 0 && GameDataManager.Instance.GetGameData().currentSubQuestId < 6)
+        {
+            Debug.Log("Nie mozna wczytac danych z samouczka, zacznie sie nowa gra.");
+            CreateNewGame();
+        }
+        else
+        {
+             SceneManager.LoadScene(sceneName: GameDataManager.Instance.GetGameData().currentSceneName);
+        }
     }
+       
 }

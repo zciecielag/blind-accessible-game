@@ -2262,7 +2262,7 @@ MonoBehaviour:
   - "Teraz potrzebujemy jeszcze sk\u0142adnik\xF3w do ciasta."
   - "M\xF3g\u0142by\u015B je dla nas zebra\u0107 z szafki w spi\u017Carni?"
   - "Niestety, gdzie\u015B zgubili\u015Bmy do niej klucz."
-  - "Na pewno znajdziez go gdzie\u015B w domu lub na podw\xF3rku!"
+  - "Na pewno znajdziesz go gdzie\u015B w domu lub na podw\xF3rku!"
   textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
@@ -15978,7 +15978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afdb1e8c7d78764cac18813d0b0aadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Scene.01.01.Hall
+  sceneToLoad: Scene.01.05.Pantry
   audioSource: {fileID: 2004979251}
   activateObjects:
   - {fileID: 1007593774}
@@ -16610,7 +16610,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1569285313}
   dialogueLines:
   - "O, hej! Przepraszam, \u017Ce Ci\u0119 obudzili\u015Bmy."
-  - "Chcemy zrobi\u0107 ciasto na przyj\u0119cie. Szukamy du\u017Cej misji do sk\u0142adnik\xF3w."
+  - "Chcemy zrobi\u0107 ciasto na przyj\u0119cie. Szukamy du\u017Cej miski do sk\u0142adnik\xF3w."
   - "Mo\u017Ce poszuka\u0142by\u015B jej dla nas?"
   - "Wygl\u0105da na to, \u017Ce musimy pom\xF3c im znale\u017A\u0107 misk\u0119. "
   - "Mo\u017Ce sprawdzimy, czy nie ma jej gdzie\u015B w domu?"

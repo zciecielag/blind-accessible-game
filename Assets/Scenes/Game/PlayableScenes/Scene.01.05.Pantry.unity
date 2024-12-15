@@ -12340,7 +12340,7 @@ GameObject:
   - component: {fileID: 1675085384}
   m_Layer: 0
   m_Name: SwitchToKitchen
-  m_TagString: SwitchToKITCHENFromOUTSIDE
+  m_TagString: SwitchToKITCHENFromPANTRY
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14849,7 +14849,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 450234963}
-  - {fileID: 1923785371}
   deactivateObjects: []
 --- !u!61 &1799081956
 BoxCollider2D:
