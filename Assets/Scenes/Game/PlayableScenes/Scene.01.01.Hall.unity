@@ -701,6 +701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104032986}
+  - component: {fileID: 104032990}
   - component: {fileID: 104032989}
   - component: {fileID: 104032988}
   - component: {fileID: 104032987}
@@ -883,7 +884,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 0
   questId: 1
-  isEnabled: 1
   activateObjects:
   - {fileID: 1671802551}
   deactivateObjects:
@@ -891,6 +891,19 @@ MonoBehaviour:
   - {fileID: 360374612}
   - {fileID: 1889621643}
   - {fileID: 1988840061}
+--- !u!114 &104032990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104032985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &106257757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9935,6 +9948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1233144164}
   - component: {fileID: 1233144165}
+  - component: {fileID: 1233144168}
   - component: {fileID: 1233144166}
   - component: {fileID: 1233144167}
   m_Layer: 0
@@ -10019,7 +10033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 0
   questId: 2
-  isEnabled: 0
   activateObjects:
   - {fileID: 922340140}
   deactivateObjects: []
@@ -10156,6 +10169,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1233144168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233144163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &1248157995
 GameObject:
   m_ObjectHideFlags: 0
@@ -12076,6 +12102,7 @@ GameObject:
   - component: {fileID: 1562562460}
   - component: {fileID: 1562562459}
   - component: {fileID: 1562562461}
+  - component: {fileID: 1562562464}
   - component: {fileID: 1562562456}
   - component: {fileID: 1562562462}
   - component: {fileID: 1562562463}
@@ -12100,7 +12127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 0
   questId: 2
-  isEnabled: 0
   doneText: {fileID: 422819644}
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
@@ -12334,6 +12360,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1562562464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562562455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &1569767975
 GameObject:
   m_ObjectHideFlags: 0
@@ -18491,6 +18530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753551697}
   - component: {fileID: 1753551696}
+  - component: {fileID: 1753551700}
   - component: {fileID: 1753551699}
   - component: {fileID: 1753551698}
   m_Layer: 0
@@ -18708,7 +18748,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 0
   questId: 3
-  isEnabled: 0
   doneText: {fileID: 422819644}
   objectBeingChanged: {fileID: 1840031002}
   unchangedSprite: {fileID: 7848023516834124207, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
@@ -18717,6 +18756,19 @@ MonoBehaviour:
   - {fileID: 2051311318}
   deactivateObjects: []
   addOrUse: 0
+--- !u!114 &1753551700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753551695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &1759288339
 GameObject:
   m_ObjectHideFlags: 0
@@ -20073,12 +20125,13 @@ GameObject:
   - component: {fileID: 1889621644}
   - component: {fileID: 1889621649}
   - component: {fileID: 1889621648}
+  - component: {fileID: 1889621650}
   - component: {fileID: 1889621647}
   - component: {fileID: 1889621646}
   - component: {fileID: 1889621645}
   m_Layer: 0
   m_Name: SwitchToLivingRoom
-  m_TagString: SwitchToKITCHENfromLR
+  m_TagString: SwitchToLRFromHall
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20226,7 +20279,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 2534287496213903074}
-  isEnabled: 0
   activateObjects: []
 --- !u!61 &1889621648
 BoxCollider2D:
@@ -20329,6 +20381,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1889621650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889621643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1890184128
 GameObject:
   m_ObjectHideFlags: 0
@@ -20651,6 +20716,7 @@ GameObject:
   - component: {fileID: 1988840065}
   - component: {fileID: 1988840064}
   - component: {fileID: 1988840063}
+  - component: {fileID: 1988840067}
   m_Layer: 5
   m_Name: WhichRoomButton
   m_TagString: WhichRoomBtnHALL
@@ -20692,7 +20758,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 1181402251}
-  isEnabled: 0
 --- !u!114 &1988840064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20775,6 +20840,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988840061}
   m_CullTransparentMesh: 1
+--- !u!114 &1988840067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988840061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &2001602107
 GameObject:
   m_ObjectHideFlags: 0
@@ -22091,6 +22169,7 @@ GameObject:
   - component: {fileID: 7705044820850609196}
   - component: {fileID: 1423243784611805493}
   - component: {fileID: 2305820312080119396}
+  - component: {fileID: 7705044820850609198}
   - component: {fileID: 7705044820850609197}
   - component: {fileID: 5860116119584834262}
   - component: {fileID: 77576655}
@@ -23202,8 +23281,8 @@ Transform:
   m_GameObject: {fileID: 634717008010781193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.452314, y: -2.7048118, z: -0.119757466}
-  m_LocalScale: {x: 2.2026436, y: 1.8029785, z: 1}
+  m_LocalPosition: {x: 7.5933, y: -2.7753, z: -0.119757466}
+  m_LocalScale: {x: 1.1639855, y: 1.1968576, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 44776118847291720}
@@ -23225,10 +23304,22 @@ MonoBehaviour:
   questId: 4
   sceneName: Scene.01.04.LivingRoom
   audioSource: {fileID: 2534287496213903074}
-  isEnabled: 0
   activateObjects:
   - {fileID: 1988840061}
   - {fileID: 1889621643}
+--- !u!114 &7705044820850609198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634717008010781193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!224 &8366848485868488371
 RectTransform:
   m_ObjectHideFlags: 0

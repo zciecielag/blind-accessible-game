@@ -13231,6 +13231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1323289113}
   - component: {fileID: 1323289112}
+  - component: {fileID: 1323289118}
   - component: {fileID: 1323289114}
   - component: {fileID: 1323289115}
   - component: {fileID: 1323289116}
@@ -13327,7 +13328,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 1
   questId: 4
-  isEnabled: 0
   doneText: {fileID: 0}
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
@@ -13527,6 +13527,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e28065838fbb348b3709986d87b446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1323289118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323289111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &1331252049
 GameObject:
   m_ObjectHideFlags: 0
@@ -17017,6 +17030,7 @@ GameObject:
   - component: {fileID: 1960546688}
   - component: {fileID: 1960546693}
   - component: {fileID: 1960546692}
+  - component: {fileID: 1960546694}
   - component: {fileID: 1960546691}
   - component: {fileID: 1960546690}
   - component: {fileID: 1960546689}
@@ -17170,7 +17184,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 1746280269}
-  isEnabled: 1
   activateObjects: []
 --- !u!61 &1960546692
 BoxCollider2D:
@@ -17273,6 +17286,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1960546694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960546687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1982692395
 GameObject:
   m_ObjectHideFlags: 0
@@ -17820,6 +17846,7 @@ GameObject:
   - component: {fileID: 2098601477}
   - component: {fileID: 2098601476}
   - component: {fileID: 2098601475}
+  - component: {fileID: 2098601480}
   m_Layer: 5
   m_Name: WhichRoomButton
   m_TagString: WhichRoomBtnOUTSIDE
@@ -17944,6 +17971,19 @@ RectTransform:
   m_AnchoredPosition: {x: -63, y: 0}
   m_SizeDelta: {x: 239.17993, y: 159.2559}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &2098601480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098601474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &2105766871
 GameObject:
   m_ObjectHideFlags: 0

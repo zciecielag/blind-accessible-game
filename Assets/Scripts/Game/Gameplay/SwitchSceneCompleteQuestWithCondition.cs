@@ -2,13 +2,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour, IGameDataManager
+public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour
 {
     public int actId;
     public int questId;
     public string sceneName;
     public AudioSource audioSource;
-    public bool isEnabled;
     FadeInOut fadeInOut;
     public GameObject[] activateObjects;
     public string conditionalObjectTag;
@@ -16,7 +15,7 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour, IGameDataMan
     private void OnEnable()
     {
         gameObject.GetComponent<AudioSource>().Play();
-        isEnabled = true;
+        gameObject.GetComponent<EnableableObject>().isEnabled = true;
         Debug.Log(gameObject.name + " got enabled");
         fadeInOut = FindFirstObjectByType<FadeInOut>();
     }
@@ -37,7 +36,7 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour, IGameDataMan
     
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (isEnabled && conditionalObjectTag != null 
+        if (gameObject.GetComponent<EnableableObject>().isEnabled && conditionalObjectTag != null 
         && conditionalObjectTag == InventoryManager.Instance.currentlyHeldObject.tag)
         {
             gameObject.GetComponent<AudioSource>().Stop();
@@ -49,37 +48,21 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour, IGameDataMan
             }
 
             GameSceneManager.Instance.ChangeName(sceneName);
-            isEnabled = false;
+            gameObject.GetComponent<EnableableObject>().isEnabled = false;
 
             if (activateObjects != null)
             {
                 foreach (GameObject a in activateObjects)
                 {
                     a.SetActive(true);
+                    if (a.GetComponent<EnableableObject>() != null)
+                    {
+                        a.GetComponent<EnableableObject>().isEnabled = true;
+                    }
                 }
             }
 
             StartCoroutine(SwitchScene());
         }  
-    }
-
-    public void LoadData(GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            this.isEnabled = data.enabledGameObjects[this.gameObject.tag];
-        }
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
-        }
-        else
-        {
-            data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
-        }
     }
 }

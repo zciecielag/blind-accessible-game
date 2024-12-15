@@ -56,6 +56,10 @@ public class DialogueBox : MonoBehaviour
             foreach (GameObject a in deactivateObjects)
             {
                 a.SetActive(false);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = false;
+                }
             }
         }
 
@@ -64,6 +68,10 @@ public class DialogueBox : MonoBehaviour
             foreach (GameObject a in deactivateObjectsPermanent)
             {
                 a.SetActive(false);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = false;
+                }
             }
         }
 
@@ -108,6 +116,10 @@ public class DialogueBox : MonoBehaviour
             foreach (GameObject a in deactivateObjects)
             {
                 a.SetActive(true);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = true;
+                }
             }
         }
 
@@ -116,6 +128,10 @@ public class DialogueBox : MonoBehaviour
             foreach (GameObject a in activateObjects)
             {
                 a.SetActive(true);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = true;
+                }
             }
             activateObjects = null;
         }

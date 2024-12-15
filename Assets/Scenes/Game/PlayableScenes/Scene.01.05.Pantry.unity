@@ -1051,6 +1051,7 @@ GameObject:
   - component: {fileID: 198937378}
   - component: {fileID: 198937377}
   - component: {fileID: 198937376}
+  - component: {fileID: 198937380}
   - component: {fileID: 198937375}
   m_Layer: 5
   m_Name: WhichRoomButton
@@ -1073,7 +1074,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 174351370}
-  isEnabled: 0
 --- !u!114 &198937376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1176,19 @@ RectTransform:
   m_AnchoredPosition: {x: -63, y: 0}
   m_SizeDelta: {x: 239.17993, y: 159.2559}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &198937380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198937374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &249133636
 GameObject:
   m_ObjectHideFlags: 0
@@ -12321,6 +12334,7 @@ GameObject:
   - component: {fileID: 1675085383}
   - component: {fileID: 1675085388}
   - component: {fileID: 1675085387}
+  - component: {fileID: 1675085389}
   - component: {fileID: 1675085386}
   - component: {fileID: 1675085385}
   - component: {fileID: 1675085384}
@@ -12474,7 +12488,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.02.Kitchen
   audioSource: {fileID: 1118420765}
-  isEnabled: 1
   activateObjects: []
 --- !u!61 &1675085387
 BoxCollider2D:
@@ -12577,6 +12590,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1675085389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675085382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1680732087
 GameObject:
   m_ObjectHideFlags: 0
@@ -14785,6 +14811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799081954}
   - component: {fileID: 1799081956}
+  - component: {fileID: 1799081957}
   - component: {fileID: 1799081955}
   m_Layer: 0
   m_Name: SpawnPoint
@@ -14824,7 +14851,6 @@ MonoBehaviour:
   - {fileID: 450234963}
   - {fileID: 1923785371}
   deactivateObjects: []
-  isEnabled: 1
 --- !u!61 &1799081956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14871,6 +14897,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1799081957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799081953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1802316862
 GameObject:
   m_ObjectHideFlags: 0
@@ -15603,6 +15642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1923785372}
   - component: {fileID: 1923785373}
+  - component: {fileID: 1923785376}
   - component: {fileID: 1923785374}
   - component: {fileID: 1923785375}
   m_Layer: 0
@@ -15680,14 +15720,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923785371}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7afdb1e8c7d78764cac18813d0b0aadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: 
   audioSource: {fileID: 1617134220}
-  isEnabled: 0
   activateObjects:
   - {fileID: 1597840029}
 --- !u!82 &1923785375
@@ -15814,6 +15853,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1923785376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923785371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &1944881831
 GameObject:
   m_ObjectHideFlags: 0

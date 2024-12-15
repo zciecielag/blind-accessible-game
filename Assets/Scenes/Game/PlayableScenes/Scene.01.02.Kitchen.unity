@@ -1364,6 +1364,7 @@ GameObject:
   - component: {fileID: 285419337}
   - component: {fileID: 285419339}
   - component: {fileID: 285419338}
+  - component: {fileID: 285419341}
   - component: {fileID: 285419340}
   m_Layer: 0
   m_Name: TreflikiCollider2
@@ -1580,7 +1581,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 1
   questId: 3
-  isEnabled: 0
   doneText: {fileID: 0}
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
@@ -1589,6 +1589,19 @@ MonoBehaviour:
   - {fileID: 412207249}
   deactivateObjects: []
   addOrUse: 0
+--- !u!114 &285419341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285419336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &293999068
 GameObject:
   m_ObjectHideFlags: 0
@@ -10709,6 +10722,7 @@ GameObject:
   - component: {fileID: 749401417}
   - component: {fileID: 749401422}
   - component: {fileID: 749401421}
+  - component: {fileID: 749401425}
   - component: {fileID: 749401424}
   - component: {fileID: 749401419}
   - component: {fileID: 749401418}
@@ -10965,9 +10979,22 @@ MonoBehaviour:
   questId: 5
   sceneName: Scene.01.05.Pantry
   audioSource: {fileID: 7204237004086557712}
-  isEnabled: 0
-  activateObjects: []
+  activateObjects:
+  - {fileID: 1511675024}
   conditionalObjectTag: KeyPantryOUTSIDE
+--- !u!114 &749401425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749401416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &768182934
 GameObject:
   m_ObjectHideFlags: 0
@@ -11478,6 +11505,7 @@ GameObject:
   - component: {fileID: 812823645}
   - component: {fileID: 812823644}
   - component: {fileID: 812823643}
+  - component: {fileID: 812823647}
   - component: {fileID: 812823642}
   m_Layer: 5
   m_Name: WhichRoomButton
@@ -11500,7 +11528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateObjects:
   - {fileID: 1411537968}
-  isEnabled: 0
 --- !u!114 &812823643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11603,6 +11630,19 @@ RectTransform:
   m_AnchoredPosition: {x: -63, y: 0}
   m_SizeDelta: {x: 239.17993, y: 159.2559}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &812823647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812823641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &857968894
 GameObject:
   m_ObjectHideFlags: 0
@@ -14083,6 +14123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1225382880}
+  - component: {fileID: 1225382884}
   - component: {fileID: 1225382882}
   - component: {fileID: 1225382881}
   - component: {fileID: 1225382883}
@@ -14168,7 +14209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actId: 1
   questId: 2
-  isEnabled: 1
   activateObjects:
   - {fileID: 1542476414}
   deactivateObjects: []
@@ -14305,6 +14345,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1225382884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225382879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1229055661
 GameObject:
   m_ObjectHideFlags: 0
@@ -15773,6 +15826,7 @@ GameObject:
   - component: {fileID: 1511675025}
   - component: {fileID: 1511675030}
   - component: {fileID: 1511675029}
+  - component: {fileID: 1511675031}
   - component: {fileID: 1511675028}
   - component: {fileID: 1511675027}
   - component: {fileID: 1511675026}
@@ -15919,14 +15973,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511675024}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7afdb1e8c7d78764cac18813d0b0aadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.01.Hall
   audioSource: {fileID: 2004979251}
-  isEnabled: 0
   activateObjects:
   - {fileID: 1007593774}
 --- !u!61 &1511675029
@@ -16030,6 +16083,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1511675031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511675024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &1514707302
 GameObject:
   m_ObjectHideFlags: 0
@@ -16906,6 +16972,7 @@ GameObject:
   - component: {fileID: 1575777868}
   - component: {fileID: 1575777873}
   - component: {fileID: 1575777872}
+  - component: {fileID: 1575777874}
   - component: {fileID: 1575777871}
   - component: {fileID: 1575777870}
   - component: {fileID: 1575777869}
@@ -17059,7 +17126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 2004979251}
-  isEnabled: 1
   activateObjects: []
 --- !u!61 &1575777872
 BoxCollider2D:
@@ -17162,6 +17228,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1575777874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575777867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1600590124
 GameObject:
   m_ObjectHideFlags: 0

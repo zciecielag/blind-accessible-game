@@ -1,19 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WhichRoomButtonBehaviour : MonoBehaviour, IGameDataManager
+public class WhichRoomButtonBehaviour : MonoBehaviour
 {
     public GameObject[] activateObjects;
-    public bool isEnabled;
     private void OnEnable()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
-        isEnabled = true;
+        gameObject.GetComponent<EnableableObject>().isEnabled = true;
     }
 
     private void Start()
     {
-        if (isEnabled)
+        if (gameObject.GetComponent<EnableableObject>().isEnabled)
         {   
             gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
         }
@@ -25,27 +24,11 @@ public class WhichRoomButtonBehaviour : MonoBehaviour, IGameDataManager
             foreach (GameObject a in activateObjects)
             {
                 a.SetActive(true);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = true;
+                }
             }
-        }
-    }
-
-    public void LoadData(GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            this.isEnabled = data.enabledGameObjects[this.gameObject.tag];
-        }
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
-        }
-        else
-        {
-            data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
         }
     }
 }

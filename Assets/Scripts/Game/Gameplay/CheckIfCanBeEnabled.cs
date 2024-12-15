@@ -19,11 +19,8 @@ public class CheckIfCanBeEnabled : MonoBehaviour
         {
             if (objectToDisable != null)
             {
-                if (objectToDisable.GetComponent<SwitchSceneOnCollide>() != null) { 
-                    objectToDisable.GetComponent<SwitchSceneOnCollide>().isEnabled = false; 
-                }
-                if (objectToDisable.GetComponent<SwitchSceneCompleteQuestWithCondition>() != null) { 
-                    objectToDisable.GetComponent<SwitchSceneCompleteQuestWithCondition>().isEnabled = false; 
+                if (objectToDisable.GetComponent<EnableableObject>() != null) { 
+                    objectToDisable.GetComponent<EnableableObject>().isEnabled = false; 
                 }
                 
                 objectToDisable.SetActive(false);
@@ -34,11 +31,8 @@ public class CheckIfCanBeEnabled : MonoBehaviour
                 objectToEnable.SetActive(false);
             }
 
-            if (objectToEnable.GetComponent<SwitchSceneOnCollide>() != null) { 
-                objectToEnable.GetComponent<SwitchSceneOnCollide>().isEnabled = true; 
-            }
-            if (objectToEnable.GetComponent<SwitchSceneCompleteQuestWithCondition>() != null) { 
-                objectToEnable.GetComponent<SwitchSceneCompleteQuestWithCondition>().isEnabled = true; 
+            if (objectToEnable.GetComponent<EnableableObject>() != null) { 
+                objectToEnable.GetComponent<EnableableObject>().isEnabled = true; 
             }
 
             objectToEnable.SetActive(true);

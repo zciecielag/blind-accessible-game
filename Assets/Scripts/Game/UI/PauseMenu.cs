@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         {
             whichRoomButton.SetActive(false);
         }
-        if (whichRoomButtonQuest != null && whichRoomButtonQuest.GetComponent<WhichRoomButtonBehaviour>().isEnabled)
+        if (whichRoomButtonQuest != null && whichRoomButtonQuest.GetComponent<EnableableObject>().isEnabled)
         {
             whichRoomButton.SetActive(false);
         }
@@ -59,7 +59,7 @@ public class PauseMenu : MonoBehaviour
         {
             whichRoomButton.SetActive(true);
         }
-        if (whichRoomButtonQuest != null && whichRoomButtonQuest.GetComponent<WhichRoomButtonBehaviour>().isEnabled)
+        if (whichRoomButtonQuest != null && whichRoomButtonQuest.GetComponent<EnableableObject>().isEnabled)
         {
             whichRoomButton.SetActive(true);
         }

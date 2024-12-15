@@ -2,18 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
+public class SwitchSceneOnCollide : MonoBehaviour
 {
     public string sceneToLoad;
     public AudioSource audioSource;
     FadeInOut fadeInOut;
-    public bool isEnabled;
     public GameObject[] activateObjects;
-
-    private void OnEnable()
-    {
-        isEnabled = true;
-    }
 
     private void Start()
     {
@@ -37,7 +31,7 @@ public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
         
         if (other.tag == "Player")
         {
-            if (isEnabled)
+            if (gameObject.GetComponent<EnableableObject>().isEnabled)
             {
                 GameDataManager.Instance.SaveGame();
                 StartCoroutine(SwitchScene());
@@ -49,29 +43,13 @@ public class SwitchSceneOnCollide : MonoBehaviour, IGameDataManager
                     foreach (GameObject a in activateObjects)
                     {
                         a.SetActive(true);
+                        if (a.GetComponent<EnableableObject>() != null)
+                        {
+                            a.GetComponent<EnableableObject>().isEnabled = true;
+                        }
                     }
                 }
             }
-        }
-    }
-
-    public void LoadData(GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            this.isEnabled = data.enabledGameObjects[this.gameObject.tag];
-        }
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
-        }
-        else
-        {
-            data.enabledGameObjects.Add(this.gameObject.tag, this.isEnabled);
         }
     }
 }

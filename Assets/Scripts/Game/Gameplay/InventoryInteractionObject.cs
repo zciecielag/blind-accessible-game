@@ -4,11 +4,10 @@ using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 
-public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
+public class InventoryInteractionObject : MonoBehaviour
 {
     public int actId;
     public int questId;
-    public bool isEnabled;
     public GameObject doneText;
 
     public GameObject objectBeingChanged;
@@ -24,14 +23,9 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
     private int countTap = 0;
     private bool collisionActive = false;
 
-    private void OnEnable()
-    {
-        isEnabled = true;
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && isEnabled)
+        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
         {
             collisionActive = true;
             StartCoroutine(WaitForTap());
@@ -39,7 +33,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "Player" && isEnabled)
+        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
         {
             collisionActive = false;
             countTap = 0;
@@ -53,7 +47,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
         ActManager.Instance.CompleteSubQuest(actId, questId);
         gameObject.GetComponent<DontDestroyObject>().ActivateDontDestroy();
 
-        isEnabled = false;
+        gameObject.GetComponent<EnableableObject>().isEnabled = false;
         GameDataManager.Instance.SaveGame();
 
         gameObject.GetComponent<AudioSource>().Stop();
@@ -68,6 +62,10 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
             foreach (GameObject a in activateObjects)
             {
                 a.SetActive(true);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = true;
+                }
             }
         }
 
@@ -76,6 +74,10 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
             foreach (GameObject a in deactivateObjects)
             {
                 a.SetActive(false);
+                if (a.GetComponent<EnableableObject>() != null)
+                {
+                    a.GetComponent<EnableableObject>().isEnabled = false;
+                }
             }
         }
     }
@@ -85,7 +87,7 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
         InventoryManager.Instance.RemoveFromInventory();
         ActManager.Instance.CompleteSubQuest(actId, questId);
 
-        isEnabled = false;
+        gameObject.GetComponent<EnableableObject>().isEnabled = false;
         GameDataManager.Instance.SaveGame();
 
         gameObject.GetComponent<AudioSource>().Stop();
@@ -171,28 +173,6 @@ public class InventoryInteractionObject : MonoBehaviour, IGameDataManager
             doneText.SetActive(true);
             yield return new WaitForSeconds(1.0f);
             doneText.SetActive(false);
-        }
-    }
-
-    public void LoadData(GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            this.isEnabled = data.enabledGameObjects[this.gameObject.tag];
-        }
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
-        {
-            Debug.Log("Contains key");
-            data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
-        }
-        else
-        {
-            Debug.Log("Creating new key");
-            data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
         }
     }
 }
