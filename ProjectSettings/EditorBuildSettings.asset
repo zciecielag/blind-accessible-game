@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartingScenes/ChooseContrastMenu.unity
     guid: 295e4797c364cda49bf40a4c5900b688
   - enabled: 1
+    path: Assets/Scenes/StartingScenes/GameMainMenu.unity
+    guid: 64b9f58f9d5be784db5c97fb7f573cb7
+  - enabled: 1
     path: Assets/Scenes/StartingScenes/MainMenu.unity
     guid: 2ed7283f7aafa1048b8b42d104a1850d
   - enabled: 1
