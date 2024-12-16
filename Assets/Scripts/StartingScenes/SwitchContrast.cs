@@ -24,6 +24,6 @@ public class SwitchContrast : MonoBehaviour
     void DoSwitchContrastAndLoadNext()
     {
         globalVariableManager.SetContrastStatus(contrastOrNoContrast);
-        SceneManager.LoadScene(sceneName: "MainMenu");
+        SceneManager.LoadScene(sceneName: "GameMainMenu");
     }
 }

@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 public class SwitchSceneButton : MonoBehaviour
 {
-
-    [SerializeField]
-    private string sceneNameLoad;
+    public string sceneNameLoad;
 
     void Start()
     {
@@ -24,6 +22,7 @@ public class SwitchSceneButton : MonoBehaviour
     IEnumerator sceneLoadAndButtonSound()
     {
         yield return new WaitForSeconds(0.2f);
+        //audio src add
         SceneManager.LoadScene(sceneName: sceneNameLoad);
     }
 
