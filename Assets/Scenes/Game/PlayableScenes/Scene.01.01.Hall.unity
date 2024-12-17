@@ -19603,10 +19603,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1840031004}
   - component: {fileID: 1840031003}
+  - component: {fileID: 1840031006}
   - component: {fileID: 1840031005}
   m_Layer: 0
   m_Name: Hanger
-  m_TagString: Untagged
+  m_TagString: HangerObjHALL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19727,6 +19728,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9375, y: 0.34383395}
   m_EdgeRadius: 0
+--- !u!114 &1840031006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840031002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfbebb142ab94b43b04af6338a5235d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unchangedSprite: {fileID: 7848023516834124207, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  changedSprite: {fileID: -4350673933192149042, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  isChanged: 0
 --- !u!1 &1844477716
 GameObject:
   m_ObjectHideFlags: 0
@@ -20162,8 +20178,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: ecef0d9472d883f4dbce43db053356ca, type: 3}
-  m_Resource: {fileID: 8300000, guid: ecef0d9472d883f4dbce43db053356ca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 718b78c0ed0efe842a83823ab8976d17, type: 3}
+  m_Resource: {fileID: 8300000, guid: 718b78c0ed0efe842a83823ab8976d17, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1

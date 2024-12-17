@@ -25,15 +25,20 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
 
     public void RemoveFromInventory()
     {
+        Destroy(currentlyHeldObject);
         this.currentlyHeldObject = null;
         inventoryItem.GetComponent<Image>().sprite = null;
-        inventoryText.text = "";
+        inventoryText.text = "Brak";
     }
 
     public void LoadData(GameData data)
     {
         this.currentlyHeldObject = data.currentlyHeldObject;
         Debug.Log("Logged data inventory: " + currentlyHeldObject);
+        if (currentlyHeldObject == null && data.currentlyHeldObjectTag != "")
+        {
+            this.currentlyHeldObject = GameObject.FindGameObjectWithTag(data.currentlyHeldObjectTag);
+        }
         if (currentlyHeldObject != null)
         {
             inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
@@ -53,5 +58,13 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
     public void SaveData(ref GameData data)
     {
         data.currentlyHeldObject = this.currentlyHeldObject;
+        if (this.currentlyHeldObject != null)
+        {
+            data.currentlyHeldObjectTag = this.currentlyHeldObject.tag;
+        } else
+        {
+            data.currentlyHeldObjectTag = "";
+        }
+        
     }
 }

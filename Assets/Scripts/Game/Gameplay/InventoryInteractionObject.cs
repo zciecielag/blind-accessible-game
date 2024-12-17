@@ -95,6 +95,10 @@ public class InventoryInteractionObject : MonoBehaviour
         if (objectBeingChanged != null && changedSprite != null)
         {
             objectBeingChanged.GetComponent<SpriteRenderer>().sprite = changedSprite;
+            if (objectBeingChanged.GetComponent<ChangeSpriteOnLoad>() != null)
+            {
+                objectBeingChanged.GetComponent<ChangeSpriteOnLoad>().Change(changedSprite);
+            }
         }
 
         MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
