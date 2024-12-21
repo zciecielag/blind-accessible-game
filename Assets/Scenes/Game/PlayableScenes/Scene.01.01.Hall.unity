@@ -5262,7 +5262,7 @@ GameObject:
   - component: {fileID: 411569416}
   m_Layer: 5
   m_Name: DText
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5283,8 +5283,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -0.0000038146973}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: -0.4499, y: -14.8915}
+  m_SizeDelta: {x: 980.8947, y: 235.6116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411569416
 MonoBehaviour:
@@ -5309,7 +5309,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5333,8 +5333,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5374,7 +5374,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &411569417
@@ -6014,7 +6014,7 @@ GameObject:
   - component: {fileID: 568646872}
   m_Layer: 5
   m_Name: DText
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6066,8 +6066,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6134,8 +6134,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -0.0000038146973}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: -0.4499, y: -14.8915}
+  m_SizeDelta: {x: 980.8947, y: 235.6116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &571673645
 GameObject:
@@ -6807,6 +6807,7 @@ MonoBehaviour:
   menuButton: {fileID: 43260223570994051}
   whichRoomButton: {fileID: 0}
   whichRoomButtonQuest: {fileID: 0}
+  activeDialogue: {fileID: 0}
 --- !u!4 &743119539
 Transform:
   m_ObjectHideFlags: 0
@@ -7221,7 +7222,7 @@ GameObject:
   - component: {fileID: 854266948}
   m_Layer: 5
   m_Name: DText
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7242,8 +7243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -0.0000038146973}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: -0.4499, y: -14.8915}
+  m_SizeDelta: {x: 980.8947, y: 235.6116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &854266948
 MonoBehaviour:
@@ -7268,7 +7269,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7292,8 +7293,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7333,7 +7334,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &854266949
@@ -7626,8 +7627,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -317.34283}
-  m_SizeDelta: {x: 1614.1084, y: 342.5396}
+  m_AnchoredPosition: {x: -33.946632, y: -375.53885}
+  m_SizeDelta: {x: 1017.5994, y: 279.4942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922340142
 MonoBehaviour:
@@ -7647,12 +7648,8 @@ MonoBehaviour:
   skipDialogue: 1
   activateObjects:
   - {fileID: 1562562455}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
-  - {fileID: 43260223570994051}
-  deactivateObjectsPermanent:
-  - {fileID: 1988840061}
+  deactivateObjects: []
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 411569416}
   dialogueLines:
   - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot."
@@ -9280,8 +9277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: -317.34283}
-  m_SizeDelta: {x: 1614.1084, y: 342.5396}
+  m_AnchoredPosition: {x: -33.936474, y: -375.38025}
+  m_SizeDelta: {x: 1017.6324, y: 279.1816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1181402253
 AudioSource:
@@ -10159,8 +10156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -317.34283}
-  m_SizeDelta: {x: 1614.1084, y: 342.5396}
+  m_AnchoredPosition: {x: -33.946632, y: -375.53885}
+  m_SizeDelta: {x: 1017.5994, y: 279.4942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1260689238
 AudioSource:
@@ -10277,12 +10274,8 @@ MonoBehaviour:
   skipDialogue: 1
   activateObjects:
   - {fileID: 1753551695}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
-  - {fileID: 43260223570994051}
-  deactivateObjectsPermanent:
-  - {fileID: 1988840061}
+  deactivateObjects: []
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 854266948}
   dialogueLines:
   - "Super, podnios\u0142e\u015B szalik i zabra\u0142e\u015B go ze sob\u0105!"
@@ -13086,10 +13079,7 @@ MonoBehaviour:
   skipDialogue: 1
   activateObjects:
   - {fileID: 1233144163}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
-  - {fileID: 43260223570994051}
+  deactivateObjects: []
   deactivateObjectsPermanent:
   - {fileID: 1988840061}
   dialogueText: {fileID: 568646872}
@@ -13161,8 +13151,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -317.34283}
-  m_SizeDelta: {x: 1614.1084, y: 342.5396}
+  m_AnchoredPosition: {x: -33.946632, y: -375.53885}
+  m_SizeDelta: {x: 1017.5994, y: 279.4942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1671802556
 AudioSource:
@@ -18873,7 +18863,7 @@ GameObject:
   - component: {fileID: 1783954843}
   m_Layer: 5
   m_Name: DText
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18894,8 +18884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -0.0000038146973}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: -0.4499, y: -14.8915}
+  m_SizeDelta: {x: 980.8947, y: 235.6116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783954843
 MonoBehaviour:
@@ -18920,7 +18910,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18944,8 +18934,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18985,7 +18975,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1783954844
@@ -20881,7 +20871,7 @@ GameObject:
   - component: {fileID: 2020052957}
   m_Layer: 5
   m_Name: DText
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20902,8 +20892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -0.0000038146973}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: -1.9752, y: -11.7819}
+  m_SizeDelta: {x: 980.8947, y: 235.6116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020052957
 MonoBehaviour:
@@ -20928,7 +20918,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20952,8 +20942,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20993,7 +20983,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2020052958
@@ -21348,8 +21338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -317.34283}
-  m_SizeDelta: {x: 1614.1084, y: 342.5396}
+  m_AnchoredPosition: {x: -33.946632, y: -375.53885}
+  m_SizeDelta: {x: 1017.5994, y: 279.4942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051311320
 MonoBehaviour:
@@ -21369,12 +21359,8 @@ MonoBehaviour:
   skipDialogue: 1
   activateObjects:
   - {fileID: 634717008010781193}
-  deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
-  - {fileID: 43260223570994051}
-  deactivateObjectsPermanent:
-  - {fileID: 1988840061}
+  deactivateObjects: []
+  deactivateObjectsPermanent: []
   dialogueText: {fileID: 1783954843}
   dialogueLines:
   - "Szalik odwieszony - \u015Bwietnie, teraz jeste\u015B gotowy!"

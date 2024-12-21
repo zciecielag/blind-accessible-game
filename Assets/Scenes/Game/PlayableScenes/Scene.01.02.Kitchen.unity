@@ -13159,7 +13159,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1514707303}
   dialogueLines:
   - "Tu jest spi\u017Carnia, ale drzwi s\u0105 zamkni\u0119te. Potrzebujesz klucza."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1007593777
@@ -15915,7 +15915,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015Bmy w kuchni. Zapach przypraw przepe\u0142nia to pomieszczenie. Stary
     grzejnik ogrzewa ca\u0142e pomieszczenie."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1411537971

@@ -9422,7 +9422,7 @@ MonoBehaviour:
   dialogueLines:
   - "Tu s\u0105 schody na g\xF3r\u0119, \u015Bpi tam teraz Treflinka. Lepiej jej
     nie przeszkadzajmy."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &467085716
@@ -19754,7 +19754,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1614882004}
   dialogueLines:
   - "To s\u0105 drzwi przed dom, ale na razie nie potrzebujemy i\u015B\u0107 na zewn\u0105trz."
-  textSpeed: 0
+  textSpeed: 0.05
   playerRb: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1478447771

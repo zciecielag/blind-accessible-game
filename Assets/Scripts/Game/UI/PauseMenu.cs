@@ -13,6 +13,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject menuButton;
     public GameObject whichRoomButton;
     public GameObject whichRoomButtonQuest;
+
+    public GameObject activeDialogue;
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -38,6 +40,13 @@ public class PauseMenu : MonoBehaviour
         joystick.SetActive(false);
         inventory.SetActive(false);
         menuButton.SetActive(false);
+
+        activeDialogue = GameObject.FindGameObjectWithTag("DialogueBox");
+        if (activeDialogue != null)
+        {
+            activeDialogue.SetActive(false);
+        }
+
         if (whichRoomButton != null)
         {
             whichRoomButton.SetActive(false);
@@ -55,6 +64,12 @@ public class PauseMenu : MonoBehaviour
         joystick.SetActive(true);
         inventory.SetActive(true);
         menuButton.SetActive(true);
+
+        if (activeDialogue != null)
+        {
+            activeDialogue.SetActive(true);
+        }
+
         if (whichRoomButton != null)
         {
             whichRoomButton.SetActive(true);
