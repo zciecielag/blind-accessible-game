@@ -25,7 +25,7 @@ public class DialogueBox : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-        playerRb.linearVelocity = Vector2.zero;
+        //playerRb.linearVelocity = Vector2.zero;
 
         StartDialogue();
     }
@@ -34,6 +34,27 @@ public class DialogueBox : MonoBehaviour
         // Jesli kliknieto przycisk myszy to pomija dialog
         if (skipDialogue && Input.GetMouseButtonDown(0))
         {
+            // Debug.Log("clicked");
+            // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            // RaycastHit raycastHit;
+            // if(Physics.Raycast(ray, out raycastHit)) {
+            //     if (raycastHit.transform != null)
+            //     {
+            //         Debug.Log("1");
+            //         if(raycastHit.transform.gameObject.tag == "DialogueBox") {
+            //             Debug.Log("2");
+            //             if (dialogueText.text == dialogueLines[index])
+            //             {
+            //                 NextLineOfDialogue();
+            //             }
+            //             else
+            //             {
+            //                 StopAllCoroutines();
+            //                 dialogueText.text = dialogueLines[index];
+            //             }   
+            //         }
+            //     }   
+            // }
             if (dialogueText.text == dialogueLines[index])
             {
                 NextLineOfDialogue();
@@ -49,7 +70,7 @@ public class DialogueBox : MonoBehaviour
     private void StartDialogue()
     {
         gameObject.GetComponent<AudioSource>().Play();
-        playerRb.constraints = RigidbodyConstraints2D.FreezePosition;
+        //playerRb.constraints = RigidbodyConstraints2D.FreezePosition;
 
         if (deactivateObjects != null)
         {
@@ -140,7 +161,7 @@ public class DialogueBox : MonoBehaviour
         {
             InventoryManager.Instance.ShowInventory();
         }
-        playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        //playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         gameObject.SetActive(false);
     }

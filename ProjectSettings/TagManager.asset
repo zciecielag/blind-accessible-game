@@ -41,6 +41,7 @@ TagManager:
   - CupboardEventColliderPANTRY
   - SwitchToKITCHENFromPANTRY
   - HangerObjHALL
+  - DialogueBox
   layers:
   - Default
   - TransparentFX
