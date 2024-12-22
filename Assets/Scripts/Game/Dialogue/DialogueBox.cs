@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueBox : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class DialogueBox : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public string[] dialogueLines;
     public float textSpeed;
-    private int index;
+    public int index;
     public Rigidbody2D playerRb;
     public GameObject player;
 
@@ -26,35 +27,14 @@ public class DialogueBox : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         //playerRb.linearVelocity = Vector2.zero;
+        gameObject.GetComponent<Button>().onClick.AddListener(SkipDialogue);
 
         StartDialogue();
     }
-    private void Update()
+
+    private void SkipDialogue()
     {
-        // Jesli kliknieto przycisk myszy to pomija dialog
-        if (skipDialogue && Input.GetMouseButtonDown(0))
-        {
-            // Debug.Log("clicked");
-            // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            // RaycastHit raycastHit;
-            // if(Physics.Raycast(ray, out raycastHit)) {
-            //     if (raycastHit.transform != null)
-            //     {
-            //         Debug.Log("1");
-            //         if(raycastHit.transform.gameObject.tag == "DialogueBox") {
-            //             Debug.Log("2");
-            //             if (dialogueText.text == dialogueLines[index])
-            //             {
-            //                 NextLineOfDialogue();
-            //             }
-            //             else
-            //             {
-            //                 StopAllCoroutines();
-            //                 dialogueText.text = dialogueLines[index];
-            //             }   
-            //         }
-            //     }   
-            // }
+        if(skipDialogue) {
             if (dialogueText.text == dialogueLines[index])
             {
                 NextLineOfDialogue();
@@ -63,8 +43,42 @@ public class DialogueBox : MonoBehaviour
             {
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[index];
-            }
-        }
+            }   
+        }   
+    }
+    private void Update()
+    {
+        // Jesli kliknieto przycisk myszy to pomija dialog
+        // if (skipDialogue && Input.GetMouseButtonDown(0))
+        // {
+        //     Debug.Log("clicked");
+        //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //     RaycastHit2D raycastHit = Physics2D.Raycast(ray.origin, ray.direction);
+        //     if(raycastHit.collider != null) {
+        //         Debug.Log("1");
+        //         if(raycastHit.collider.gameObject.tag == "DialogueBox") {
+        //             Debug.Log("2");
+        //             if (dialogueText.text == dialogueLines[index])
+        //             {
+        //                 NextLineOfDialogue();
+        //             }
+        //             else
+        //             {
+        //                 StopAllCoroutines();
+        //                 dialogueText.text = dialogueLines[index];
+        //             }   
+        //         }   
+        //     }
+        //     // if (dialogueText.text == dialogueLines[index])
+        //     // {
+        //     //     NextLineOfDialogue();
+        //     // }
+        //     // else
+        //     // {
+        //     //     StopAllCoroutines();
+        //     //     dialogueText.text = dialogueLines[index];
+        //     // }
+        // }
     }
 
     private void StartDialogue()
@@ -166,7 +180,7 @@ public class DialogueBox : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void NextLineOfDialogue()
+    public void NextLineOfDialogue()
     {
         if (index < dialogueLines.Length - 1)
         {
