@@ -17,6 +17,8 @@ public class InventoryInteractionObject : MonoBehaviour
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
 
+    public GameObject confirmInteractionButton;
+
     public bool addOrUse;
 
     private float doubleTapTime = 0.5f;
@@ -28,7 +30,10 @@ public class InventoryInteractionObject : MonoBehaviour
         if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
         {
             collisionActive = true;
-            StartCoroutine(WaitForTap());
+            confirmInteractionButton.SetActive(true);
+
+
+            //StartCoroutine(WaitForTap());
         }
     }
 
@@ -36,8 +41,23 @@ public class InventoryInteractionObject : MonoBehaviour
         if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
         {
             collisionActive = false;
-            countTap = 0;
-            StopAllCoroutines();
+            confirmInteractionButton.SetActive(false);
+
+            
+            //countTap = 0;
+            //StopAllCoroutines();
+        }
+    }
+
+    public void AddOrUse()
+    {
+        if (addOrUse)
+        {
+            AddToInventory();
+        }
+        else
+        {
+            UseInventoryObject();
         }
     }
 
@@ -46,6 +66,8 @@ public class InventoryInteractionObject : MonoBehaviour
         InventoryManager.Instance.AddToInventory(gameObject);
         ActManager.Instance.CompleteSubQuest(actId, questId);
         gameObject.GetComponent<DontDestroyObject>().ActivateDontDestroy();
+
+        confirmInteractionButton.SetActive(false);
 
         gameObject.GetComponent<EnableableObject>().isEnabled = false;
         GameDataManager.Instance.SaveGame();
@@ -86,6 +108,8 @@ public class InventoryInteractionObject : MonoBehaviour
     {
         InventoryManager.Instance.RemoveFromInventory();
         ActManager.Instance.CompleteSubQuest(actId, questId);
+
+        confirmInteractionButton.SetActive(false);
 
         gameObject.GetComponent<EnableableObject>().isEnabled = false;
         GameDataManager.Instance.SaveGame();

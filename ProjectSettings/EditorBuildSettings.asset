@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Prototypes/DodgeFallingObjects/Scenes/Game.unity
     guid: b0de900b14916f345aa990a8575d2a63
   - enabled: 1
-    path: Assets/Scenes/MainMechanicPrototype/MainScene.unity
+    path: Assets/Scenes/MainMechanicPrototype/MainScenePrototype.unity
     guid: bbbcd658efee2c248bd2ffcc2d5e876d
   - enabled: 1
     path: Assets/Scenes/Settings/SettingsSFXVolume.unity
@@ -74,6 +74,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.05.Pantry.unity
     guid: a2aff4f5f19d5344aa00964414acae94
+  - enabled: 1
+    path: Assets/Scenes/TEST/MainMechanicPrototype/MainMechanicFirstLevel.unity
+    guid: aefa68abe04eca44297dd83e69df1d79
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -42,6 +42,11 @@ TagManager:
   - SwitchToKITCHENFromPANTRY
   - HangerObjHALL
   - DialogueBox
+  - Cross
+  - BackgroundMusic
+  - FailureSound
+  - SuccessSound
+  - MiskaKITCHEN
   layers:
   - Default
   - TransparentFX

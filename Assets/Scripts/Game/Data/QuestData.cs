@@ -15,7 +15,7 @@ public class QuestData
                     1, false, false, 0, "Spróbuj podejść do szafki w lewym górnym rogu pokoju."
                 ),
                 new SubQuest(
-                    2, false, false, 0, "Spróbuj podnieść szalik naciskając dwukrotnie na ekran."
+                    2, false, false, 0, "Spróbuj podnieść szalik naciskając na przycisk na środku ekranu."
                 ),
                 new SubQuest(
                     3, false, false, 0, "Powieś szalik na wieszaku."
@@ -43,7 +43,7 @@ public class QuestData
                     2, false, false, 1, "Znajdź i zabierz ze sobą miskę."
                 ),
                 new SubQuest(
-                    3, false, false, 1, "Przynieś miskę Treflikom w kuchni, klikając 2 razy na ekran przy Treflikach."
+                    3, false, false, 1, "Przynieś miskę Treflikom w kuchni, klikając na przycisk na środku ekranu."
                 ), 
                 new SubQuest(
                     4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
