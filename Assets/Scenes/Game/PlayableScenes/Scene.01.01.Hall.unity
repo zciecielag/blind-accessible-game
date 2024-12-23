@@ -7606,7 +7606,7 @@ GameObject:
   - component: {fileID: 922340146}
   m_Layer: 5
   m_Name: DialogueBox2
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7655,7 +7655,7 @@ MonoBehaviour:
   dialogueLines:
   - "Super! Uda\u0142o si\u0119, teraz spr\xF3bujmy podnie\u015B\u0107 przedmiot."
   - "Na szafce le\u017Cy szalik, kt\xF3ry trzeba odwiesi\u0107 na wieszak."
-  - "Aby go podnie\u015B\u0107, kliknij 2 razy w ekran."
+  - "Aby go podnie\u015B\u0107, kliknij na przycisk na \u015Brodku ekranu!"
   textSpeed: 0.05
   index: 0
   playerRb: {fileID: 4915379782232514820}
@@ -8707,7 +8707,7 @@ GameObject:
   - component: {fileID: 1079745656}
   - component: {fileID: 1079745655}
   m_Layer: 5
-  m_Name: ConfirmButton
+  m_Name: ConfirmButtonSzalikAdd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8775,7 +8775,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1079745656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562562456}
+        m_TargetAssemblyTypeName: InventoryInteractionObject, Assembly-CSharp
+        m_MethodName: AddOrUse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1079745656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9422,7 +9434,7 @@ GameObject:
   - component: {fileID: 1181402257}
   m_Layer: 5
   m_Name: WhichRoomDialogueBox
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9562,9 +9574,6 @@ MonoBehaviour:
   skipDialogue: 1
   activateObjects: []
   deactivateObjects:
-  - {fileID: 2384867345152268757}
-  - {fileID: 1808525503}
-  - {fileID: 43260223570994051}
   - {fileID: 1988840061}
   deactivateObjectsPermanent: []
   dialogueText: {fileID: 2020052957}
@@ -10347,7 +10356,7 @@ GameObject:
   - component: {fileID: 1260689242}
   m_Layer: 5
   m_Name: DialogueBox3
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10494,7 +10503,7 @@ MonoBehaviour:
   - "Super, podnios\u0142e\u015B szalik i zabra\u0142e\u015B go ze sob\u0105!"
   - "Teraz musisz znale\u017A\u0107 wieszak, podej\u015B\u0107 do niego i odwiesi\u0107
     szalik."
-  - "Szalik odwiesisz klikaj\u0105c ponownie 2 razy na ekran przy wieszaku. Do dzie\u0142a!"
+  - "Szalik odwiesisz klikaj\u0105c ponownie na przycisk na \u015Brodku ekranu."
   textSpeed: 0.05
   index: 0
   playerRb: {fileID: 4915379782232514820}
@@ -12101,6 +12110,7 @@ MonoBehaviour:
   activateObjects:
   - {fileID: 1260689236}
   deactivateObjects: []
+  confirmInteractionButton: {fileID: 1079745653}
   addOrUse: 1
 --- !u!212 &1562562459
 SpriteRenderer:
@@ -12848,6 +12858,138 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1609118206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609118207}
+  - component: {fileID: 1609118210}
+  - component: {fileID: 1609118209}
+  - component: {fileID: 1609118208}
+  m_Layer: 5
+  m_Name: ConfirmButtonSzalikUse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1609118207
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609118206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1349277526581937071}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000031471, y: 0.0000085831}
+  m_SizeDelta: {x: 144.579, y: 146.3472}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1609118208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609118206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1609118209}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1753551699}
+        m_TargetAssemblyTypeName: InventoryInteractionObject, Assembly-CSharp
+        m_MethodName: AddOrUse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1609118209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609118206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.72925067, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1609118210
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609118206}
+  m_CullTransparentMesh: 1
 --- !u!1 &1616362580
 GameObject:
   m_ObjectHideFlags: 0
@@ -13315,7 +13457,7 @@ GameObject:
   - component: {fileID: 1671802557}
   m_Layer: 5
   m_Name: DialogueBox1
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18765,6 +18907,7 @@ MonoBehaviour:
   activateObjects:
   - {fileID: 2051311318}
   deactivateObjects: []
+  confirmInteractionButton: {fileID: 1609118206}
   addOrUse: 0
 --- !u!114 &1753551700
 MonoBehaviour:
@@ -21621,7 +21764,7 @@ GameObject:
   - component: {fileID: 2051311324}
   m_Layer: 5
   m_Name: DialogueBox4
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22269,6 +22412,7 @@ RectTransform:
   - {fileID: 1988840062}
   - {fileID: 1181402252}
   - {fileID: 1079745654}
+  - {fileID: 1609118207}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

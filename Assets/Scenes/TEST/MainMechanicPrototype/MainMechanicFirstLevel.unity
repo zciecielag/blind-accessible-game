@@ -1059,6 +1059,7 @@ MonoBehaviour:
   - "Spadaj\u0105ce przedmioty wydaj\u0105 z siebie d\u017Awi\u0119k, postaraj si\u0119
     ich unikn\u0105\u0107! Masz trzy \u017Cycia"
   textSpeed: 0.05
+  index: 0
   playerRb: {fileID: 914560682}
   player: {fileID: 914560677}
 --- !u!114 &556990217
@@ -4718,6 +4719,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015B na torze po lewej stronie. Kliknij w ekran, aby rozpocz\u0105\u0107 "
   textSpeed: 0.05
+  index: 0
   playerRb: {fileID: 914560682}
   player: {fileID: 914560677}
 --- !u!114 &1977140199
@@ -5066,7 +5068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2142795794
 RectTransform:
   m_ObjectHideFlags: 0

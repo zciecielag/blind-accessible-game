@@ -27,7 +27,7 @@ public class DialogueBox : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         //playerRb.linearVelocity = Vector2.zero;
-        gameObject.GetComponent<Button>().onClick.AddListener(SkipDialogue);
+        if (gameObject.GetComponent<Button>() != null) { gameObject.GetComponent<Button>().onClick.AddListener(SkipDialogue); }
 
         StartDialogue();
     }
