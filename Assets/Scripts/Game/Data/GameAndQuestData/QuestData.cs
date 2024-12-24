@@ -64,6 +64,15 @@ public class QuestData
                     8, false, false, 1, "Przynieś gotowe składniki Treflikom."
                 )
             }
-        )
+        ),
+
+        new Act(
+            2, false, false, 1, new List<SubQuest>
+            {
+                new SubQuest(
+                    1, false, false, 1, ""
+                )
+            }
+        ),
     };
 }

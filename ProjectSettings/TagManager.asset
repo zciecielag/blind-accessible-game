@@ -47,6 +47,7 @@ TagManager:
   - FailureSound
   - SuccessSound
   - MiskaKITCHEN
+  - TreflikiCollider3
   layers:
   - Default
   - TransparentFX
