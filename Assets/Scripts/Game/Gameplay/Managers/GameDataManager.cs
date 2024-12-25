@@ -7,20 +7,22 @@ using Unity.VisualScripting;
 
 public class GameDataManager : MonoBehaviour
 {
-    [SerializeField] private string fileName;
-
+    public string fileName;
     private GameData gameData;
     private FileDataManager fileDataManager;
     private List<IGameDataManager> gameDataManagers;
-    public static GameDataManager Instance { get; private set; }
-
+    public static GameDataManager Instance 
+    { 
+        get; 
+        private set; 
+    }
     private CheckIfCanBeEnabled[] checkIfCanBeEnableds;
 
     private void Awake()
     {
         if (Instance != null)
         {
-            Debug.Log("More than one GDM instance");
+            Debug.Log("Warning! More than one GDM instance.");
         }
         this.gameDataManagers = FindGameDataManagers();
         Instance = this;
@@ -53,7 +55,7 @@ public class GameDataManager : MonoBehaviour
 
         if (this.gameData == null) 
         {
-            Debug.Log("No game data found. Creating default data.");
+            Debug.Log("No game data found. Creating new default data.");
             NewGame();
         }
 
@@ -78,7 +80,7 @@ public class GameDataManager : MonoBehaviour
         }
 
         fileDataManager.Save(gameData);
-        Debug.Log("Saved");
+        Debug.Log("Game was saved");
     }
 
     public GameData GetGameData()

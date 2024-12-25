@@ -31,9 +31,6 @@ public class InventoryInteractionObject : MonoBehaviour
         {
             collisionActive = true;
             confirmInteractionButton.SetActive(true);
-
-
-            //StartCoroutine(WaitForTap());
         }
     }
 
@@ -42,10 +39,6 @@ public class InventoryInteractionObject : MonoBehaviour
         {
             collisionActive = false;
             confirmInteractionButton.SetActive(false);
-
-            
-            //countTap = 0;
-            //StopAllCoroutines();
         }
     }
 

@@ -48,7 +48,12 @@ public class ActManager : MonoBehaviour, IGameDataManager
                     {
                         subquests[j].isActive = true;
                         this.currentQuestId = questId;
-                        if (questTextDescription != null) { questTextDescription.text = subquests[j].description; }
+
+                        if (questTextDescription != null) 
+                        { 
+                            questTextDescription.text = subquests[j].description;
+                        }
+                        
                         break;
                     }
                 }

@@ -16,12 +16,10 @@ public class EnableableObject : MonoBehaviour, IGameDataManager
     {
         if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))
         {
-            Debug.Log("Contains key");
             data.enabledGameObjects[this.gameObject.tag] = this.isEnabled;
         }
         else
         {
-            Debug.Log("Creating new key");
             data.enabledGameObjects.Add(this.gameObject.tag, isEnabled);
         }
     }

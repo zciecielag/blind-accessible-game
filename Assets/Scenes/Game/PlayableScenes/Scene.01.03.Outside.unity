@@ -12376,7 +12376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 6
   movementJoystick: {fileID: 1070439871}
-  rigidbody2D: {fileID: 1227590117}
+  playerRigidBody2D: {fileID: 1227590117}
   animator: {fileID: 1227590114}
   spawnPoint: {fileID: 1092655458}
 --- !u!61 &1227590116

@@ -5,7 +5,11 @@ public class GameSceneManager : MonoBehaviour, IGameDataManager
 {
 
     private string currentSceneName;
-    public static GameSceneManager Instance { get; private set; }
+    public static GameSceneManager Instance 
+    { 
+        get; 
+        private set; 
+    }
 
     public void LoadData(GameData data)
     {
