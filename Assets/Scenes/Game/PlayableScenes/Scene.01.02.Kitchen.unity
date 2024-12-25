@@ -19675,7 +19675,7 @@ GameObject:
   - component: {fileID: 1615675753}
   - component: {fileID: 1615675754}
   m_Layer: 0
-  m_Name: SwitchSceneToAct1Cutscene
+  m_Name: SwitchSceneToAct1End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19708,9 +19708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2cb40b1d4b2644e8a45c816735256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actId: 2
-  questId: 1
-  scene: Cutscene.02.Act1EndCutscene
+  actId: 1
+  questId: 8
+  scene: MainMenu
   audioSource: {fileID: 7204237004086557712}
 --- !u!114 &1615675754
 MonoBehaviour:
@@ -27266,7 +27266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 6
   movementJoystick: {fileID: 649826714}
-  rigidbody2D: {fileID: 353499245038119926}
+  playerRigidBody2D: {fileID: 353499245038119926}
   animator: {fileID: 9140800888624365767}
   spawnPoint: {fileID: 116905657}
 --- !u!4 &4350396005745819505

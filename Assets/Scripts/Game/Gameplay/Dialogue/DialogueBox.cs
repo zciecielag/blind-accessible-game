@@ -26,15 +26,21 @@ public class DialogueBox : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+
         //playerRb.linearVelocity = Vector2.zero;
-        if (gameObject.GetComponent<Button>() != null) { gameObject.GetComponent<Button>().onClick.AddListener(SkipDialogue); }
+
+        if (gameObject.GetComponent<Button>() != null) 
+        { 
+            gameObject.GetComponent<Button>().onClick.AddListener(SkipDialogue); 
+        }
 
         StartDialogue();
     }
 
     private void SkipDialogue()
     {
-        if(skipDialogue) {
+        if(skipDialogue) 
+        {
             if (dialogueText.text == dialogueLines[index])
             {
                 NextLineOfDialogue();
@@ -175,6 +181,7 @@ public class DialogueBox : MonoBehaviour
         {
             InventoryManager.Instance.ShowInventory();
         }
+        
         //playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         gameObject.SetActive(false);

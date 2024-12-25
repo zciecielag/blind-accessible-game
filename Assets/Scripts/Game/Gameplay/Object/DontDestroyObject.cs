@@ -8,14 +8,13 @@ public class DontDestroyObject : MonoBehaviour
         GameObject[] invObject = GameObject.FindGameObjectsWithTag(this.gameObject.tag);
          if (invObject.Length > 1)
         {
-            Debug.Log("Too many game objects");
+            Debug.Log("Too many game objects. Destroying.");
             Destroy(this.gameObject);
         }
     }
 
     public void ActivateDontDestroy()
     {
-        Debug.Log("Dont destroy");
         DontDestroyOnLoad(this.gameObject);
     }
 }

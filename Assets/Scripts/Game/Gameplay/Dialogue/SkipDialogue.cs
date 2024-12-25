@@ -3,32 +3,33 @@ using UnityEngine.UI;
 
 public class SkipDialogue : MonoBehaviour
 {
-    private GameObject parent;
+    private DialogueBox parentDialogueBox;
     void Start()
     {
         this.gameObject.GetComponent<Button>().onClick.AddListener(Skip);
-        parent = this.gameObject.transform.parent.gameObject;
+        parentDialogueBox = this.gameObject.transform.parent.gameObject.GetComponent<DialogueBox>();
     }
 
     private void Skip()
     {
-        Debug.Log("clicked");
+        
         // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         // RaycastHit2D raycastHit = Physics2D.Raycast(ray.origin, ray.direction);
         // if(raycastHit.collider != null) {
         //     Debug.Log("1");
         //     if(raycastHit.collider.gameObject.tag == "DialogueBox") {
         //         Debug.Log("2");
-        if (parent.GetComponent<DialogueBox>().skipDialogue)
+
+        if (parentDialogueBox.skipDialogue)
         {
-            if (parent.GetComponent<DialogueBox>().dialogueText.text == parent.GetComponent<DialogueBox>().dialogueLines[parent.GetComponent<DialogueBox>().index])
+            if (parentDialogueBox.dialogueText.text == parentDialogueBox.dialogueLines[parentDialogueBox.index])
                 {
-                    parent.GetComponent<DialogueBox>().NextLineOfDialogue();
+                    parentDialogueBox.NextLineOfDialogue();
                 }
                 else
                 {
                     StopAllCoroutines();
-                    parent.GetComponent<DialogueBox>().dialogueText.text = parent.GetComponent<DialogueBox>().dialogueLines[parent.GetComponent<DialogueBox>().index];
+                    parentDialogueBox.dialogueText.text = parentDialogueBox.dialogueLines[parentDialogueBox.index];
                 } 
         }
                   

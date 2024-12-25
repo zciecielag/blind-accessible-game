@@ -6,7 +6,11 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour, IGameDataManager
 {
 
-    public static InventoryManager Instance { get; private set; }
+    public static InventoryManager Instance 
+    { 
+        get; 
+        private set; 
+    }
     public GameObject currentlyHeldObject;
     public GameObject inventoryItem;
     public TextMeshProUGUI inventoryText;
@@ -34,11 +38,12 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
     public void LoadData(GameData data)
     {
         this.currentlyHeldObject = data.currentlyHeldObject;
-        Debug.Log("Logged data inventory: " + currentlyHeldObject);
+
         if (currentlyHeldObject == null && data.currentlyHeldObjectTag != "")
         {
             this.currentlyHeldObject = GameObject.FindGameObjectWithTag(data.currentlyHeldObjectTag);
         }
+        
         if (currentlyHeldObject != null)
         {
             inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;

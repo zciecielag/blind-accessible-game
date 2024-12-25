@@ -37,10 +37,12 @@ public class SwitchSceneCompleteQuest : MonoBehaviour
         if (gameObject.GetComponent<EnableableObject>().isEnabled)
         {
             gameObject.GetComponent<AudioSource>().Stop();
+
             if (questId > 0)
             {
                 ActManager.Instance.CompleteSubQuest(actId, questId);
             }
+            
             GameSceneManager.Instance.ChangeName(sceneName);
             gameObject.GetComponent<EnableableObject>().isEnabled = false;
 

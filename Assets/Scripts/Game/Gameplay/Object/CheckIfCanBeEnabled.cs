@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class CheckIfCanBeEnabled : MonoBehaviour
 {
-    public static CheckIfCanBeEnabled Instance {get; private set;}
+    public static CheckIfCanBeEnabled Instance 
+    {
+        get; 
+        private set;
+    }
     public int actId;
     public int questId;
     public GameObject objectToEnable;

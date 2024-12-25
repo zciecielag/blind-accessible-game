@@ -9,12 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private bool isFacingRight = true;
     public Joystick movementJoystick;
-
-    public Rigidbody2D rigidbody2D;
+    public Rigidbody2D playerRigidBody2D;
     public Animator animator;
-
     public GameObject spawnPoint;
-
     private bool isMoving = true;
 
     void Start()
@@ -30,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = movementJoystick.Direction.x;
 
-        if (rigidbody2D.constraints == RigidbodyConstraints2D.FreezePosition)
+        if (playerRigidBody2D.constraints == RigidbodyConstraints2D.FreezePosition)
         {
             isMoving = false;
         }
@@ -46,13 +43,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if((movementJoystick.Horizontal != 0 || movementJoystick.Vertical != 0) && isMoving)
         {
-            rigidbody2D.linearVelocity = new Vector2(movementJoystick.Direction.x * movementSpeed, movementJoystick.Direction.y * movementSpeed);
-            animator.SetFloat("xVelocity", Math.Abs(rigidbody2D.linearVelocityX));
-            animator.SetFloat("yVelocity", rigidbody2D.linearVelocityY);
+            playerRigidBody2D.linearVelocity = new Vector2(movementJoystick.Direction.x * movementSpeed, movementJoystick.Direction.y * movementSpeed);
+            animator.SetFloat("xVelocity", Math.Abs(playerRigidBody2D.linearVelocityX));
+            animator.SetFloat("yVelocity", playerRigidBody2D.linearVelocityY);
             animator.SetBool("Moving", true);
         } else
         {
-            rigidbody2D.linearVelocity = Vector2.zero;
+            playerRigidBody2D.linearVelocity = Vector2.zero;
             animator.SetBool("Moving", false);
             movementJoystick.input = Vector2.zero;
         }
