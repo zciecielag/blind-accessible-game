@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 public class GlobalVariableManager
 {
     private static bool contrastOrNoContrastGlobal;
