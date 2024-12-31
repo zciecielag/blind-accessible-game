@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject whichRoomButton;
     public GameObject whichRoomButtonQuest;
 
-    public GameObject activeDialogue;
+    public GameObject[] activeDialogue;
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -41,10 +41,13 @@ public class PauseMenu : MonoBehaviour
         inventory.SetActive(false);
         menuButton.SetActive(false);
 
-        activeDialogue = GameObject.FindGameObjectWithTag("DialogueBox");
+        activeDialogue = GameObject.FindGameObjectsWithTag("DialogueBox");
         if (activeDialogue != null)
         {
-            activeDialogue.SetActive(false);
+            foreach(GameObject a in activeDialogue)
+            {
+                a.SetActive(false);
+            }
         }
 
         if (whichRoomButton != null)
@@ -67,7 +70,10 @@ public class PauseMenu : MonoBehaviour
 
         if (activeDialogue != null)
         {
-            activeDialogue.SetActive(true);
+            foreach(GameObject a in activeDialogue)
+            {
+                a.SetActive(true);
+            }
         }
 
         if (whichRoomButton != null)

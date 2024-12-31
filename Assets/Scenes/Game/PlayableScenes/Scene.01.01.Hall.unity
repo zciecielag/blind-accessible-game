@@ -20759,6 +20759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890184130}
   - component: {fileID: 1890184129}
+  - component: {fileID: 1890184131}
   m_Layer: 0
   m_Name: Rug
   m_TagString: RugHALL
@@ -20837,6 +20838,21 @@ Transform:
   - {fileID: 104032986}
   m_Father: {fileID: 1763682187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890184131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890184128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -8331241645820216898, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  noContrastSprite: {fileID: 7078752631852307880, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 1890184129}
 --- !u!1 &1901588106
 GameObject:
   m_ObjectHideFlags: 0
