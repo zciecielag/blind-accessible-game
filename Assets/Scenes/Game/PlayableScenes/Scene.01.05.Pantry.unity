@@ -7124,7 +7124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1104290329}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: ResumeGame
+        m_MethodName: OpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8596,7 +8596,8 @@ MonoBehaviour:
   menuButton: {fileID: 1825356998}
   whichRoomButton: {fileID: 198937374}
   whichRoomButtonQuest: {fileID: 0}
-  activeDialogue: {fileID: 0}
+  activeDialogue:
+  - {fileID: 0}
 --- !u!4 &1104290330
 Transform:
   m_ObjectHideFlags: 0
@@ -12139,7 +12140,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1104290329}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: ResumeGame
+        m_MethodName: OpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15740,7 +15741,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1104290329}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: PauseGame
+        m_MethodName: OpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
