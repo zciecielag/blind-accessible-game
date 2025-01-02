@@ -52,6 +52,7 @@ public class DialogueBox : MonoBehaviour
             }   
         }   
     }
+
     private void Update()
     {
         // Jesli kliknieto przycisk myszy to pomija dialog
@@ -139,7 +140,7 @@ public class DialogueBox : MonoBehaviour
 
     IEnumerator WaitAndEnd()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
 
         if (gameObject.GetComponent<AudioSource>().isPlaying)
         {

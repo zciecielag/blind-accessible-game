@@ -900,7 +900,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015Bmy w spi\u017Carni. Nie jest tu zbyt du\u017Co miejsca do zabawy,
     ale ch\u0142\xF3d pod\u0142ogi daje przyjemne miejsce do spania."
-  textSpeed: 0
+  textSpeed: 0.05
   index: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
@@ -11574,7 +11574,7 @@ MonoBehaviour:
   dialogueText: {fileID: 748246511}
   dialogueLines:
   - "Nie mamy w co zbiera\u0107 sk\u0142adnik\xF3w. Poszukajmy lepiej miski."
-  textSpeed: 0
+  textSpeed: 0.05
   index: 0
   playerRb: {fileID: 0}
   player: {fileID: 0}
