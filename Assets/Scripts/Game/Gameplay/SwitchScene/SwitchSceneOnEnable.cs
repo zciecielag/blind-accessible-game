@@ -21,7 +21,10 @@ public class SwitchSceneOnEnable : MonoBehaviour
         {
             fadeInOut.FadeIn();
         }
-        audioSource.Play();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
         yield return new WaitForSeconds(1);
         GameSceneManager.Instance.ChangeName(scene);
         GameDataManager.Instance.SaveGame();
