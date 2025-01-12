@@ -37,13 +37,13 @@ public class QuestData
             1, false, false, 1, new List<SubQuest>
             {
                 new SubQuest(
-                    1, false, false, 1, "Podejdź do Treflików."
+                    1, false, false, 1, "Podejdź do Polarnych."
                 ),
                 new SubQuest(
                     2, false, false, 1, "Znajdź i zabierz ze sobą miskę."
                 ),
                 new SubQuest(
-                    3, false, false, 1, "Przynieś miskę Treflikom w kuchni, klikając na przycisk na środku ekranu."
+                    3, false, false, 1, "Przynieś miskę Polarnym w kuchni, klikając na przycisk na środku ekranu."
                 ), 
                 new SubQuest(
                     4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
@@ -61,7 +61,7 @@ public class QuestData
                 //Teraz jest mini-gra
                 //Potem dostajemy miskę ze składnikami do eq
                 new SubQuest(
-                    8, false, false, 1, "Przynieś gotowe składniki Treflikom."
+                    8, false, false, 1, "Przynieś gotowe składniki Polarnym."
                 )
             }
         ),
