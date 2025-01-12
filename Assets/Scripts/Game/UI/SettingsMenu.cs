@@ -4,8 +4,8 @@ public class SettingsMenu : MonoBehaviour
 {
     public GameObject chooseSettings;
     public GameObject volumeModification;
-    public GameObject brightnessModification;
     public GameObject switchContrast;
+    public GameObject switchNarrator;
 
     public void ShowVolumeModification()
     {
@@ -18,19 +18,6 @@ public class SettingsMenu : MonoBehaviour
         volumeModification.SetActive(false);
         chooseSettings.SetActive(true);
     }
-
-    public void ShowBrightnessModification()
-    {
-        chooseSettings.SetActive(false);
-        brightnessModification.SetActive(true);
-    }
-
-    public void BrightnessGoBack()
-    {
-        brightnessModification.SetActive(false);
-        chooseSettings.SetActive(true);
-    }
-
     public void ShowSwitchContrast()
     {
         chooseSettings.SetActive(false);
@@ -40,6 +27,18 @@ public class SettingsMenu : MonoBehaviour
     public void ContrastGoBack()
     {
         switchContrast.SetActive(false);
+        chooseSettings.SetActive(true);
+    }
+
+    public void ShowSwichNarrator()
+    {
+        chooseSettings.SetActive(false);
+        switchNarrator.SetActive(true);
+    }
+
+    public void NarratorGoBack()
+    {
+        switchNarrator.SetActive(false);
         chooseSettings.SetActive(true);
     }
 
