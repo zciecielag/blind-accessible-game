@@ -12,7 +12,7 @@ public class ChangeImageContrast : MonoBehaviour
 
     void Start()
     {
-        changeContrast();
+        ChangeContrast();
     }
 
     private void Awake()
@@ -28,7 +28,7 @@ public class ChangeImageContrast : MonoBehaviour
         }
     }
 
-    public void changeContrast()
+    public void ChangeContrast()
     {
         if (targetSpriteRenderer != null)
         {
@@ -40,10 +40,6 @@ public class ChangeImageContrast : MonoBehaviour
             {
                 targetSpriteRenderer.sprite = noContrastSprite;
             }
-        }
-        else
-        {
-            Debug.LogError("Brak sprite renderer");
         }
     }
 }

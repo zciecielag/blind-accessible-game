@@ -48,6 +48,7 @@ TagManager:
   - SuccessSound
   - MiskaKITCHEN
   - TreflikiCollider3
+  - Narrator
   layers:
   - Default
   - TransparentFX

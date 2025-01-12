@@ -11,10 +11,7 @@ public class ControlVolume : MonoBehaviour
     {
         musicMixer.GetFloat("vol", out currentVolume);
         currentVolumeD = (double) currentVolume;
-        Debug.Log(currentVolume);
-        Debug.Log(currentVolumeD);
 
-        //Way too loud at +20dB so there'a a cap
         if (currentVolume + 10 > 0) 
         {
             Debug.Log("Cannot increase volume");

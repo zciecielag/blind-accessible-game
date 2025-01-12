@@ -578,8 +578,6 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 2371758410667282718, guid: 24846da662bd1124695ead67d3f51994, type: 2}
     value: {fileID: 1806002344}
-  - key: {fileID: -9023149303611657894, guid: 24846da662bd1124695ead67d3f51994, type: 2}
-    value: {fileID: 1776858509}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &209708015
@@ -7684,7 +7682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 6
   movementJoystick: {fileID: 0}
-  rigidbody2D: {fileID: 742972346}
+  playerRigidBody2D: {fileID: 0}
   animator: {fileID: 0}
   spawnPoint: {fileID: 0}
 --- !u!61 &742972345
@@ -7873,7 +7871,6 @@ GameObject:
   - component: {fileID: 867789510}
   - component: {fileID: 867789509}
   - component: {fileID: 867789508}
-  - component: {fileID: 867789511}
   m_Layer: 5
   m_Name: DialogueBox3
   m_TagString: Untagged
@@ -7898,8 +7895,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.0746, y: -335.3279}
-  m_SizeDelta: {x: 1526.809, y: 198.2808}
+  m_AnchoredPosition: {x: -2.3303, y: -298.56}
+  m_SizeDelta: {x: 1517.3, y: 271.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867789508
 MonoBehaviour:
@@ -7924,7 +7921,8 @@ MonoBehaviour:
   dialogueLines:
   - "Masz racj\u0119, co\u015B dziwnego dzieje si\u0119 w kuchni. Lepiej p\xF3jd\u017Amy
     to sprawdzi\u0107."
-  textSpeed: 0.05
+  textSpeed: 0.06
+  index: 0
   playerRb: {fileID: 742972346}
   player: {fileID: 742972341}
 --- !u!114 &867789509
@@ -7940,7 +7938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8584906, g: 0.63915944, b: 0.3523051, a: 1}
+  m_Color: {r: 1, g: 0.8509804, b: 0.30980393, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7965,103 +7963,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867789506}
   m_CullTransparentMesh: 1
---- !u!82 &867789511
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867789506}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_Resource: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &999428340
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,8 +7997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76, y: -14.158}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: 2.9763, y: 1.186}
+  m_SizeDelta: {x: 1425.0042, y: 224.2249}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &999428342
 MonoBehaviour:
@@ -8121,8 +8022,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8184,7 +8085,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -140.50359, y: 34.16991, z: 0, w: 48.86023}
+  m_margin: {x: 6.563431, y: 24.681736, z: 0, w: 10.907463}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8657,8 +8558,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9206,8 +9107,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75.99994, y: -14.1579895}
-  m_SizeDelta: {x: 1301.658, y: 226.5969}
+  m_AnchoredPosition: {x: -8.2076, y: 4.2243}
+  m_SizeDelta: {x: 1470.0732, y: 263.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751080172
 MonoBehaviour:
@@ -9231,8 +9132,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9392903836350b3459cf460c587c959b, type: 2}
+  m_sharedMaterial: {fileID: 650878446594217821, guid: 9392903836350b3459cf460c587c959b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9294,7 +9195,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -140.50359, y: 34.16991, z: 0, w: 48.86023}
+  m_margin: {x: 13.67952, y: 34.16991, z: 0, w: 32.255867}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9563,6 +9464,7 @@ MonoBehaviour:
   actId: 0
   questId: 1
   scene: Scene.01.01.Hall
+  audioSource: {fileID: 0}
 --- !u!1 &1903217119
 GameObject:
   m_ObjectHideFlags: 0
@@ -9671,6 +9573,7 @@ MonoBehaviour:
   dialogueLines:
   - "Miaaaa\u0142...."
   textSpeed: 0.05
+  index: 0
   playerRb: {fileID: 742972346}
   player: {fileID: 742972341}
 --- !u!114 &1937887160
@@ -9686,7 +9589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8584906, g: 0.63915944, b: 0.3523051, a: 1}
+  m_Color: {r: 1, g: 0.8509804, b: 0.30980393, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9720,10 +9623,10 @@ AudioSource:
   m_GameObject: {fileID: 1937887157}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 36dc44b3ae1140840a354ce03d05aa24, type: 2}
   m_audioClip: {fileID: 8300000, guid: 78ce7826e81642b48aeb14fc4ebbb585, type: 3}
   m_Resource: {fileID: 8300000, guid: 78ce7826e81642b48aeb14fc4ebbb585, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1.33
   Loop: 0
@@ -9852,7 +9755,6 @@ GameObject:
   - component: {fileID: 2022084231}
   - component: {fileID: 2022084230}
   - component: {fileID: 2022084232}
-  - component: {fileID: 2022084233}
   m_Layer: 5
   m_Name: DialogueBox1
   m_TagString: Untagged
@@ -9877,8 +9779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.0746, y: -335.3279}
-  m_SizeDelta: {x: 1526.8086, y: 198.2808}
+  m_AnchoredPosition: {x: -2.3304, y: -298.5612}
+  m_SizeDelta: {x: 1517.3203, y: 271.8143}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2022084230
 MonoBehaviour:
@@ -9893,7 +9795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.85882354, g: 0.6392157, b: 0.3529412, a: 1}
+  m_Color: {r: 1, g: 0.8509804, b: 0.30980393, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9939,112 +9841,16 @@ MonoBehaviour:
   deactivateObjectsPermanent: []
   dialogueText: {fileID: 999428342}
   dialogueLines:
-  - "To by\u0142 spokojny dzie\u0144. Rodzina Treflik\xF3w przyjecha\u0142a na par\u0119
-    dni do ich przyjaci\xF3\u0142 - Pa\u0144stwa Misiuch i ich kota T\u0142ustusia.  "
+  - "To by\u0142 spokojny dzie\u0144. Rodzina Polarowych przyjecha\u0142a na par\u0119
+    dni do ich przyjaci\xF3\u0142 - Pa\u0144stwa Misiuk i ich kota T\u0142ustusia.  "
   - "Od wczoraj kr\u0119c\u0105 si\u0119 po domu i pupil ju\u017C przyzwyczai\u0142
     si\u0119 do ich towarzystwa.  "
   - "Mog\u0142o si\u0119 wydawa\u0107, \u017Ce nic wi\u0119cej si\u0119 nie b\u0119dzie
     dzia\u0142o, ale ca\u0142a zawierucha mia\u0142a si\u0119 dopiero co zacz\u0105\u0107. "
-  textSpeed: 0.05
+  textSpeed: 0.065
+  index: 0
   playerRb: {fileID: 742972346}
   player: {fileID: 742972341}
---- !u!82 &2022084233
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022084228}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_Resource: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

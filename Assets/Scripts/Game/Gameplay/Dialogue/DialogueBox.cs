@@ -13,22 +13,13 @@ public class DialogueBox : MonoBehaviour
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
     public GameObject[] deactivateObjectsPermanent;
-
-
     public TextMeshProUGUI dialogueText;
     public string[] dialogueLines;
     public float textSpeed;
     public int index;
-    public Rigidbody2D playerRb;
-    public GameObject player;
 
     private void OnEnable()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-
-        //playerRb.linearVelocity = Vector2.zero;
-
         if (gameObject.GetComponent<Button>() != null) 
         { 
             gameObject.GetComponent<Button>().onClick.AddListener(SkipDialogue); 
@@ -53,45 +44,8 @@ public class DialogueBox : MonoBehaviour
         }   
     }
 
-    private void Update()
-    {
-        // Jesli kliknieto przycisk myszy to pomija dialog
-        // if (skipDialogue && Input.GetMouseButtonDown(0))
-        // {
-        //     Debug.Log("clicked");
-        //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //     RaycastHit2D raycastHit = Physics2D.Raycast(ray.origin, ray.direction);
-        //     if(raycastHit.collider != null) {
-        //         Debug.Log("1");
-        //         if(raycastHit.collider.gameObject.tag == "DialogueBox") {
-        //             Debug.Log("2");
-        //             if (dialogueText.text == dialogueLines[index])
-        //             {
-        //                 NextLineOfDialogue();
-        //             }
-        //             else
-        //             {
-        //                 StopAllCoroutines();
-        //                 dialogueText.text = dialogueLines[index];
-        //             }   
-        //         }   
-        //     }
-        //     // if (dialogueText.text == dialogueLines[index])
-        //     // {
-        //     //     NextLineOfDialogue();
-        //     // }
-        //     // else
-        //     // {
-        //     //     StopAllCoroutines();
-        //     //     dialogueText.text = dialogueLines[index];
-        //     // }
-        // }
-    }
-
     private void StartDialogue()
     {
-        gameObject.GetComponent<AudioSource>().Play();
-        //playerRb.constraints = RigidbodyConstraints2D.FreezePosition;
 
         if (deactivateObjects != null)
         {
@@ -142,11 +96,14 @@ public class DialogueBox : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        if (gameObject.GetComponent<AudioSource>().isPlaying)
+        if (gameObject.GetComponent<AudioSource>() != null)
         {
-            gameObject.GetComponent<AudioSource>().Stop();
-        }
-
+            if (gameObject.GetComponent<AudioSource>().isPlaying)
+            {
+                gameObject.GetComponent<AudioSource>().Stop();
+            }
+        }   
+        
         if (completesQuest)
         {
             ActManager.Instance.CompleteSubQuest(actId, questId);
@@ -183,7 +140,6 @@ public class DialogueBox : MonoBehaviour
             InventoryManager.Instance.ShowInventory();
         }
         
-        //playerRb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         gameObject.SetActive(false);
     }

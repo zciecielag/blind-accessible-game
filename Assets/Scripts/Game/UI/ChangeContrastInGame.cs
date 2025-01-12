@@ -29,7 +29,7 @@ public class ChangeContrastInGame : MonoBehaviour
 
         for (int i = 0; i < objects.Length; i++)
         {
-            objects[i].changeContrast();
+            objects[i].ChangeContrast();
         }
 
         Debug.Log("Contrast value is: " + globalVariableManager.GetContrastStatus());
@@ -49,7 +49,7 @@ public class ChangeContrastInGame : MonoBehaviour
 
         for (int i = 0; i < objects.Length; i++)
         {
-            objects[i].changeContrast();
+            objects[i].ChangeContrast();
         }
 
         Debug.Log("Contrast value was changed to: " + globalVariableManager.GetContrastStatus());
