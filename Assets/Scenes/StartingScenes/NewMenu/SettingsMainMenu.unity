@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25329429}
   - component: {fileID: 25329430}
+  - component: {fileID: 25329431}
   m_Layer: 5
   m_Name: NarratorVolSlider
   m_TagString: Untagged
@@ -221,6 +222,63 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &25329431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25329428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: 
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 1
+  m_Increments: 5
+  m_IncrementInPercent: 1
+  m_WholeNumbersOnly: 1
 --- !u!1 &46355661
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +680,7 @@ GameObject:
   - component: {fileID: 236932273}
   - component: {fileID: 236932272}
   - component: {fileID: 236932271}
+  - component: {fileID: 236932274}
   m_Layer: 5
   m_Name: ContrastButton
   m_TagString: Untagged
@@ -743,6 +802,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236932269}
   m_CullTransparentMesh: 1
+--- !u!114 &236932274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236932269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Kontrast
+  m_NameLabel: {fileID: 828246404}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &241778757
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327644346}
   - component: {fileID: 327644347}
+  - component: {fileID: 327644348}
   m_Layer: 5
   m_Name: MusicVolSlider
   m_TagString: Untagged
@@ -881,6 +994,63 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &327644348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327644345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: 
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 1
+  m_Increments: 5
+  m_IncrementInPercent: 1
+  m_WholeNumbersOnly: 1
 --- !u!1 &374471201
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +1062,7 @@ GameObject:
   - component: {fileID: 374471202}
   - component: {fileID: 374471204}
   - component: {fileID: 374471203}
+  - component: {fileID: 374471205}
   m_Layer: 5
   m_Name: NarratorVolumeText
   m_TagString: Untagged
@@ -1017,6 +1188,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374471201}
   m_CullTransparentMesh: 1
+--- !u!114 &374471205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374471201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Narrator
+  m_NameLabel: {fileID: 374471201}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &446594194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1252,7 @@ GameObject:
   - component: {fileID: 446594195}
   - component: {fileID: 446594197}
   - component: {fileID: 446594196}
+  - component: {fileID: 446594198}
   m_Layer: 5
   m_Name: MusicVolumeText
   m_TagString: Untagged
@@ -1153,6 +1378,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446594194}
   m_CullTransparentMesh: 1
+--- !u!114 &446594198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446594194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Muzyka
+  m_NameLabel: {fileID: 446594194}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &495382464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,6 +1693,7 @@ GameObject:
   - component: {fileID: 555923901}
   - component: {fileID: 555923900}
   - component: {fileID: 555923899}
+  - component: {fileID: 555923902}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1536,6 +1815,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555923897}
   m_CullTransparentMesh: 1
+--- !u!114 &555923902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555923897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Powr\xF3t"
+  m_NameLabel: {fileID: 46355661}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &601251445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,6 +1994,7 @@ GameObject:
   - component: {fileID: 634602946}
   - component: {fileID: 634602945}
   - component: {fileID: 634602948}
+  - component: {fileID: 634602949}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1784,6 +2117,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNameLoad: GameMainMenu
+--- !u!114 &634602949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634602943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Powr\xF3t"
+  m_NameLabel: {fileID: 1228002964}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &637226745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +2181,7 @@ GameObject:
   - component: {fileID: 637226746}
   - component: {fileID: 637226748}
   - component: {fileID: 637226747}
+  - component: {fileID: 637226749}
   m_Layer: 5
   m_Name: ContrastText
   m_TagString: Untagged
@@ -1920,6 +2307,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637226745}
   m_CullTransparentMesh: 1
+--- !u!114 &637226749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637226745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Kontrast
+  m_NameLabel: {fileID: 637226745}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &655691464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2619,7 @@ GameObject:
   - component: {fileID: 808358993}
   - component: {fileID: 808358992}
   - component: {fileID: 808358991}
+  - component: {fileID: 808358994}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2300,6 +2741,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808358989}
   m_CullTransparentMesh: 1
+--- !u!114 &808358994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808358989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Powr\xF3t"
+  m_NameLabel: {fileID: 1591144483}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &828246404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +3095,7 @@ GameObject:
   - component: {fileID: 969181333}
   - component: {fileID: 969181332}
   - component: {fileID: 969181331}
+  - component: {fileID: 969181334}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2722,6 +3217,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969181329}
   m_CullTransparentMesh: 1
+--- !u!114 &969181334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969181329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Powr\xF3t"
+  m_NameLabel: {fileID: 655691464}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &980077705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,6 +3430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1017709326}
   - component: {fileID: 1017709327}
+  - component: {fileID: 1017709328}
   m_Layer: 5
   m_Name: SFXVolSlider
   m_TagString: Untagged
@@ -2974,6 +3523,63 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1017709328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017709325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: 
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 1
+  m_Increments: 5
+  m_IncrementInPercent: 1
+  m_WholeNumbersOnly: 1
 --- !u!1 &1023136402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,6 +3741,7 @@ GameObject:
   - component: {fileID: 1134281647}
   - component: {fileID: 1134281649}
   - component: {fileID: 1134281648}
+  - component: {fileID: 1134281650}
   m_Layer: 5
   m_Name: SFXVolumeText
   m_TagString: Untagged
@@ -3260,6 +3867,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134281646}
   m_CullTransparentMesh: 1
+--- !u!114 &1134281650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134281646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: SFX
+  m_NameLabel: {fileID: 1134281646}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1228002964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +4376,7 @@ GameObject:
   - component: {fileID: 1549127659}
   - component: {fileID: 1549127658}
   - component: {fileID: 1549127657}
+  - component: {fileID: 1549127660}
   m_Layer: 5
   m_Name: VolumeButton
   m_TagString: Untagged
@@ -3837,6 +4498,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549127655}
   m_CullTransparentMesh: 1
+--- !u!114 &1549127660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549127655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "D\u017Awi\u0119k"
+  m_NameLabel: {fileID: 1308468145}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1591144483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3986,6 +4700,7 @@ GameObject:
   - component: {fileID: 1704824133}
   - component: {fileID: 1704824132}
   - component: {fileID: 1704824131}
+  - component: {fileID: 1704824135}
   m_Layer: 5
   m_Name: SwitchContrastButton
   m_TagString: Untagged
@@ -4108,6 +4823,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704824129}
   m_CullTransparentMesh: 1
+--- !u!114 &1704824135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704824129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Prze\u0142\u0105cz narratora"
+  m_NameLabel: {fileID: 1412945489}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1764207528
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +5010,7 @@ GameObject:
   - component: {fileID: 1794227317}
   - component: {fileID: 1794227319}
   - component: {fileID: 1794227318}
+  - component: {fileID: 1794227320}
   m_Layer: 5
   m_Name: ContrastText
   m_TagString: Untagged
@@ -4367,6 +5136,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794227316}
   m_CullTransparentMesh: 1
+--- !u!114 &1794227320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794227316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Wy\u0142\u0105cz/w\u0142\u0105cz narratora:"
+  m_NameLabel: {fileID: 1794227316}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1805147030
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,6 +5548,7 @@ GameObject:
   - component: {fileID: 1989997753}
   - component: {fileID: 1989997752}
   - component: {fileID: 1989997751}
+  - component: {fileID: 1989997754}
   m_Layer: 5
   m_Name: NarratorButton
   m_TagString: Untagged
@@ -4847,6 +5670,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989997749}
   m_CullTransparentMesh: 1
+--- !u!114 &1989997754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989997749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Narrator
+  m_NameLabel: {fileID: 232382208}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1993379141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4860,6 +5736,7 @@ GameObject:
   - component: {fileID: 1993379145}
   - component: {fileID: 1993379144}
   - component: {fileID: 1993379147}
+  - component: {fileID: 1993379148}
   m_Layer: 5
   m_Name: SwitchContrastButton
   m_TagString: Untagged
@@ -4981,6 +5858,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7ce8755508b8644b242a825f48dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1993379148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993379141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: "Prze\u0142\u0105cz kontrast"
+  m_NameLabel: {fileID: 523342421}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2017501923
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,6 +5967,7 @@ GameObject:
   - component: {fileID: 2045330034}
   - component: {fileID: 2045330036}
   - component: {fileID: 2045330035}
+  - component: {fileID: 2045330037}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -5162,6 +6093,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045330033}
   m_CullTransparentMesh: 1
+--- !u!114 &2045330037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045330033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Ustawienia
+  m_NameLabel: {fileID: 2045330033}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2049738086
 GameObject:
   m_ObjectHideFlags: 0

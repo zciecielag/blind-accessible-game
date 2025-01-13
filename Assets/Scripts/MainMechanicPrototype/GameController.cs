@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     //Lub co tam wymyślicie
 
     public bool gameStarted = false;
+    public bool canStart = false;
     public GameObject clickText;
     void Start()
     {
@@ -16,7 +17,7 @@ public class GameController : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !gameStarted)// kiedy klikniemy na ekran i gra sie jeszcze sie nie zaczęła
+        if (Input.GetMouseButtonDown(0) && !gameStarted && canStart)// kiedy klikniemy na ekran i gra sie jeszcze sie nie zaczęła
         {
             gameStarted = true;
 
