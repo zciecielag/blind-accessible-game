@@ -578,6 +578,10 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 2371758410667282718, guid: 24846da662bd1124695ead67d3f51994, type: 2}
     value: {fileID: 1806002344}
+  - key: {fileID: 8093547431946490310, guid: 24846da662bd1124695ead67d3f51994, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -1321369129381641465, guid: 24846da662bd1124695ead67d3f51994, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &209708015
@@ -7923,8 +7927,6 @@ MonoBehaviour:
     to sprawdzi\u0107."
   textSpeed: 0.06
   index: 0
-  playerRb: {fileID: 742972346}
-  player: {fileID: 742972341}
 --- !u!114 &867789509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9574,8 +9576,6 @@ MonoBehaviour:
   - "Miaaaa\u0142...."
   textSpeed: 0.05
   index: 0
-  playerRb: {fileID: 742972346}
-  player: {fileID: 742972341}
 --- !u!114 &1937887160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9842,15 +9842,13 @@ MonoBehaviour:
   dialogueText: {fileID: 999428342}
   dialogueLines:
   - "To by\u0142 spokojny dzie\u0144. Rodzina Polarowych przyjecha\u0142a na par\u0119
-    dni do ich przyjaci\xF3\u0142 - Pa\u0144stwa Misiuk i ich kota T\u0142ustusia.  "
+    dni do ich przyjaci\xF3\u0142 - Pa\u0144stwa Misiuch i ich kota T\u0142ustusia.  "
   - "Od wczoraj kr\u0119c\u0105 si\u0119 po domu i pupil ju\u017C przyzwyczai\u0142
     si\u0119 do ich towarzystwa.  "
   - "Mog\u0142o si\u0119 wydawa\u0107, \u017Ce nic wi\u0119cej si\u0119 nie b\u0119dzie
     dzia\u0142o, ale ca\u0142a zawierucha mia\u0142a si\u0119 dopiero co zacz\u0105\u0107. "
   textSpeed: 0.065
   index: 0
-  playerRb: {fileID: 742972346}
-  player: {fileID: 742972341}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

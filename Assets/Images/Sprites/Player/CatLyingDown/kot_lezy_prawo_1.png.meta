@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kot_lezy_prawo_1_0: 3867283355750461174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
