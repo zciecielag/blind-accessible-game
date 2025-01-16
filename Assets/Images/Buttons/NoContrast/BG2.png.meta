@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 72dff2d41a02c3141a52d41cab82eaed
+guid: 0f325ae6cff9c7c4e867c5dce6962835
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8466038823302851354
-    second: kot_lezy_prawo_2_0
+      213: -2191668444884831948
+    second: BG2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kot_lezy_prawo_2_0
+      name: BG2_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 0
-        width: 25
-        height: 17
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1be1ad64796d7570800000000000000
-      internalID: 8466038823302851354
+      spriteID: 431f43d4921a591e0800000000000000
+      internalID: -2191668444884831948
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      kot_lezy_prawo_2_0: 8466038823302851354
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,7 +8,7 @@ public class SwitchSceneOnEnable : MonoBehaviour
     public int questId;
     public string scene;
     public AudioSource audioSource;
-    FadeInOut fadeInOut;
+    private FadeInOut fadeInOut;
 
     private void Start()
     {
@@ -26,15 +26,24 @@ public class SwitchSceneOnEnable : MonoBehaviour
             audioSource.Play();
         }
         yield return new WaitForSeconds(1);
-        GameSceneManager.Instance.ChangeName(scene);
-        GameDataManager.Instance.SaveGame();
-        SceneManager.LoadScene(scene);
 
+        if (GameSceneManager.Instance != null)
+        {
+            GameSceneManager.Instance.ChangeName(scene);
+        }
+        if (GameDataManager.Instance != null)
+        {
+            GameDataManager.Instance.SaveGame();
+        }
+        SceneManager.LoadScene(scene);
     }
 
     private void OnEnable()
     {
-        ActManager.Instance.AcquireQuest(actId, questId);
+        if (ActManager.Instance != null)
+        {
+            ActManager.Instance.AcquireQuest(actId, questId);
+        }
         StartCoroutine(SwitchScene());
     }
 }

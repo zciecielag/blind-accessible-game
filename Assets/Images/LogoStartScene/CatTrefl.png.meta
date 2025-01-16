@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 72dff2d41a02c3141a52d41cab82eaed
+guid: 3bf107ecc36fb664ba8d8c57cc78a80f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8466038823302851354
-    second: kot_lezy_prawo_2_0
+      213: -6944055825624881155
+    second: CatTrefl_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kot_lezy_prawo_2_0
+      name: CatTrefl_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 25
-        height: 17
+        x: 20
+        y: 64
+        width: 495
+        height: 695
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1be1ad64796d7570800000000000000
-      internalID: 8466038823302851354
+      spriteID: df7a52d8402c1af90800000000000000
+      internalID: -6944055825624881155
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      kot_lezy_prawo_2_0: 8466038823302851354
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
