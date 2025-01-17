@@ -1569,9 +1569,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_Resource: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: bce71ca3fcf4d9b4e8e48cbcc290f6e2, type: 3}
+  m_Resource: {fileID: 8300000, guid: bce71ca3fcf4d9b4e8e48cbcc290f6e2, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2763,9 +2763,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 3d637691d21a26148a647d0790245d72, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3d637691d21a26148a647d0790245d72, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2875,7 +2875,7 @@ MonoBehaviour:
   - "Teraz musimy poszuka\u0107 w szafce sk\u0142adnik\xF3w."
   - "Ale najpierw musimy znowu wzi\u0105\u0107 ze sob\u0105 misk\u0119."
   - Poszukaj jej w kuchni!
-  textSpeed: 0.05
+  textSpeed: 0.07
   index: 0
 --- !u!114 &450234967
 MonoBehaviour:
@@ -13367,7 +13367,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b298142c4e99cda428b0870c098a6e1f, type: 3}
   m_Resource: {fileID: 8300000, guid: b298142c4e99cda428b0870c098a6e1f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0

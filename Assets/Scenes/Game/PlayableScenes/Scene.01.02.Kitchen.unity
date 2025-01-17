@@ -1508,9 +1508,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: c667a17c0576e0340986817f38f09499, type: 3}
+  m_Resource: {fileID: 8300000, guid: c667a17c0576e0340986817f38f09499, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10812,9 +10812,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: be92fd80921a8c440981061339b08fba, type: 3}
+  m_Resource: {fileID: 8300000, guid: be92fd80921a8c440981061339b08fba, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10922,7 +10922,7 @@ MonoBehaviour:
   dialogueLines:
   - "Super! Zabrali\u015Bmy misk\u0119 ze sto\u0142u."
   - "Teraz skierujmy si\u0119 z powrotem do spi\u017Carni."
-  textSpeed: 0.05
+  textSpeed: 0.07
   index: 0
 --- !u!114 &1122706771
 MonoBehaviour:
@@ -12327,7 +12327,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015Bmy w kuchni. Zapach przypraw przepe\u0142nia to pomieszczenie. Stary
     grzejnik ogrzewa ca\u0142e pomieszczenie."
-  textSpeed: 0.05
+  textSpeed: 0.07
   index: 0
 --- !u!114 &1411537971
 MonoBehaviour:
@@ -12560,7 +12560,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 185bf3a0bb306c44d9278f79f17cfc78, type: 3}
   m_Resource: {fileID: 8300000, guid: 185bf3a0bb306c44d9278f79f17cfc78, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13021,9 +13021,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: ed0334e86c773c543b0b8af9c73730a5, type: 3}
+  m_Resource: {fileID: 8300000, guid: ed0334e86c773c543b0b8af9c73730a5, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -13132,10 +13132,7 @@ MonoBehaviour:
   - "O, hej! Przepraszam, \u017Ce Ci\u0119 obudzili\u015Bmy."
   - "Chcemy zrobi\u0107 ciasto na przyj\u0119cie. Szukamy du\u017Cej miski do sk\u0142adnik\xF3w."
   - "Mo\u017Ce poszuka\u0142by\u015B jej dla nas?"
-  - "Wygl\u0105da na to, \u017Ce musimy pom\xF3c im znale\u017A\u0107 misk\u0119. "
-  - "Mo\u017Ce sprawdzimy, czy nie ma jej gdzie\u015B w domu?"
-  - "Pami\u0119taj - szukaj przedmiot\xF3w po ich d\u017Awi\u0119ku!"
-  textSpeed: 0.05
+  textSpeed: 0.07
   index: 0
 --- !u!114 &1542476418
 MonoBehaviour:
@@ -13454,7 +13451,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: cbc901c3439809f43bb9cb5f898306a4, type: 3}
   m_Resource: {fileID: 8300000, guid: cbc901c3439809f43bb9cb5f898306a4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14457,9 +14454,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 4fb75d92d63e4924f947eee0c750e180, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4fb75d92d63e4924f947eee0c750e180, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -15237,7 +15234,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 15a35feab0679e4458c348b9cecc71a9, type: 3}
   m_Resource: {fileID: 8300000, guid: 15a35feab0679e4458c348b9cecc71a9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
