@@ -242,7 +242,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b298142c4e99cda428b0870c098a6e1f, type: 3}
   m_Resource: {fileID: 8300000, guid: b298142c4e99cda428b0870c098a6e1f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -525,7 +525,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 718b78c0ed0efe842a83823ab8976d17, type: 3}
   m_Resource: {fileID: 8300000, guid: 718b78c0ed0efe842a83823ab8976d17, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11605,9 +11605,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_Resource: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 3a5a90dc66ef3a44888960e0013309fa, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3a5a90dc66ef3a44888960e0013309fa, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -12375,9 +12375,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_Resource: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: c37a72e2851798442bb46c59f74bb9b8, type: 3}
+  m_Resource: {fileID: 8300000, guid: c37a72e2851798442bb46c59f74bb9b8, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -12852,9 +12852,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_Resource: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 112504799c74dcb46a64ab05fdb47389, type: 3}
+  m_Resource: {fileID: 8300000, guid: 112504799c74dcb46a64ab05fdb47389, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -12968,7 +12968,7 @@ MonoBehaviour:
     przy wej\u015Bciu do pokoju."
   - "Aby us\u0142ysze\u0107 je jeszcze raz kliknij przycisk \"W jakim pokoju jestem?\"
     po prawej stronie ekranu."
-  textSpeed: 0.05
+  textSpeed: 0.08
   index: 0
 --- !u!114 &1349551806
 MonoBehaviour:
@@ -13873,10 +13873,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 185bf3a0bb306c44d9278f79f17cfc78, type: 3}
-  m_Resource: {fileID: 8300000, guid: 185bf3a0bb306c44d9278f79f17cfc78, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 08693afdb8d4c3443959cf0485177e13, type: 3}
+  m_Resource: {fileID: 8300000, guid: 08693afdb8d4c3443959cf0485177e13, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14741,7 +14741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22474968, guid: 89f4a0ae7ea3fa84ea56c91291d7bd87, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.500061
+      value: -1.5000916
       objectReference: {fileID: 0}
     - target: {fileID: 4973883477652662, guid: 89f4a0ae7ea3fa84ea56c91291d7bd87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15549,9 +15549,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_Resource: {fileID: 8300000, guid: ad7707d7086f8ee40ba304182de41947, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 885df66d3dcf0c649a63f6fb2ea8f527, type: 3}
+  m_Resource: {fileID: 8300000, guid: 885df66d3dcf0c649a63f6fb2ea8f527, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -15661,7 +15661,7 @@ MonoBehaviour:
   dialogueLines:
   - "Jeste\u015Bmy w salonie. Mi\u0119kka kanapa, a\u017C si\u0119 prosi, aby po\u0142o\u017Cy\u0107
     si\u0119 i wygrzewa\u0107 w cieple kominka. "
-  textSpeed: 0.05
+  textSpeed: 0.07
   index: 0
 --- !u!114 &1957254899
 MonoBehaviour:
