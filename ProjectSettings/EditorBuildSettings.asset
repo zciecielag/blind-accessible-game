@@ -75,11 +75,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/PlayableScenes/Scene.01.05.Pantry.unity
     guid: a2aff4f5f19d5344aa00964414acae94
   - enabled: 1
-    path: Assets/Scenes/TEST/MainMechanicPrototype/MainMechanicFirstLevel.unity
+    path: Assets/Scenes/Game/PlayableScenes/MainMechanicIntro.unity
     guid: aefa68abe04eca44297dd83e69df1d79
   - enabled: 1
-    path: Assets/Scenes/Game/Cutscenes/Cutscene.02.Act1EndCutscene.unity
-    guid: e7dc413323cee024a8d52eaacc915c0d
+    path: Assets/Scenes/Game/PlayableScenes/MainMechanic_1.unity
+    guid: ff94ce64364ff2b49887696eb579a065
   - enabled: 1
     path: Assets/Scenes/StartingScenes/NewMenu/SettingsMainMenu.unity
     guid: 9c79e89e45ae7414c85b36531b1568ae

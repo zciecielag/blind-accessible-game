@@ -7,7 +7,6 @@ public class HealthManager : MonoBehaviour
     public Sprite fullHeart;
     public Sprite brokenHeart;
 
-    // Update is called once per frame
     void Update()
     {
         foreach (Image img in hearts)

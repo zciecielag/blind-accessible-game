@@ -18,18 +18,17 @@ public class GrabObject : MonoBehaviour
             {
                 Touch touch = Input.GetTouch(i);
           
-                if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) // czy naciœniêto/naciœnieto i gracz rusza palcem
+                if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
                 {
-                    if (touch.position.x < Screen.width/2) // czy dotknieto z lewej
+                    if (touch.position.x < Screen.width/2)
                     {
                         leftSidePressed = true;
                     }
                     else 
                     {
-                        rightSidePressed = true; // czy dotkniêto  z prawej
+                        rightSidePressed = true;
                     }
                 }
-                // musimy sprawdziæ czy przyciski s¹ dalej przyciœniête
                 if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
                 {
                     if (touch.position.x < Screen.width/2)
