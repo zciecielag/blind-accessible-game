@@ -31,8 +31,6 @@ public class ActManager : MonoBehaviour, IGameDataManager
         Instance = this;
     }
 
-    //przechodzimy po wszystkich aktach i ich questach i zmieniamy potrzebne wartosci
-    //TODO: usprawnic, brzydki for
     public void AcquireQuest(int actId, int questId)
     {
         for (int i = 0; i < allActs.Count; i++)
@@ -61,8 +59,6 @@ public class ActManager : MonoBehaviour, IGameDataManager
         }
     }
 
-    //przechodzimy po wszystkich aktach i ich questach i zmieniamy potrzebne wartosci
-    //TODO: usprawnic, brzydki for
     public void CompleteSubQuest(int actId, int questId)
     {
         for (int i = 0; i < allActs.Count; i++) {

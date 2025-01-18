@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,13 +6,6 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class ObjectCollision : MonoBehaviour
 {
-    //Tutaj trzeba zrobić kolizję z kotkiem i co wtedy się dzieje
-    //Dodatkowo połączenie ze skryptem, gdzie będzie sprawdzanie czy w danym momencie gracz kliknął 2 przyciski jednocześnie
-    //Wtedy albo jupi sukces + dźwięk albo nie udało nam się :(
-
-    //true - circle
-    //false - cross
-    //i trzeba ify porobić co jeśli circle co jeśli cross
 
     public TextMeshProUGUI scoreT;
     public GameObject characterKot;
@@ -19,27 +13,43 @@ public class ObjectCollision : MonoBehaviour
     private GrabObject pressInput;
 
     public AudioSource failedToDodgeSound;
-    int scoreC = 0;
+    public GameObject tryAgainPanel;
+    public GameObject gameCompletedPanel;
+    public int completionScore;
+    public int scoreC = 0;
+    public GameObject addObject;
 
 
-    private void Awake()
+    private void Start()
     {
         characterKot = GetComponent<GameObject>();
         coinCollected = GetComponent<AudioSource>();
         pressInput = FindFirstObjectByType<GrabObject>();
+        HealthManager.health = 3;
+    }
+
+    void Update()
+    {
+        //debug, comment later
+        if (scoreC == completionScore)
+        {
+            StartCoroutine(WaitAndCompleteGame());
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        //co się dzieje kiedy wchodzimy w kolizję z kotkiem
         if (other.tag == "Circle")
         {
             if (pressInput != null && pressInput.leftRightPressed)
             {
-                // Złapanie przedmiotu
                 coinCollected.Play();
                 scoreC++;
                 scoreT.text = scoreC.ToString();
+                if (scoreC == completionScore)
+                {
+                    StartCoroutine(WaitAndCompleteGame());
+                }
                 Destroy(other.gameObject);
             }
 
@@ -49,8 +59,7 @@ public class ObjectCollision : MonoBehaviour
             HealthManager.health--;
             if(HealthManager.health <= 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                HealthManager.health = 3;
+                StartCoroutine(WaitAndRestart());
             }
             else
             {
@@ -58,5 +67,40 @@ public class ObjectCollision : MonoBehaviour
             }
             Destroy(other.gameObject);
         }
+    }
+
+    IEnumerator WaitAndRestart()
+    {
+        GameController.Instance.gameStarted = false;
+
+        if (tryAgainPanel != null)
+        {
+            tryAgainPanel.SetActive(true);
+            yield return new WaitForSeconds(4.0f);
+            tryAgainPanel.SetActive(false);
+        }
+        
+        GameController.Instance.RestartGame();
+    }
+
+    IEnumerator WaitAndCompleteGame()
+    {
+        GameController.Instance.gameStarted = false;
+
+        if (gameCompletedPanel != null)
+        {
+            gameCompletedPanel.SetActive(true);
+            yield return new WaitForSeconds(5.0f);
+            gameCompletedPanel.SetActive(false);
+        }
+
+        ActManager.Instance.AcquireQuest(1, 8);
+        GameSceneManager.Instance.ChangeName("Scene.01.05.Pantry");
+        if (addObject != null)
+        {
+            InventoryManager.Instance.AddToInventory(addObject);
+        }
+        GameDataManager.Instance.SaveGame();
+        SceneManager.LoadScene("Scene.01.05.Pantry");
     }
 }

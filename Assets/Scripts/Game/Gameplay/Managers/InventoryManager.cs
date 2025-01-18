@@ -23,8 +23,11 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
     public void AddToInventory(GameObject objectToAdd)
     {
         this.currentlyHeldObject = objectToAdd;
-        inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
-        inventoryText.text = objectToAdd.name;
+        if (inventoryItem != null && inventoryText != null)
+        {
+            inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
+            inventoryText.text = objectToAdd.name;
+        }
     }
 
     public void RemoveFromInventory()

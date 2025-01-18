@@ -49,6 +49,9 @@ TagManager:
   - MiskaKITCHEN
   - TreflikiCollider3
   - Narrator
+  - Circle
+  - Character
+  - MiskaSkladniki
   layers:
   - Default
   - TransparentFX

@@ -1,23 +1,25 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GameController : MonoBehaviour
 {
-    //Ogólny skrypt do gry, tutaj można np. sprawdzać czy piosenka się skończyła i jak tak to wychodzić z aplikacji
-    //Ogólnie rzeczy które nie pasują do innych skryptów
-    //Lub co tam wymyślicie
-
+    public static GameController Instance { get; private set; }
     public bool gameStarted = false;
-    public bool canStart = false;
+    public bool canStart;
     public GameObject clickText;
+    public int objectsScrolled;
+    public int totalObjects;
+
     void Start()
     {
-
+        Instance = this;
+        objectsScrolled = 0;
     }
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !gameStarted && canStart)// kiedy klikniemy na ekran i gra sie jeszcze sie nie zaczęła
+        if (Input.GetMouseButtonDown(0) && !gameStarted && canStart)
         {
             gameStarted = true;
 
@@ -33,5 +35,11 @@ public class GameController : MonoBehaviour
 
         }
 
+    }
+
+    public void RestartGame()
+    {
+        Debug.Log("Restarting game...");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

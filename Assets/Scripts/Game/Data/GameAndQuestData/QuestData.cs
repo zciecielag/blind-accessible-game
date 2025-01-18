@@ -48,7 +48,6 @@ public class QuestData
                 new SubQuest(
                     4, false, false, 1, "Znajdź i zabierz ze sobą klucz do spiżarni."
                 ),
-                //W tym queście musi być warunek spełniony, że jeśli rzecz w ekwipunku to ten klucz, to przechodzi do spiżarni.
                 new SubQuest(
                     5, false, false, 1, "Spróbuj teraz wejść do spiżarni."
                 ),
