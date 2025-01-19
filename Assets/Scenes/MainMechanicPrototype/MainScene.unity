@@ -2051,10 +2051,17 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Scenes/MainMechanicPrototype/MainScene.unity
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1075993247170539406, guid: 3895fe9ba82807844b61d34cc98891f5, type: 3}
+=======
+  m_SortingLayerID: 466898289
+  m_SortingLayer: 5
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -574420536115311560, guid: a2ce4ee90f5c96c479f979682ee004af, type: 3}
+>>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanic_1.unity
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3358,7 +3365,11 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 310dca246cfa01b4a9e0e0beb509f219, type: 3}
   m_Resource: {fileID: 8300000, guid: 310dca246cfa01b4a9e0e0beb509f219, type: 3}
   m_PlayOnAwake: 0
+<<<<<<< Updated upstream:Assets/Scenes/MainMechanicPrototype/MainScene.unity
   m_Volume: 1
+=======
+  m_Volume: 0.232
+>>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanic_1.unity
   m_Pitch: 1
   Loop: 0
   Mute: 0

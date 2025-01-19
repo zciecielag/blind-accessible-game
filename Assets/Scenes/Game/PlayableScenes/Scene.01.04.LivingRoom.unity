@@ -19976,8 +19976,13 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< Updated upstream
   m_audioClip: {fileID: 8300000, guid: a1acf78f022a4ee4984baaecf861e555, type: 3}
   m_Resource: {fileID: 8300000, guid: a1acf78f022a4ee4984baaecf861e555, type: 3}
+=======
+  m_audioClip: {fileID: 8300000, guid: da9707054b6c53642800b6b1ed0af48a, type: 3}
+  m_Resource: {fileID: 8300000, guid: da9707054b6c53642800b6b1ed0af48a, type: 3}
+>>>>>>> Stashed changes
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

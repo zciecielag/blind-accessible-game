@@ -173,9 +173,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
+<<<<<<< Updated upstream:Assets/Scenes/StartingScenes/SaveMenu.unity
   m_audioClip: {fileID: 8300000, guid: 9e3e9887929e41043ae3ce5b0dd8b227, type: 3}
   m_Resource: {fileID: 8300000, guid: 9e3e9887929e41043ae3ce5b0dd8b227, type: 3}
   m_PlayOnAwake: 1
+=======
+  m_audioClip: {fileID: 8300000, guid: 73daeba9a75d88d46b29629dea44c9cc, type: 3}
+  m_Resource: {fileID: 8300000, guid: 73daeba9a75d88d46b29629dea44c9cc, type: 3}
+  m_PlayOnAwake: 0
+>>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanicIntro.unity
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -273,8 +279,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358db38274661a84eb0a292a8de54d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Scenes/StartingScenes/SaveMenu.unity
   sceneNameLoad: SelectGameOrPrototype
 --- !u!114 &89677623
+=======
+  actId: 0
+  questId: 0
+  completesQuest: 0
+  skipDialogue: 0
+  activateObjects: []
+  deactivateObjects: []
+  deactivateObjectsPermanent: []
+  dialogueText: {fileID: 2003462113}
+  dialogueLines:
+  - "Czas na nauk\u0119 mini-gry w kt\xF3rej b\u0119dziesz musia\u0142 poradzi\u0107
+    sobie z przeszkodami na swojej drodze. "
+  - "Jeste\u015B got\xF3w? Zaczynajmy!"
+  - "S\u0105 dwa tory, po kt\xF3rych mo\u017Cesz si\u0119 porusza\u0107 klikaj\u0105c
+    praw\u0105 lub lew\u0105 stron\u0119 ekranu. Na ekranie pojawi\u0105 si\u0119
+    przeszkody"
+  - "Spadaj\u0105ce przedmioty wydaj\u0105 z siebie d\u017Awi\u0119k, postaraj si\u0119
+    ich unikn\u0105\u0107! Masz trzy \u017Cycia"
+  textSpeed: 0.07
+  index: 0
+--- !u!114 &556990217
+>>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanicIntro.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1130,8 +1159,13 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
+<<<<<<< Updated upstream:Assets/Scenes/StartingScenes/SaveMenu.unity
   m_audioClip: {fileID: 8300000, guid: e164e3e80d27968419e70716302d64eb, type: 3}
   m_Resource: {fileID: 8300000, guid: e164e3e80d27968419e70716302d64eb, type: 3}
+=======
+  m_audioClip: {fileID: 8300000, guid: b08169df44d1db14faf00fa7b45a4258, type: 3}
+  m_Resource: {fileID: 8300000, guid: b08169df44d1db14faf00fa7b45a4258, type: 3}
+>>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanicIntro.unity
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
