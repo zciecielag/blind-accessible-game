@@ -10326,9 +10326,15 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_audioClip: {fileID: 8300000, guid: 70dfe710c78bf8d4a9bafaef51923143, type: 3}
   m_Resource: {fileID: 8300000, guid: 70dfe710c78bf8d4a9bafaef51923143, type: 3}
   m_PlayOnAwake: 0
+=======
+  m_audioClip: {fileID: 8300000, guid: afb06bbae85606f45a6f4f370bdf9baf, type: 3}
+  m_Resource: {fileID: 8300000, guid: afb06bbae85606f45a6f4f370bdf9baf, type: 3}
+  m_PlayOnAwake: 1
+>>>>>>> Stashed changes
 =======
   m_audioClip: {fileID: 8300000, guid: afb06bbae85606f45a6f4f370bdf9baf, type: 3}
   m_Resource: {fileID: 8300000, guid: afb06bbae85606f45a6f4f370bdf9baf, type: 3}
@@ -12118,8 +12124,13 @@ RectTransform:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_audioClip: {fileID: 8300000, guid: 65ac20fb455c5f94f9de072906797fd2, type: 3}
   m_Resource: {fileID: 8300000, guid: 65ac20fb455c5f94f9de072906797fd2, type: 3}
+=======
+  m_audioClip: {fileID: 8300000, guid: 146de2405f4c2934492bb01c4c4ffc41, type: 3}
+  m_Resource: {fileID: 8300000, guid: 146de2405f4c2934492bb01c4c4ffc41, type: 3}
+>>>>>>> Stashed changes
 =======
   m_audioClip: {fileID: 8300000, guid: 146de2405f4c2934492bb01c4c4ffc41, type: 3}
   m_Resource: {fileID: 8300000, guid: 146de2405f4c2934492bb01c4c4ffc41, type: 3}

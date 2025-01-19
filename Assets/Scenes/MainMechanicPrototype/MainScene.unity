@@ -3366,7 +3366,11 @@ AudioSource:
   m_Resource: {fileID: 8300000, guid: 310dca246cfa01b4a9e0e0beb509f219, type: 3}
   m_PlayOnAwake: 0
 <<<<<<< Updated upstream:Assets/Scenes/MainMechanicPrototype/MainScene.unity
+<<<<<<< Updated upstream:Assets/Scenes/MainMechanicPrototype/MainScene.unity
   m_Volume: 1
+=======
+  m_Volume: 0.232
+>>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanic_1.unity
 =======
   m_Volume: 0.232
 >>>>>>> Stashed changes:Assets/Scenes/Game/PlayableScenes/MainMechanic_1.unity
