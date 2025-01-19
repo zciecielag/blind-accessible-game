@@ -169,9 +169,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_Resource: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 6f85119e90e084a4a8163af393d5ba2f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 6f85119e90e084a4a8163af393d5ba2f, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
     przeszkody"
   - "Spadaj\u0105ce przedmioty wydaj\u0105 z siebie d\u017Awi\u0119k, postaraj si\u0119
     ich unikn\u0105\u0107! Masz trzy \u017Cycia"
-  textSpeed: 0.05
+  textSpeed: 0.07
   index: 0
 --- !u!114 &556990217
 MonoBehaviour:
@@ -1237,9 +1237,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 379c627e5e3b68a41b19159b84d07e2f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_Resource: {fileID: 8300000, guid: dda6e178535772145b42c75a24c80a88, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 37f6ae9bfcbebf541b3864f10f9e1530, type: 3}
+  m_Resource: {fileID: 8300000, guid: 37f6ae9bfcbebf541b3864f10f9e1530, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
