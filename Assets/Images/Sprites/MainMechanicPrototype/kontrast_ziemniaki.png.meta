@@ -223,7 +223,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kontrast_ziemniaki_0: -8485043907193554803
+      kontrast_ziemniaki_1: 5455929642128578927
+      kontrast_ziemniaki_2: -7622517958396986535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

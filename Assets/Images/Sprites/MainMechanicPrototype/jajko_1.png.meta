@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      jajko_1_0: 1788788483159542406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

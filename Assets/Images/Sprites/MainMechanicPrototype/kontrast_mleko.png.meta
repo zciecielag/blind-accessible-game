@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kontrast_mleko_0: 5281511173549614393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

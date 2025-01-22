@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mleko_0: -1835116892081733501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

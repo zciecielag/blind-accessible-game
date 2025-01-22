@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kontrast_maka_0: -3110923736320582207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
