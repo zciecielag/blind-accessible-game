@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      papryczka_0: 543337652569140410
+      papryczka_1: 9149947718071733557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

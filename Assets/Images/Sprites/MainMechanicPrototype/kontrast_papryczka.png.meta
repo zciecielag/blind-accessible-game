@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kontrast_papryczka_0: -6702305521724201639
+      kontrast_papryczka_1: -5808605263338939932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

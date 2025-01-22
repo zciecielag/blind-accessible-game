@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 51d6aefc7325c9a4b8feb51e89ab3e18
+guid: 2bea42d12cc009f46ae7f15d182b8bd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5264952605660302620
-    second: ziemniaki_0
-  - first:
-      213: -8173885255816566910
-    second: ziemniaki_1
-  - first:
-      213: -1349187662839347117
-    second: ziemniaki_2
+      213: 2790154676960456030
+    second: dywan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,19 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,57 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ziemniaki_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 22
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e2b95400812fe6b0800000000000000
-      internalID: -5264952605660302620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ziemniaki_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 14
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 287204cbaa6809e80800000000000000
-      internalID: -8173885255816566910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ziemniaki_2
+      name: dywan_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 17
-        height: 19
+        y: 3
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3580f1d08f8b64de0800000000000000
-      internalID: -1349187662839347117
+      spriteID: e5d6f9455ee98b620800000000000000
+      internalID: 2790154676960456030
       vertices: []
       indices: 
       edges: []
@@ -224,9 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ziemniaki_0: -5264952605660302620
-      ziemniaki_1: -8173885255816566910
-      ziemniaki_2: -1349187662839347117
+      dywan_0: 2790154676960456030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
