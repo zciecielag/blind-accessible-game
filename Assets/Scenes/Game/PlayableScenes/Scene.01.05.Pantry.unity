@@ -10214,7 +10214,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.010324091}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10224,7 +10224,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8125, y: 1.8125}
+  m_Size: {x: 0.8125, y: 1.0381901}
   m_EdgeRadius: 0
 --- !u!212 &1504245859
 SpriteRenderer:
@@ -11781,7 +11781,7 @@ Transform:
   m_GameObject: {fileID: 1653766911}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.43, y: 6.15, z: 0}
+  m_LocalPosition: {x: 7.91, y: 7.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12008,8 +12008,8 @@ Transform:
   m_GameObject: {fileID: 1675085382}
   serializedVersion: 2
   m_LocalRotation: {x: -5.304201e-12, y: 0.00000037450693, z: 1, w: -0.0000028461216}
-  m_LocalPosition: {x: -26.13, y: -3.42, z: -0.1171}
-  m_LocalScale: {x: 8.5342045, y: 8.100052, z: 5.6223927}
+  m_LocalPosition: {x: -26.4177, y: -3.23, z: -0.12}
+  m_LocalScale: {x: 1.8350385, y: 2.2699509, z: 5.6223927}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820982700}
@@ -12028,7 +12028,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b298142c4e99cda428b0870c098a6e1f, type: 3}
   m_Resource: {fileID: 8300000, guid: b298142c4e99cda428b0870c098a6e1f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.45
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -12036,10 +12036,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.56
-  MaxDistance: 11.35
+  MinDistance: 1
+  MaxDistance: 15
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -12048,22 +12048,58 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0.9963112
+      inSlope: -18.007198
+      outSlope: -18.007198
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.0006412938
+      value: 0.5654831
+      inSlope: -4.5017996
+      outSlope: -4.5017996
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.050900355
+      value: 0.30965424
+      inSlope: -1.768656
+      outSlope: -1.768656
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.17925356
+    - serializedVersion: 3
+      time: 0.27317217
+      value: 0.052368164
+      inSlope: -0.28136247
+      outSlope: -0.28136247
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8559223
+      value: 0
+      inSlope: 0.048640277
+      outSlope: 0.048640277
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.14489792
+      outWeight: 0.8980503
+    - serializedVersion: 3
+      time: 0.9675827
+      value: 0.00680542
+      inSlope: -0.0555777
+      outSlope: -0.0555777
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -12177,17 +12213,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.2333523, y: 0.0131213665}
+  m_Offset: {x: 0.20505083, y: 0.07031858}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.32}
+    oldSize: {x: 0.9375, y: 1}
     newSize: {x: 0.3, y: 0.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.55898523, y: 1.0609136}
+  m_Size: {x: 0.6155882, y: 1.7701604}
   m_EdgeRadius: 0
 --- !u!212 &1675085388
 SpriteRenderer:
@@ -14299,7 +14335,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  m_Sprite: {fileID: 3864967908981870829, guid: efca047766c01674fae4536abe790edb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14319,7 +14355,7 @@ Transform:
   m_GameObject: {fileID: 1760753799}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.43, y: 6.15, z: 0}
+  m_LocalPosition: {x: 7.72, y: 5.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15657,7 +15693,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.39188504}
+  m_Offset: {x: 0, y: -0.16733535}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15667,7 +15703,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0875587, y: 1.7837701}
+  m_Size: {x: 1.0875587, y: 1.3346703}
   m_EdgeRadius: 0
 --- !u!114 &1923785374
 MonoBehaviour:
@@ -15698,7 +15734,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4c275893ad5145f4aadcd40c16d722bb, type: 3}
   m_Resource: {fileID: 8300000, guid: 4c275893ad5145f4aadcd40c16d722bb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15707,7 +15743,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 11
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -15717,46 +15753,55 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.024602026
-      value: 1.0026398
-      inSlope: -11.004398
-      outSlope: -11.004398
+      time: 0
+      value: 0.9963112
+      inSlope: -18.007198
+      outSlope: -18.007198
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.0814535
-      value: 0.42877197
-      inSlope: -2.7510996
-      outSlope: -2.7510996
+      time: 0.0006412938
+      value: 0.5654831
+      inSlope: -4.5017996
+      outSlope: -4.5017996
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.2632717
-      value: 0.17877197
-      inSlope: -0.6877749
-      outSlope: -0.6877749
+      time: 0.050900355
+      value: 0.30965424
+      inSlope: -1.768656
+      outSlope: -1.768656
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.17925356
+    - serializedVersion: 3
+      time: 0.27317217
+      value: 0.052368164
+      inSlope: -0.28136247
+      outSlope: -0.28136247
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.62690806
-      value: 0.053771973
-      inSlope: -0.17194372
-      outSlope: -0.17194372
+      time: 0.8559223
+      value: 0
+      inSlope: 0.048640277
+      outSlope: 0.048640277
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.14489792
+      outWeight: 0.8980503
     - serializedVersion: 3
-      time: 0.8996353
-      value: 0.019681066
-      inSlope: -0.090945326
-      outSlope: -0.090945326
+      time: 0.9675827
+      value: 0.00680542
+      inSlope: -0.0555777
+      outSlope: -0.0555777
       tangentMode: 0
       weightedMode: 0
       inWeight: 0

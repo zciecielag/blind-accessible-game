@@ -30,7 +30,6 @@ public class ObjectCollision : MonoBehaviour
 
     void Update()
     {
-        //debug, comment later
         if (scoreC == completionScore)
         {
             StartCoroutine(WaitAndCompleteGame());
