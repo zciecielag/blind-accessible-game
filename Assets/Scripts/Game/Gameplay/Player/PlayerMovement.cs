@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public GameObject spawnPoint;
     private bool isMoving = true;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -47,11 +48,19 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("xVelocity", Math.Abs(playerRigidBody2D.linearVelocityX));
             animator.SetFloat("yVelocity", playerRigidBody2D.linearVelocityY);
             animator.SetBool("Moving", true);
+            if (audioSource != null && !audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
         } else
         {
             playerRigidBody2D.linearVelocity = Vector2.zero;
             animator.SetBool("Moving", false);
             movementJoystick.input = Vector2.zero;
+            if (audioSource != null && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
         }
     }
 

@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public GameObject clickText;
     public int objectsScrolled;
     public int totalObjects;
+    public AudioSource audioSrc;
 
     void Start()
     {
@@ -21,6 +22,11 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !gameStarted && canStart)
         {
+            if (audioSrc != null)
+            {
+                audioSrc.Play();
+            }
+            
             gameStarted = true;
 
             FadeAway fadeScript = clickText.GetComponent<FadeAway>();

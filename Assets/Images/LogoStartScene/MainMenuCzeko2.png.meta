@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MainMenuCzeko2_0: -1127179559611259255
+      MainMenuCzeko2_1: 5265843668823615503
+      MainMenuCzeko2_2: 3534967761634157492
+      MainMenuCzeko2_3: -4913320881489514326
+      MainMenuCzeko2_4: 1562395894083440643
+      MainMenuCzeko2_5: 7021150463140594924
+      MainMenuCzeko2_6: 4839058002388774912
+      MainMenuCzeko2_7: -7859746150585155536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
