@@ -1134,7 +1134,6 @@ MonoBehaviour:
   movementJoystick: {fileID: 0}
   playerRigidBody2D: {fileID: 0}
   animator: {fileID: 0}
-  spawnPoint: {fileID: 0}
   audioSource: {fileID: 0}
 --- !u!61 &742972345
 BoxCollider2D:
@@ -4136,6 +4135,7 @@ GameObject:
   - component: {fileID: 1062630271}
   - component: {fileID: 1062630273}
   - component: {fileID: 1062630272}
+  - component: {fileID: 1062630274}
   m_Layer: 0
   m_Name: Cabinet
   m_TagString: Untagged
@@ -4260,6 +4260,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1062630274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062630270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 4813157627983688422, guid: 4f865ad296e1bb34c9721234b1a8528e, type: 3}
+  noContrastSprite: {fileID: -889733206667570224, guid: e3c33697a36fb8e459794ef4a57ad347, type: 3}
+  targetSpriteRenderer: {fileID: 1062630273}
 --- !u!1 &1072706124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,6 +4561,7 @@ GameObject:
   - component: {fileID: 1203560547}
   - component: {fileID: 1203560546}
   - component: {fileID: 1203560545}
+  - component: {fileID: 1203560551}
   m_Layer: 0
   m_Name: SwitchToLivingRoomQuest
   m_TagString: SwitchToLRFromHallQUEST
@@ -4701,6 +4717,7 @@ MonoBehaviour:
   activateObjects:
   - {fileID: 0}
   - {fileID: 1334113910}
+  spawnPointTag: 
 --- !u!114 &1203560548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4815,6 +4832,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1203560551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203560543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 6b6f3833f7bfeac4ca03c83087d06cc4, type: 3}
+  targetSpriteRenderer: {fileID: 1203560550}
 --- !u!1 &1334113910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,6 +4862,7 @@ GameObject:
   - component: {fileID: 1334113914}
   - component: {fileID: 1334113913}
   - component: {fileID: 1334113912}
+  - component: {fileID: 1334113918}
   m_Layer: 0
   m_Name: SwitchToLivingRoom
   m_TagString: SwitchToLRFromHall
@@ -4981,6 +5014,7 @@ MonoBehaviour:
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 0}
   activateObjects: []
+  spawnPointTag: 
 --- !u!114 &1334113915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5095,6 +5129,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1334113918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334113910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 6b6f3833f7bfeac4ca03c83087d06cc4, type: 3}
+  targetSpriteRenderer: {fileID: 1334113917}
 --- !u!1 &1356975489
 GameObject:
   m_ObjectHideFlags: 0
@@ -6541,6 +6590,7 @@ MonoBehaviour:
   questId: 1
   scene: Scene.01.01.Hall
   audioSource: {fileID: 0}
+  spawnPointTag: 
 --- !u!1 &1847195235
 GameObject:
   m_ObjectHideFlags: 0
@@ -7920,6 +7970,7 @@ GameObject:
   - component: {fileID: 1913009157}
   - component: {fileID: 1913009156}
   - component: {fileID: 1913009155}
+  - component: {fileID: 1913009158}
   m_Layer: 0
   m_Name: Hanger
   m_TagString: HangerObjHALL
@@ -8058,6 +8109,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1913009158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913009153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -829607230467061116, guid: f39a7abfef2265e4793df8eeed43fcb6, type: 3}
+  noContrastSprite: {fileID: 6901358285369026516, guid: 7e8a75f645ee80b4e9323a85c111b361, type: 3}
+  targetSpriteRenderer: {fileID: 1913009157}
 --- !u!1 &1937887157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8524,7 +8590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contrastSprite: {fileID: -8331241645820216898, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  contrastSprite: {fileID: 0}
   noContrastSprite: {fileID: 7078752631852307880, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
   targetSpriteRenderer: {fileID: 2004340689}
 --- !u!212 &2004340689

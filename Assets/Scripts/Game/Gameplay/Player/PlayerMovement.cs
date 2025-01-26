@@ -11,17 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Joystick movementJoystick;
     public Rigidbody2D playerRigidBody2D;
     public Animator animator;
-    public GameObject spawnPoint;
     private bool isMoving = true;
     public AudioSource audioSource;
-
-    void Start()
-    {
-        if (spawnPoint != null && spawnPoint.activeSelf == true)
-        {
-            transform.position = spawnPoint.transform.position;
-        }
-    }
 
 
     void Update()

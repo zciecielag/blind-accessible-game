@@ -9,6 +9,7 @@ public class SwitchSceneOnEnable : MonoBehaviour
     public string scene;
     public AudioSource audioSource;
     private FadeInOut fadeInOut;
+    public string spawnPointTag;
 
     private void Start()
     {
@@ -30,6 +31,10 @@ public class SwitchSceneOnEnable : MonoBehaviour
         if (GameSceneManager.Instance != null)
         {
             GameSceneManager.Instance.ChangeName(scene);
+        }
+        if (PlayerSpawnPoint.Instance != null)
+        {
+            PlayerSpawnPoint.Instance.ChangeSpawnPoint(spawnPointTag);
         }
         if (GameDataManager.Instance != null)
         {

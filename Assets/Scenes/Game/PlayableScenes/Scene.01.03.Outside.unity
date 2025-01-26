@@ -5125,6 +5125,7 @@ GameObject:
   - component: {fileID: 45523803}
   - component: {fileID: 45523801}
   - component: {fileID: 45523800}
+  - component: {fileID: 45523807}
   m_Layer: 0
   m_Name: "Miska ze sk\u0142adnikami"
   m_TagString: MiskaSkladniki
@@ -5356,7 +5357,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  m_Sprite: {fileID: 3864967908981870829, guid: efca047766c01674fae4536abe790edb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5382,6 +5383,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45523807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45523799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -7893166588195128759, guid: 390452b857aedea44af15ebfb8074d62, type: 3}
+  noContrastSprite: {fileID: 3864967908981870829, guid: efca047766c01674fae4536abe790edb, type: 3}
+  targetSpriteRenderer: {fileID: 45523805}
 --- !u!1 &78104251
 GameObject:
   m_ObjectHideFlags: 0
@@ -8750,6 +8766,7 @@ GameObject:
   - component: {fileID: 496635490}
   - component: {fileID: 496635491}
   - component: {fileID: 496635492}
+  - component: {fileID: 496635493}
   m_Layer: 0
   m_Name: TX Plant_2
   m_TagString: Untagged
@@ -8864,6 +8881,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0.023878347, y: 0.12130726}
   m_Size: {x: 1.9581629, y: 2.579575}
   m_Direction: 0
+--- !u!114 &496635493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496635489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 6212027134239493093, guid: 5bd09039c0b3b874eb66b5fbd42f2d21, type: 3}
+  targetSpriteRenderer: {fileID: 496635491}
 --- !u!1 &530296584
 GameObject:
   m_ObjectHideFlags: 0
@@ -8878,6 +8910,7 @@ GameObject:
   - component: {fileID: 530296588}
   - component: {fileID: 530296586}
   - component: {fileID: 530296585}
+  - component: {fileID: 530296592}
   m_Layer: 0
   m_Name: Miska
   m_TagString: MiskaKITCHEN
@@ -9135,6 +9168,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &530296592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530296584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2182916397313013961, guid: 7aee713f5680d4142bafe3e72c256723, type: 3}
+  noContrastSprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 530296590}
 --- !u!1 &530432552
 GameObject:
   m_ObjectHideFlags: 0
@@ -11640,6 +11688,7 @@ GameObject:
   - component: {fileID: 753526892}
   - component: {fileID: 753526893}
   - component: {fileID: 753526894}
+  - component: {fileID: 753526895}
   m_Layer: 0
   m_Name: TX Props_6
   m_TagString: Untagged
@@ -11763,6 +11812,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.8125, y: 1.34375}
   m_EdgeRadius: 0
+--- !u!114 &753526895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753526891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -1264371203132490004, guid: ff514c14e44d3c44a97d34ee7b48b391, type: 3}
+  targetSpriteRenderer: {fileID: 753526893}
 --- !u!1 &765304873
 GameObject:
   m_ObjectHideFlags: 0
@@ -12732,6 +12796,7 @@ Transform:
   - {fileID: 704335787}
   - {fileID: 983670090}
   - {fileID: 667825229}
+  - {fileID: 1101814761}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937558440
@@ -14058,7 +14123,7 @@ GameObject:
   - component: {fileID: 1092655459}
   m_Layer: 0
   m_Name: SpawnPoint1
-  m_TagString: Untagged
+  m_TagString: OUTSIDEfromLR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14078,6 +14143,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1153868021}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1101814760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1101814761}
+  - component: {fileID: 1101814762}
+  m_Layer: 0
+  m_Name: PlayerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1101814761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101814760}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 933315392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1101814762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101814760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5151b29aa98bcfd4b8f1f3bab85df8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointTag: OUTSIDEfromLR
+  player: {fileID: 1227590113}
 --- !u!1 &1102683965
 GameObject:
   m_ObjectHideFlags: 0
@@ -14324,6 +14435,7 @@ GameObject:
   - component: {fileID: 1165966290}
   - component: {fileID: 1165966291}
   - component: {fileID: 1165966292}
+  - component: {fileID: 1165966293}
   m_Layer: 0
   m_Name: TX Plant_0
   m_TagString: Untagged
@@ -14438,6 +14550,21 @@ CapsuleCollider2D:
   m_Offset: {x: -0.026010616, y: 0.17527507}
   m_Size: {x: 2.2045197, y: 2.6911778}
   m_Direction: 0
+--- !u!114 &1165966293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165966289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 7393824619407222304, guid: 5bd09039c0b3b874eb66b5fbd42f2d21, type: 3}
+  targetSpriteRenderer: {fileID: 1165966291}
 --- !u!1 &1176528198
 GameObject:
   m_ObjectHideFlags: 0
@@ -14605,6 +14732,7 @@ GameObject:
   - component: {fileID: 1194379265}
   - component: {fileID: 1194379263}
   - component: {fileID: 1194379262}
+  - component: {fileID: 1194379269}
   m_Layer: 0
   m_Name: Miska
   m_TagString: MiskaLR
@@ -14862,6 +14990,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1194379269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194379261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2182916397313013961, guid: 7aee713f5680d4142bafe3e72c256723, type: 3}
+  noContrastSprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 1194379267}
 --- !u!1 &1209206051
 GameObject:
   m_ObjectHideFlags: 0
@@ -15182,7 +15325,6 @@ MonoBehaviour:
   movementJoystick: {fileID: 1750395734}
   playerRigidBody2D: {fileID: 1227590117}
   animator: {fileID: 1227590114}
-  spawnPoint: {fileID: 1092655458}
   audioSource: {fileID: 1227590120}
 --- !u!61 &1227590116
 BoxCollider2D:
@@ -16165,6 +16307,7 @@ GameObject:
   - component: {fileID: 1323289115}
   - component: {fileID: 1323289116}
   - component: {fileID: 1323289117}
+  - component: {fileID: 1323289119}
   m_Layer: 0
   m_Name: Klucz
   m_TagString: KeyPantryOUTSIDE
@@ -16469,6 +16612,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 0
+--- !u!114 &1323289119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323289111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -4132717465435760865, guid: b6bad48582c13064ba6720417516c1af, type: 3}
+  noContrastSprite: {fileID: -3952268966531190577, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 1323289112}
 --- !u!1 &1353620929
 GameObject:
   m_ObjectHideFlags: 0
@@ -17074,6 +17232,7 @@ GameObject:
   - component: {fileID: 1438474834}
   - component: {fileID: 1438474835}
   - component: {fileID: 1438474836}
+  - component: {fileID: 1438474837}
   m_Layer: 0
   m_Name: TX Plant_1 (1)
   m_TagString: Untagged
@@ -17188,6 +17347,21 @@ CapsuleCollider2D:
   m_Offset: {x: -0.03404808, y: 0.25088143}
   m_Size: {x: 2.3502836, y: 2.520525}
   m_Direction: 0
+--- !u!114 &1438474837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438474833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -4181601160242843456, guid: 5bd09039c0b3b874eb66b5fbd42f2d21, type: 3}
+  targetSpriteRenderer: {fileID: 1438474835}
 --- !u!1 &1458754449
 GameObject:
   m_ObjectHideFlags: 0
@@ -18913,6 +19087,7 @@ GameObject:
   - component: {fileID: 1649969223}
   - component: {fileID: 1649969224}
   - component: {fileID: 1649969225}
+  - component: {fileID: 1649969226}
   m_Layer: 0
   m_Name: TX Plant_1
   m_TagString: Untagged
@@ -19027,6 +19202,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.43353605}
   m_Size: {x: 2.486477, y: 2.486477}
   m_Direction: 0
+--- !u!114 &1649969226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649969222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -4181601160242843456, guid: 5bd09039c0b3b874eb66b5fbd42f2d21, type: 3}
+  targetSpriteRenderer: {fileID: 1649969224}
 --- !u!1 &1650436636
 GameObject:
   m_ObjectHideFlags: 0
@@ -20719,6 +20909,7 @@ MonoBehaviour:
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 1746280269}
   activateObjects: []
+  spawnPointTag: LRfromOUTSIDE
 --- !u!61 &1960546692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21535,8 +21726,8 @@ SceneRoots:
   - {fileID: 933315392}
   - {fileID: 1153868021}
   - {fileID: 1323289113}
-  - {fileID: 664182662}
   - {fileID: 45523806}
   - {fileID: 530296591}
   - {fileID: 1194379268}
   - {fileID: 1032566529}
+  - {fileID: 664182662}

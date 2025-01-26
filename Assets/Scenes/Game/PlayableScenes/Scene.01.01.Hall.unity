@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 11014200}
   - component: {fileID: 11014198}
   - component: {fileID: 11014197}
+  - component: {fileID: 11014204}
   m_Layer: 0
   m_Name: Miska
   m_TagString: MiskaKITCHEN
@@ -364,7 +365,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  m_Sprite: {fileID: 1847077017978733391, guid: 496b3f336c8b26746903c8d54068820c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -390,6 +391,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11014204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11014196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2182916397313013961, guid: 7aee713f5680d4142bafe3e72c256723, type: 3}
+  noContrastSprite: {fileID: 1847077017978733391, guid: 496b3f336c8b26746903c8d54068820c, type: 3}
+  targetSpriteRenderer: {fileID: 11014202}
 --- !u!1 &27424653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,7 +1168,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.014235973, y: -0.24200761}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1162,7 +1178,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.5625, y: 3.6571429}
+  m_Size: {x: 6.153406, y: 4.5967016}
   m_EdgeRadius: 0
 --- !u!114 &104032989
 MonoBehaviour:
@@ -1293,6 +1309,7 @@ GameObject:
   - component: {fileID: 119506062}
   - component: {fileID: 119506060}
   - component: {fileID: 119506059}
+  - component: {fileID: 119506066}
   m_Layer: 0
   m_Name: Miska
   m_TagString: MiskaLR
@@ -1524,7 +1541,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  m_Sprite: {fileID: 1847077017978733391, guid: 496b3f336c8b26746903c8d54068820c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1550,6 +1567,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &119506066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119506058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2182916397313013961, guid: 7aee713f5680d4142bafe3e72c256723, type: 3}
+  noContrastSprite: {fileID: 1847077017978733391, guid: 496b3f336c8b26746903c8d54068820c, type: 3}
+  targetSpriteRenderer: {fileID: 119506064}
 --- !u!1 &133619768
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,11 +5419,11 @@ GameObject:
   - component: {fileID: 516276538}
   m_Layer: 0
   m_Name: SpawnPoint1
-  m_TagString: Untagged
+  m_TagString: HALLfromLR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &516276538
 Transform:
   m_ObjectHideFlags: 0
@@ -5401,7 +5433,7 @@ Transform:
   m_GameObject: {fileID: 516276537}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.282314, y: -2.8848119, z: -0.04068754}
+  m_LocalPosition: {x: -3.32, y: -0.15, z: -0.04068754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9106,6 +9138,7 @@ GameObject:
   - component: {fileID: 1133712980}
   - component: {fileID: 1133712979}
   - component: {fileID: 1133712978}
+  - component: {fileID: 1133712985}
   m_Layer: 0
   m_Name: Klucz
   m_TagString: KeyPantryOUTSIDE
@@ -9409,6 +9442,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1133712985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133712977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -4132717465435760865, guid: b6bad48582c13064ba6720417516c1af, type: 3}
+  noContrastSprite: {fileID: -3952268966531190577, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 1133712983}
 --- !u!1 &1137130097
 GameObject:
   m_ObjectHideFlags: 0
@@ -10035,6 +10083,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1223170250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223170251}
+  - component: {fileID: 1223170252}
+  m_Layer: 0
+  m_Name: PlayerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223170251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223170250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1844477717}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223170252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223170250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5151b29aa98bcfd4b8f1f3bab85df8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointTag: HALLfromLR
+  player: {fileID: 9205327401529381851}
 --- !u!1 &1229111443
 GameObject:
   m_ObjectHideFlags: 0
@@ -13592,6 +13686,7 @@ GameObject:
   - component: {fileID: 1562562456}
   - component: {fileID: 1562562462}
   - component: {fileID: 1562562463}
+  - component: {fileID: 1562562465}
   m_Layer: 0
   m_Name: Szalik
   m_TagString: ScarfHALL
@@ -13859,6 +13954,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 0
+--- !u!114 &1562562465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562562455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 3863135269512129128, guid: a191eb419fbd3a345ad0a2501ed55a5e, type: 3}
+  noContrastSprite: {fileID: -3853772825908950293, guid: 79f6cd81b6f20d9478b1ac637acf3dab, type: 3}
+  targetSpriteRenderer: {fileID: 1562562459}
 --- !u!1 &1569767975
 GameObject:
   m_ObjectHideFlags: 0
@@ -18284,6 +18394,7 @@ GameObject:
   - component: {fileID: 1840031003}
   - component: {fileID: 1840031006}
   - component: {fileID: 1840031005}
+  - component: {fileID: 1840031007}
   m_Layer: 0
   m_Name: Hanger
   m_TagString: HangerObjHALL
@@ -18422,6 +18533,21 @@ MonoBehaviour:
   unchangedSprite: {fileID: 6901358285369026516, guid: 4c56bcb702f0d9f458801110f5f218e3, type: 3}
   changedSprite: {fileID: -971567149743060422, guid: 58b758049c4877b4ba836dcd721177f9, type: 3}
   isChanged: 0
+--- !u!114 &1840031007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840031002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -8720390306805000572, guid: 7b2246c9dbdaa9a459a9bc770c872e7b, type: 3}
+  noContrastSprite: {fileID: 6901358285369026516, guid: 4c56bcb702f0d9f458801110f5f218e3, type: 3}
+  targetSpriteRenderer: {fileID: 1840031003}
 --- !u!1 &1844477716
 GameObject:
   m_ObjectHideFlags: 0
@@ -18461,6 +18587,7 @@ Transform:
   - {fileID: 1901588107}
   - {fileID: 478067065}
   - {fileID: 1569767976}
+  - {fileID: 1223170251}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862105278
@@ -18936,6 +19063,7 @@ GameObject:
   - component: {fileID: 1889621647}
   - component: {fileID: 1889621646}
   - component: {fileID: 1889621645}
+  - component: {fileID: 1889621651}
   m_Layer: 0
   m_Name: SwitchToLivingRoom
   m_TagString: SwitchToLRFromHall
@@ -19123,6 +19251,7 @@ MonoBehaviour:
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 2534287496213903074}
   activateObjects: []
+  spawnPointTag: LRfromHALL
 --- !u!61 &1889621648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19237,6 +19366,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+--- !u!114 &1889621651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889621643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 44cbf4c4cb78c0646b1d3d1f82fc796f, type: 3}
+  targetSpriteRenderer: {fileID: 1889621649}
 --- !u!1 &1890184128
 GameObject:
   m_ObjectHideFlags: 0
@@ -19338,7 +19482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contrastSprite: {fileID: -8331241645820216898, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  contrastSprite: {fileID: 0}
   noContrastSprite: {fileID: 7078752631852307880, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
   targetSpriteRenderer: {fileID: 1890184129}
 --- !u!1 &1901588106
@@ -20058,6 +20202,7 @@ GameObject:
   - component: {fileID: 2005109031}
   - component: {fileID: 2005109029}
   - component: {fileID: 2005109028}
+  - component: {fileID: 2005109035}
   m_Layer: 0
   m_Name: "Miska ze sk\u0142adnikami"
   m_TagString: MiskaSkladniki
@@ -20289,7 +20434,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1790103232169582999, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  m_Sprite: {fileID: 3864967908981870829, guid: d4f80e4beee5d2c4884ba503dc2ef85a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20315,6 +20460,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2005109035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005109027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -7893166588195128759, guid: 390452b857aedea44af15ebfb8074d62, type: 3}
+  noContrastSprite: {fileID: 3864967908981870829, guid: d4f80e4beee5d2c4884ba503dc2ef85a, type: 3}
+  targetSpriteRenderer: {fileID: 2005109033}
 --- !u!1 &2020052955
 GameObject:
   m_ObjectHideFlags: 0
@@ -20652,6 +20812,7 @@ GameObject:
   - component: {fileID: 2023758997}
   - component: {fileID: 2023758996}
   - component: {fileID: 2023758998}
+  - component: {fileID: 2023758999}
   m_Layer: 0
   m_Name: Cabinet
   m_TagString: Untagged
@@ -20776,6 +20937,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.8136117, y: 1.6001271}
   m_EdgeRadius: 0
+--- !u!114 &2023758999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023758995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 4813157627983688422, guid: 4f865ad296e1bb34c9721234b1a8528e, type: 3}
+  noContrastSprite: {fileID: -5098431541821842539, guid: b05926327ce94f14689d56bc9ddbfddc, type: 3}
+  targetSpriteRenderer: {fileID: 2023758996}
 --- !u!1 &2037005929
 GameObject:
   m_ObjectHideFlags: 0
@@ -21779,6 +21955,7 @@ GameObject:
   - component: {fileID: 7705044820850609197}
   - component: {fileID: 5860116119584834262}
   - component: {fileID: 77576655}
+  - component: {fileID: 7705044820850609199}
   m_Layer: 0
   m_Name: SwitchToLivingRoomQuest
   m_TagString: SwitchToLRFromHallQUEST
@@ -22920,6 +23097,7 @@ MonoBehaviour:
   activateObjects:
   - {fileID: 1988840061}
   - {fileID: 1889621643}
+  spawnPointTag: LRfromHALL
 --- !u!114 &7705044820850609198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22933,6 +23111,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 0
+--- !u!114 &7705044820850609199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634717008010781193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 44cbf4c4cb78c0646b1d3d1f82fc796f, type: 3}
+  targetSpriteRenderer: {fileID: 1423243784611805493}
 --- !u!224 &8366848485868488371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23046,7 +23239,6 @@ MonoBehaviour:
   movementJoystick: {fileID: 5340318584753942648}
   playerRigidBody2D: {fileID: 4915379782232514820}
   animator: {fileID: 9205327401529381852}
-  spawnPoint: {fileID: 516276537}
   audioSource: {fileID: 9205327401529381853}
 --- !u!4 &8975313900350698883
 Transform:

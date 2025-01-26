@@ -52,6 +52,14 @@ TagManager:
   - Circle
   - Character
   - MiskaSkladniki
+  - HALLfromLR
+  - LRfromHALL
+  - KITCHENfromLR
+  - LRfromKITCHEN
+  - OUTSIDEfromLR
+  - LRfromOUTSIDE
+  - PANTRYfromKITCHEN
+  - KITCHENfromPANTRY
   layers:
   - Default
   - TransparentFX

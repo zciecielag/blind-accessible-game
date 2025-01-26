@@ -10,11 +10,6 @@ public class ChangeImageContrast : MonoBehaviour
 
     private GlobalVariableManager globalVariableManager = new GlobalVariableManager();
 
-    void Start()
-    {
-        ChangeContrast();
-    }
-
     private void Awake()
     {
         if (Instance == null)
@@ -22,15 +17,11 @@ public class ChangeImageContrast : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
     public void ChangeContrast()
     {
-        if (targetSpriteRenderer != null)
+        if (targetSpriteRenderer != null && contrastSprite != null && noContrastSprite != null)
         {
             if (globalVariableManager.GetContrastStatus())
             {
@@ -40,6 +31,24 @@ public class ChangeImageContrast : MonoBehaviour
             {
                 targetSpriteRenderer.sprite = noContrastSprite;
             }
+        }
+    }
+
+    public void ChangeToContrast()
+    {
+        if (targetSpriteRenderer != null && contrastSprite != null && noContrastSprite != null)
+        {
+            targetSpriteRenderer.sprite = contrastSprite;
+            gameObject.transform.localScale -= new Vector3(1.3f,1.3f,0);
+        }
+    }
+
+    public void ChangeToNoContrast()
+    {
+        if (targetSpriteRenderer != null && contrastSprite != null && noContrastSprite != null)
+        {
+            targetSpriteRenderer.sprite = noContrastSprite;
+            gameObject.transform.localScale += new Vector3(1.3f,1.3f,0);
         }
     }
 }

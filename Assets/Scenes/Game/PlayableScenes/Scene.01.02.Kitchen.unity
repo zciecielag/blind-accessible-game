@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &42664782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42664783}
+  m_Layer: 0
+  m_Name: SpawnPoint2
+  m_TagString: KITCHENfromPANTRY
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &42664783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42664782}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.12, y: 9.95, z: 0.010201104}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 439274497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &78391497
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +354,7 @@ GameObject:
   - component: {fileID: 97847923}
   - component: {fileID: 97847922}
   - component: {fileID: 97847921}
+  - component: {fileID: 97847928}
   m_Layer: 0
   m_Name: Key
   m_TagString: KeyPantryOUTSIDE
@@ -626,6 +658,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &97847928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97847920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -4132717465435760865, guid: b6bad48582c13064ba6720417516c1af, type: 3}
+  noContrastSprite: {fileID: -3952268966531190577, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 97847926}
 --- !u!1 &98275721
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +729,7 @@ GameObject:
   - component: {fileID: 116905658}
   m_Layer: 0
   m_Name: SpawnPoint1
-  m_TagString: Untagged
+  m_TagString: KITCHENfromLR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -696,7 +743,7 @@ Transform:
   m_GameObject: {fileID: 116905657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.05, y: 5.97, z: 0.010201104}
+  m_LocalPosition: {x: 2.05, y: 5.4, z: 0.010201104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1010,6 +1057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204030261}
   - component: {fileID: 204030260}
+  - component: {fileID: 204030262}
   m_Layer: 0
   m_Name: kitchen furniture_11
   m_TagString: Untagged
@@ -1087,6 +1135,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &204030262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204030259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -5455636417756725786, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 204030260}
 --- !u!1 &268820526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1498,7 @@ GameObject:
   - component: {fileID: 307018262}
   - component: {fileID: 307018264}
   - component: {fileID: 307018263}
+  - component: {fileID: 307018265}
   m_Layer: 0
   m_Name: kitchen furniture_3 (1)
   m_TagString: Untagged
@@ -1558,6 +1622,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &307018265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307018261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 1878398965820589095, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 307018264}
 --- !u!1 &325881964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 352419605}
   - component: {fileID: 352419604}
+  - component: {fileID: 352419606}
   m_Layer: 0
   m_Name: kitchen furniture_6
   m_TagString: Untagged
@@ -1723,6 +1803,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &352419606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352419603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -4780177331702791066, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 352419604}
 --- !u!1 &374380394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2102,7 @@ GameObject:
   - component: {fileID: 410369052}
   - component: {fileID: 410369051}
   - component: {fileID: 410369050}
+  - component: {fileID: 410369053}
   m_Layer: 0
   m_Name: kitchen furniture_12
   m_TagString: Untagged
@@ -2130,6 +2226,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &410369053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410369049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 9068249596526497873, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 410369051}
 --- !u!1 &410755845
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410755846}
   - component: {fileID: 410755847}
+  - component: {fileID: 410755848}
   m_Layer: 0
   m_Name: kitchen furniture_11 (1)
   m_TagString: Untagged
@@ -2217,6 +2329,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &410755848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410755845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -9141356920826016398, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 410755847}
 --- !u!1 &412207249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2634,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 116905658}
+  - {fileID: 42664783}
   - {fileID: 325881965}
   - {fileID: 472173834}
   - {fileID: 1615675752}
@@ -6583,6 +6711,7 @@ GameObject:
   - component: {fileID: 744335041}
   - component: {fileID: 744335040}
   - component: {fileID: 744335039}
+  - component: {fileID: 744335046}
   m_Layer: 0
   m_Name: MiskaLR
   m_TagString: MiskaLR
@@ -6887,6 +7016,21 @@ Transform:
   - {fileID: 1585078537}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744335046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744335038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2182916397313013961, guid: 7aee713f5680d4142bafe3e72c256723, type: 3}
+  noContrastSprite: {fileID: 1847077017978733391, guid: 496b3f336c8b26746903c8d54068820c, type: 3}
+  targetSpriteRenderer: {fileID: 744335044}
 --- !u!1 &749401416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,6 +7046,7 @@ GameObject:
   - component: {fileID: 749401424}
   - component: {fileID: 749401419}
   - component: {fileID: 749401418}
+  - component: {fileID: 749401426}
   m_Layer: 0
   m_Name: SwitchToPantryQuest
   m_TagString: SwitchToPANTRYFromKITCHENQUEST
@@ -7194,6 +7339,7 @@ MonoBehaviour:
   activateObjects:
   - {fileID: 1511675024}
   conditionalObjectTag: KeyPantryOUTSIDE
+  spawnPointTag: PANTRYfromKITCHEN
 --- !u!114 &749401425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7207,6 +7353,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 0
+--- !u!114 &749401426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749401416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 44cbf4c4cb78c0646b1d3d1f82fc796f, type: 3}
+  targetSpriteRenderer: {fileID: 749401422}
 --- !u!1 &780093599
 GameObject:
   m_ObjectHideFlags: 0
@@ -7640,6 +7801,7 @@ GameObject:
   - component: {fileID: 915515862}
   - component: {fileID: 915515861}
   - component: {fileID: 915515860}
+  - component: {fileID: 915515863}
   m_Layer: 0
   m_Name: DzieckoMisiuk
   m_TagString: NPC
@@ -7860,6 +8022,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &915515863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915515858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -2636904739140769512, guid: 5e43c9bf2bdfdbc46bde67c2edc17318, type: 3}
+  targetSpriteRenderer: {fileID: 915515862}
 --- !u!1 &929713180
 GameObject:
   m_ObjectHideFlags: 0
@@ -7902,6 +8079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005728955}
   - component: {fileID: 1005728956}
+  - component: {fileID: 1005728957}
   m_Layer: 0
   m_Name: kitchen furniture_11 (2)
   m_TagString: Untagged
@@ -7979,6 +8157,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1005728957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005728954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 3203400805533635631, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 1005728956}
 --- !u!1 &1007593774
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,6 +8630,7 @@ GameObject:
   - component: {fileID: 1057277630}
   - component: {fileID: 1057277629}
   - component: {fileID: 1057277628}
+  - component: {fileID: 1057277631}
   m_Layer: 0
   m_Name: kitchen furniture_13
   m_TagString: Untagged
@@ -8560,6 +8754,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057277631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057277627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 3928881748540514113, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 1057277629}
 --- !u!1 &1057905029
 GameObject:
   m_ObjectHideFlags: 0
@@ -8658,6 +8867,7 @@ GameObject:
   - component: {fileID: 1072605266}
   - component: {fileID: 1072605265}
   - component: {fileID: 1072605264}
+  - component: {fileID: 1072605267}
   m_Layer: 0
   m_Name: kitchen furniture_14
   m_TagString: Untagged
@@ -8781,6 +8991,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072605267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072605263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: -4788156495114150691, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 1072605265}
 --- !u!1 &1122706766
 GameObject:
   m_ObjectHideFlags: 0
@@ -10171,8 +10396,9 @@ GameObject:
   - component: {fileID: 1252377915}
   - component: {fileID: 1252377914}
   - component: {fileID: 1252377913}
+  - component: {fileID: 1252377920}
   m_Layer: 0
-  m_Name: MiskaKitchen
+  m_Name: Miska
   m_TagString: MiskaKITCHEN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10475,6 +10701,21 @@ Transform:
   - {fileID: 1481711783}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1252377920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252377912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2182916397313013961, guid: 7aee713f5680d4142bafe3e72c256723, type: 3}
+  noContrastSprite: {fileID: 1847077017978733391, guid: 496b3f336c8b26746903c8d54068820c, type: 3}
+  targetSpriteRenderer: {fileID: 1252377918}
 --- !u!1 &1392246647
 GameObject:
   m_ObjectHideFlags: 0
@@ -11301,6 +11542,7 @@ GameObject:
   - component: {fileID: 1511675028}
   - component: {fileID: 1511675027}
   - component: {fileID: 1511675026}
+  - component: {fileID: 1511675032}
   m_Layer: 0
   m_Name: SwitchToPantry
   m_TagString: SwitchToPANTRYFromKITCHEN
@@ -11489,6 +11731,7 @@ MonoBehaviour:
   audioSource: {fileID: 2004979251}
   activateObjects:
   - {fileID: 1007593774}
+  spawnPointTag: PANTRYfromKITCHEN
 --- !u!61 &1511675029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11603,6 +11846,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 0
+--- !u!114 &1511675032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511675024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 44cbf4c4cb78c0646b1d3d1f82fc796f, type: 3}
+  targetSpriteRenderer: {fileID: 1511675030}
 --- !u!1 &1514707302
 GameObject:
   m_ObjectHideFlags: 0
@@ -11797,6 +12055,7 @@ GameObject:
   - component: {fileID: 1540588059}
   - component: {fileID: 1540588057}
   - component: {fileID: 1540588056}
+  - component: {fileID: 1540588063}
   m_Layer: 0
   m_Name: "Miska ze sk\u0142adnikami"
   m_TagString: MiskaSkladniki
@@ -12054,6 +12313,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1540588063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540588055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -7893166588195128759, guid: 390452b857aedea44af15ebfb8074d62, type: 3}
+  noContrastSprite: {fileID: 3864967908981870829, guid: efca047766c01674fae4536abe790edb, type: 3}
+  targetSpriteRenderer: {fileID: 1540588061}
 --- !u!1 &1542476414
 GameObject:
   m_ObjectHideFlags: 0
@@ -12700,6 +12974,7 @@ GameObject:
   - component: {fileID: 1575777871}
   - component: {fileID: 1575777870}
   - component: {fileID: 1575777869}
+  - component: {fileID: 1575777875}
   m_Layer: 0
   m_Name: SwitchToLivingRoom
   m_TagString: SwitchToLRFromKitchen
@@ -12887,6 +13162,7 @@ MonoBehaviour:
   sceneToLoad: Scene.01.04.LivingRoom
   audioSource: {fileID: 2004979251}
   activateObjects: []
+  spawnPointTag: LRfromKITCHEN
 --- !u!61 &1575777872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13001,6 +13277,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+--- !u!114 &1575777875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575777867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: -2231481437478451341, guid: 64bae052adfa942439a9c865c0f64888, type: 3}
+  noContrastSprite: {fileID: 2775582137379465754, guid: 44cbf4c4cb78c0646b1d3d1f82fc796f, type: 3}
+  targetSpriteRenderer: {fileID: 1575777873}
 --- !u!1 &1585078536
 GameObject:
   m_ObjectHideFlags: 0
@@ -13090,6 +13381,7 @@ GameObject:
   - component: {fileID: 1600590127}
   - component: {fileID: 1600590126}
   - component: {fileID: 1600590125}
+  - component: {fileID: 1600590128}
   m_Layer: 0
   m_Name: kitchen furniture_3
   m_TagString: Untagged
@@ -13213,6 +13505,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1600590128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600590124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 848309299042173597, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 1600590126}
 --- !u!1 &1615675751
 GameObject:
   m_ObjectHideFlags: 0
@@ -13262,6 +13569,7 @@ MonoBehaviour:
   questId: 8
   scene: GameStartMenu
   audioSource: {fileID: 7204237004086557712}
+  spawnPointTag: 
 --- !u!114 &1615675754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13459,6 +13767,7 @@ GameObject:
   - component: {fileID: 1711603133}
   - component: {fileID: 1711603135}
   - component: {fileID: 1711603134}
+  - component: {fileID: 1711603136}
   m_Layer: 0
   m_Name: kitchen furniture_3 (2)
   m_TagString: Untagged
@@ -13582,6 +13891,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1711603136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711603132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 3898153763674491809, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
+  targetSpriteRenderer: {fileID: 1711603135}
 --- !u!1 &1719470009
 GameObject:
   m_ObjectHideFlags: 0
@@ -13594,6 +13918,7 @@ GameObject:
   - component: {fileID: 1719470012}
   - component: {fileID: 1719470011}
   - component: {fileID: 1719470013}
+  - component: {fileID: 1719470014}
   m_Layer: 0
   m_Name: PaniMisiuk
   m_TagString: NPC
@@ -13814,6 +14139,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1719470014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719470009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 5089364969563713176, guid: 1c109703b5e501a45868d0027d20e31c, type: 3}
+  targetSpriteRenderer: {fileID: 1719470012}
 --- !u!1 &1741688611
 GameObject:
   m_ObjectHideFlags: 0
@@ -14115,8 +14455,55 @@ Transform:
   - {fileID: 1057905030}
   - {fileID: 448277691}
   - {fileID: 1552198413}
+  - {fileID: 1900830327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1900830326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900830327}
+  - component: {fileID: 1900830328}
+  m_Layer: 0
+  m_Name: PlayerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900830327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900830326}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1742159235}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900830328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900830326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5151b29aa98bcfd4b8f1f3bab85df8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointTag: KITCHENfromLR
+  player: {fileID: 4570848033542150441}
 --- !u!1 &1907306577
 GameObject:
   m_ObjectHideFlags: 0
@@ -14366,6 +14753,7 @@ GameObject:
   - component: {fileID: 1912387205}
   - component: {fileID: 1912387204}
   - component: {fileID: 1912387203}
+  - component: {fileID: 1912387206}
   m_Layer: 0
   m_Name: 1_Generic_32x32_116
   m_TagString: Untagged
@@ -14489,6 +14877,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1035267094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912387206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912387202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contrastSprite: {fileID: 0}
+  noContrastSprite: {fileID: 3185106789058855667, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
+  targetSpriteRenderer: {fileID: 1912387204}
 --- !u!1 &1915123763
 GameObject:
   m_ObjectHideFlags: 0
@@ -21785,7 +22188,6 @@ MonoBehaviour:
   movementJoystick: {fileID: 3781367696888522521}
   playerRigidBody2D: {fileID: 353499245038119926}
   animator: {fileID: 9140800888624365767}
-  spawnPoint: {fileID: 116905657}
   audioSource: {fileID: 9140800888624365768}
 --- !u!1 &4175499773969084291
 GameObject:

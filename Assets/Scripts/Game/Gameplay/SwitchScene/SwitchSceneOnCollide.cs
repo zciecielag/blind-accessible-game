@@ -8,6 +8,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
     public AudioSource audioSource;
     FadeInOut fadeInOut;
     public GameObject[] activateObjects;
+    public string spawnPointTag;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
         audioSource.Play();
         yield return new WaitForSeconds(1);
         GameSceneManager.Instance.ChangeName(sceneToLoad);
+        PlayerSpawnPoint.Instance.ChangeSpawnPoint(spawnPointTag);
         GameDataManager.Instance.SaveGame();
         SceneManager.LoadScene(sceneToLoad);
 
