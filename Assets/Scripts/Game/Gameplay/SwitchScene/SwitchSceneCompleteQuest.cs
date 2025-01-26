@@ -10,6 +10,7 @@ public class SwitchSceneCompleteQuest : MonoBehaviour
     public AudioSource audioSource;
     FadeInOut fadeInOut;
     public GameObject[] activateObjects;
+    public string spawnPointTag;
 
     private void OnEnable()
     {
@@ -27,6 +28,7 @@ public class SwitchSceneCompleteQuest : MonoBehaviour
         audioSource.Play();
         yield return new WaitForSeconds(1);
         GameSceneManager.Instance.ChangeName(sceneName);
+        PlayerSpawnPoint.Instance.ChangeSpawnPoint(spawnPointTag);
         GameDataManager.Instance.SaveGame();
         SceneManager.LoadScene(sceneName);
 

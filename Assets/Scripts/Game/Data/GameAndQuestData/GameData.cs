@@ -7,6 +7,7 @@ using System;
 public class GameData
 {
     public string currentSceneName;
+    public string playerSpawnPointTag;
     public GameObject currentlyHeldObject;
     public string currentlyHeldObjectTag;
     public int currentActId;
