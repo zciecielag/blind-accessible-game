@@ -2900,26 +2900,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 3
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 3
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 2, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -3020,26 +3000,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 3
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 3
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 2, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -3066,9 +3026,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 24ea6385edda33143891048cd395e203, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 34
+  - m_RefCount: 32
     m_Data: {fileID: 11400000, guid: 7ea3038ad3c483447b5dee5545542ac0, type: 2}
-  - m_RefCount: 34
+  - m_RefCount: 32
     m_Data: {fileID: 11400000, guid: 25eead312e5dee947b8fd829ae052f3a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 3713b2ae3a08bcd4ea371557348d6909, type: 2}
@@ -3089,9 +3049,9 @@ Tilemap:
     m_Data: {fileID: 1302589376, guid: 11977f86d51da134d8f2437cfcb14cab, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 34
+  - m_RefCount: 32
     m_Data: {fileID: -1927831599, guid: 11977f86d51da134d8f2437cfcb14cab, type: 3}
-  - m_RefCount: 34
+  - m_RefCount: 32
     m_Data: {fileID: 627983211, guid: 11977f86d51da134d8f2437cfcb14cab, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -4474943817160580795, guid: dc6ecf612aa916f4db5b3d10327b1635, type: 3}
@@ -3162,7 +3122,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 28
+  - m_RefCount: 24
     m_Data:
       e00: 1
       e01: 0
@@ -3181,7 +3141,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 90
+  - m_RefCount: 86
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3250,12 +3210,8 @@ CompositeCollider2D:
     m_ColliderPaths:
     - - X: 40000000
         Y: 60000000
-      - X: 0
-        Y: 60000000
-      - X: 0
-        Y: 40000000
       - X: 20000000
-        Y: 40000000
+        Y: 60000000
       - X: 20000000
         Y: -50000000
       - X: -80000000
@@ -3296,9 +3252,7 @@ CompositeCollider2D:
     m_Paths:
     - - {x: 3.999971, y: -7}
       - {x: 3.999971, y: 6}
-      - {x: 0, y: 5.999971}
-      - {x: 0.000029300001, y: 4}
-      - {x: 2, y: 3.9999704}
+      - {x: 2, y: 5.999971}
       - {x: 1.9999707, y: -5}
       - {x: -8, y: -4.9999704}
       - {x: -7.999921, y: 3.4405863}
@@ -4659,7 +4613,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5843,7 +5797,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8511,7 +8465,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12690,7 +12644,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12879,7 +12833,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13500,7 +13454,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17787,7 +17741,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -19080,7 +19034,7 @@ Transform:
   m_GameObject: {fileID: 1889621643}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7076151, w: 0.70659816}
-  m_LocalPosition: {x: -1.1884999, y: 5.8886995, z: -0.119757466}
+  m_LocalPosition: {x: -0.17, y: 5.89, z: -0.119757466}
   m_LocalScale: {x: 1.5429622, y: 1.7331488, z: 4.1012}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21496,7 +21450,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_Resource: {fileID: 8300000, guid: 01d46dd2181964141a11dcbab53f75d0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22383,7 +22337,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 15a35feab0679e4458c348b9cecc71a9, type: 3}
   m_Resource: {fileID: 8300000, guid: 15a35feab0679e4458c348b9cecc71a9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.23
   m_Pitch: 1
   Loop: 0
   Mute: 0
