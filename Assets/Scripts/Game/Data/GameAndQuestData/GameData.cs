@@ -16,6 +16,7 @@ public class GameData
     public GameData()
     {
         this.currentSceneName = "Cutscene.01.StartCutscene";
+        this.playerSpawnPointTag = "HALLfromLR";
         this.currentlyHeldObject = null;
         this.currentlyHeldObjectTag = "";
         this.currentActId = 0;

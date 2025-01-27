@@ -10,3 +10,5 @@
 43	3517	7560598432367057	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	50496f80945b17fe
 17	3676	7560598433996496	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9db54e4b17851ac0
 3676	3816	7560598435426018	D:/unity_projects/blind-accessible-game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5e6119/obj/arm64-v8a/libgame.so	5448fc581c48c7fb
+366	1042	7596779541555985	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	75073f56a3cdefd8
+1043	3574	7596779566755602	D:/unity_projects/blind-accessible-game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6h5e6119/obj/arm64-v8a/libswappywrapper.so	513602fbcf366c50

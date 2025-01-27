@@ -14,9 +14,13 @@ public class PlayerSpawnPoint : MonoBehaviour, IGameDataManager
     public void LoadData(GameData data)
     {
         this.spawnPointTag = data.playerSpawnPointTag;
-        if (GameObject.FindGameObjectWithTag(spawnPointTag) != null)
+        if (spawnPointTag != null && player != null)
         {
-            player.transform.position = GameObject.FindGameObjectWithTag(spawnPointTag).transform.position;
+            if (GameObject.FindGameObjectWithTag(spawnPointTag) != null)
+            {
+                Debug.Log(spawnPointTag);
+                player.transform.position = GameObject.FindGameObjectWithTag(spawnPointTag).transform.position;
+            }
         }
     }
 
@@ -37,6 +41,7 @@ public class PlayerSpawnPoint : MonoBehaviour, IGameDataManager
         {
             if (GameObject.FindGameObjectWithTag(spawnPointTag) != null)
             {
+                Debug.Log(spawnPointTag);
                 player.transform.position = GameObject.FindGameObjectWithTag(spawnPointTag).transform.position;
             }
         }

@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
@@ -8,7 +9,6 @@ public class ObjectCollision : MonoBehaviour
 {
 
     public TextMeshProUGUI scoreT;
-    public GameObject characterKot;
     private AudioSource coinCollected;
     private GrabObject pressInput;
 
@@ -22,7 +22,6 @@ public class ObjectCollision : MonoBehaviour
 
     private void Start()
     {
-        characterKot = GetComponent<GameObject>();
         coinCollected = GetComponent<AudioSource>();
         pressInput = FindFirstObjectByType<GrabObject>();
         HealthManager.health = 3;
@@ -33,6 +32,7 @@ public class ObjectCollision : MonoBehaviour
         if (scoreC == completionScore)
         {
             StartCoroutine(WaitAndCompleteGame());
+            scoreC = 0;
         }
     }
 
@@ -45,17 +45,19 @@ public class ObjectCollision : MonoBehaviour
                 coinCollected.Play();
                 scoreC++;
                 scoreT.text = scoreC.ToString();
+                Destroy(other.gameObject);
                 if (scoreC == completionScore)
                 {
                     StartCoroutine(WaitAndCompleteGame());
+                    scoreC = 0;
                 }
-                Destroy(other.gameObject);
             }
 
         } 
         else if(other.tag == "Cross")
         {
             HealthManager.health--;
+            Destroy(other.gameObject);
             if(HealthManager.health <= 0)
             {
                 StartCoroutine(WaitAndRestart());
@@ -64,7 +66,6 @@ public class ObjectCollision : MonoBehaviour
             {
                 failedToDodgeSound.Play();
             }
-            Destroy(other.gameObject);
         }
     }
 
