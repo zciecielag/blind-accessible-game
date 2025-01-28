@@ -20,6 +20,11 @@ public class ChangeContrastInGame : MonoBehaviour
             objects[i].ChangeContrast();
         }
 
+        GameObject.FindGameObjectWithTag("Player")
+        .GetComponent<PlayerMovement>()
+        .animator
+        .SetBool("Contrast", globalVariableManager.GetContrastStatus());
+
         Debug.Log("Contrast value is: " + globalVariableManager.GetContrastStatus());
 
     }
@@ -40,6 +45,11 @@ public class ChangeContrastInGame : MonoBehaviour
                 objects[i].ChangeToNoContrast();
             }
         }
+
+        GameObject.FindGameObjectWithTag("Player")
+        .GetComponent<PlayerMovement>()
+        .animator
+        .SetBool("Contrast", globalVariableManager.GetContrastStatus());
 
         Debug.Log("Contrast value was changed to: " + globalVariableManager.GetContrastStatus());
     }

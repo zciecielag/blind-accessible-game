@@ -61,6 +61,7 @@ public class ObjectCollision : MonoBehaviour
             if(HealthManager.health <= 0)
             {
                 StartCoroutine(WaitAndRestart());
+                scoreC = 0;
             }
             else
             {
