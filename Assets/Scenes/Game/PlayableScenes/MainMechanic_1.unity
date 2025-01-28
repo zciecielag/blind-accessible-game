@@ -2876,7 +2876,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.023020566, y: -0.00033932924}
+  m_Offset: {x: -0.07938872, y: -0.1468929}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2886,7 +2886,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.033551, y: 1.1042966}
+  m_Size: {x: 0.54717445, y: 0.8111894}
   m_EdgeRadius: 0
 --- !u!50 &914560682
 Rigidbody2D:
@@ -2928,7 +2928,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreT: {fileID: 839139541}
-  characterKot: {fileID: 914560677}
   failedToDodgeSound: {fileID: 1332075171}
   tryAgainPanel: {fileID: 135244512}
   gameCompletedPanel: {fileID: 565405259}

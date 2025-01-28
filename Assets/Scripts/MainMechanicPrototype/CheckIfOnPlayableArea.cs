@@ -26,7 +26,8 @@ public class CheckIfOnPlayableArea : MonoBehaviour
             objectSound.Stop();
             GameController.Instance.objectsScrolled++;
             if (GameController.Instance.objectsScrolled == GameController.Instance.totalObjects)
-            {           
+            {
+                GameController.Instance.objectsScrolled = 0;           
                 StartCoroutine(WaitAndRestart());
             }
         }
