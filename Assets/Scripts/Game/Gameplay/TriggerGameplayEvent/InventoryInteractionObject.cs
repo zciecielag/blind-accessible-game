@@ -22,14 +22,14 @@ public class InventoryInteractionObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
+        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().GetEnabledStatus())
         {
             confirmInteractionButton.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
+        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().GetEnabledStatus())
         {
             confirmInteractionButton.SetActive(false);
         }
@@ -55,7 +55,7 @@ public class InventoryInteractionObject : MonoBehaviour
 
         confirmInteractionButton.SetActive(false);
 
-        gameObject.GetComponent<EnableableObject>().isEnabled = false;
+        gameObject.GetComponent<EnableableObject>().Disable();
         GameDataManager.Instance.SaveGame();
 
         gameObject.GetComponent<AudioSource>().Stop();
@@ -68,7 +68,7 @@ public class InventoryInteractionObject : MonoBehaviour
                 a.SetActive(true);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = true;
+                    a.GetComponent<EnableableObject>().Enable();
                 }
             }
         }
@@ -80,7 +80,7 @@ public class InventoryInteractionObject : MonoBehaviour
                 a.SetActive(false);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = false;
+                    a.GetComponent<EnableableObject>().Disable();
                 }
             }
         }
@@ -93,7 +93,7 @@ public class InventoryInteractionObject : MonoBehaviour
 
         confirmInteractionButton.SetActive(false);
 
-        gameObject.GetComponent<EnableableObject>().isEnabled = false;
+        gameObject.GetComponent<EnableableObject>().Disable();
         GameDataManager.Instance.SaveGame();
 
         gameObject.GetComponent<AudioSource>().Stop();

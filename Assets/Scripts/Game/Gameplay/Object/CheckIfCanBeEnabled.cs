@@ -24,7 +24,7 @@ public class CheckIfCanBeEnabled : MonoBehaviour
             if (objectToDisable != null)
             {
                 if (objectToDisable.GetComponent<EnableableObject>() != null) { 
-                    objectToDisable.GetComponent<EnableableObject>().isEnabled = false;
+                    objectToDisable.GetComponent<EnableableObject>().Disable();
                     if(objectToEnable.GetComponent<SpriteRenderer>() != null) { objectToEnable.GetComponent<SpriteRenderer>()
                     .sortingLayerID = SortingLayer.NameToID("Default"); }
                 }
@@ -38,7 +38,7 @@ public class CheckIfCanBeEnabled : MonoBehaviour
             }
 
             if (objectToEnable.GetComponent<EnableableObject>() != null) { 
-                objectToEnable.GetComponent<EnableableObject>().isEnabled = true;
+                objectToEnable.GetComponent<EnableableObject>().Enable();
                 if(objectToEnable.GetComponent<SpriteRenderer>() != null) { objectToEnable.GetComponent<SpriteRenderer>()
                     .sortingLayerID = SortingLayer.NameToID("Foreground"); }
             }

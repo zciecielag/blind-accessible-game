@@ -60,6 +60,7 @@ TagManager:
   - LRfromOUTSIDE
   - PANTRYfromKITCHEN
   - KITCHENfromPANTRY
+  - ContrastLayer
   layers:
   - Default
   - TransparentFX
@@ -102,6 +103,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 2991501315
+    locked: 0
+  - name: Contrast
+    uniqueID: 1526252065
     locked: 0
   - name: Foreground
     uniqueID: 1431754527

@@ -54,7 +54,7 @@ public class DialogueBox : MonoBehaviour
                 a.SetActive(false);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = false;
+                    a.GetComponent<EnableableObject>().Disable();
                 }
             }
         }
@@ -66,7 +66,7 @@ public class DialogueBox : MonoBehaviour
                 a.SetActive(false);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = false;
+                    a.GetComponent<EnableableObject>().Disable();
                 }
             }
         }
@@ -117,7 +117,7 @@ public class DialogueBox : MonoBehaviour
                 a.SetActive(true);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = true;
+                    a.GetComponent<EnableableObject>().Enable();
                 }
             }
         }
@@ -129,7 +129,7 @@ public class DialogueBox : MonoBehaviour
                 a.SetActive(true);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = true;
+                    a.GetComponent<EnableableObject>().Enable();
                 }
             }
             activateObjects = null;
