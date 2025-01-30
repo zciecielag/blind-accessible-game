@@ -33,7 +33,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
         
         if (other.tag == "Player")
         {
-            if (gameObject.GetComponent<EnableableObject>().isEnabled)
+            if (gameObject.GetComponent<EnableableObject>().GetEnabledStatus())
             {
                 GameDataManager.Instance.SaveGame();
                 StartCoroutine(SwitchScene());
@@ -47,7 +47,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
                         a.SetActive(true);
                         if (a.GetComponent<EnableableObject>() != null)
                         {
-                            a.GetComponent<EnableableObject>().isEnabled = true;
+                            a.GetComponent<EnableableObject>().Enable();
                         }
                     }
                 }

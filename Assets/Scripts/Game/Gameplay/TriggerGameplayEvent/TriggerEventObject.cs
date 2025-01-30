@@ -8,7 +8,7 @@ public class TriggerEventObject : MonoBehaviour
     public GameObject[] deactivateObjects;
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
+        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().GetEnabledStatus())
         {
             ActManager.Instance.AcquireQuest(actId, questId);
             
@@ -19,7 +19,7 @@ public class TriggerEventObject : MonoBehaviour
                     a.SetActive(true);
                     if (a.GetComponent<EnableableObject>() != null)
                     {
-                        a.GetComponent<EnableableObject>().isEnabled = true;
+                        a.GetComponent<EnableableObject>().Enable();
                     }
                 }
             }
@@ -31,12 +31,12 @@ public class TriggerEventObject : MonoBehaviour
                     a.SetActive(false);
                     if (a.GetComponent<EnableableObject>() != null)
                     {
-                        a.GetComponent<EnableableObject>().isEnabled = false;
+                        a.GetComponent<EnableableObject>().Disable();
                     }
                 }
             }
 
-            gameObject.GetComponent<EnableableObject>().isEnabled = false;
+            gameObject.GetComponent<EnableableObject>().Disable();
             GameDataManager.Instance.SaveGame();
 
             gameObject.GetComponent<AudioSource>().Stop();

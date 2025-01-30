@@ -7,12 +7,12 @@ public class WhichRoomButtonBehaviour : MonoBehaviour
     private void OnEnable()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
-        gameObject.GetComponent<EnableableObject>().isEnabled = true;
+        gameObject.GetComponent<EnableableObject>().Enable();
     }
 
     private void Start()
     {
-        if (gameObject.GetComponent<EnableableObject>().isEnabled)
+        if (gameObject.GetComponent<EnableableObject>().GetEnabledStatus())
         {   
             gameObject.GetComponent<Button>().onClick.AddListener(PlayRoomReminder);
         }
@@ -26,7 +26,7 @@ public class WhichRoomButtonBehaviour : MonoBehaviour
                 a.SetActive(true);
                 if (a.GetComponent<EnableableObject>() != null)
                 {
-                    a.GetComponent<EnableableObject>().isEnabled = true;
+                    a.GetComponent<EnableableObject>().Enable();
                 }
             }
         }

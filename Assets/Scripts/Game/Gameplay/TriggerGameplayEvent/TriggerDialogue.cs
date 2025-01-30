@@ -8,7 +8,7 @@ public class TriggerDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().isEnabled)
+        if (other.tag == "Player" && gameObject.GetComponent<EnableableObject>().GetEnabledStatus())
         {
             if (activateObjects != null)
             {
@@ -17,7 +17,7 @@ public class TriggerDialogue : MonoBehaviour
                     a.SetActive(true);
                     if (a.GetComponent<EnableableObject>() != null)
                     {
-                        a.GetComponent<EnableableObject>().isEnabled = true;
+                        a.GetComponent<EnableableObject>().Enable();
                     }
                 }
             }
@@ -29,11 +29,11 @@ public class TriggerDialogue : MonoBehaviour
                     a.SetActive(false);
                     if (a.GetComponent<EnableableObject>() != null)
                     {
-                        a.GetComponent<EnableableObject>().isEnabled = false;
+                        a.GetComponent<EnableableObject>().Disable();
                     }
                 }
             }
-            gameObject.GetComponent<EnableableObject>().isEnabled = false;
+            gameObject.GetComponent<EnableableObject>().Disable();
         }
     }
 

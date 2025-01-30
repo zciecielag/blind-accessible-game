@@ -39,7 +39,6 @@ public class ChangeImageContrast : MonoBehaviour
         if (targetSpriteRenderer != null && contrastSprite != null && noContrastSprite != null)
         {
             targetSpriteRenderer.sprite = contrastSprite;
-            gameObject.transform.localScale -= new Vector3(1.3f,1.3f,0);
         }
     }
 
@@ -48,7 +47,6 @@ public class ChangeImageContrast : MonoBehaviour
         if (targetSpriteRenderer != null && contrastSprite != null && noContrastSprite != null)
         {
             targetSpriteRenderer.sprite = noContrastSprite;
-            gameObject.transform.localScale += new Vector3(1.3f,1.3f,0);
         }
     }
 }

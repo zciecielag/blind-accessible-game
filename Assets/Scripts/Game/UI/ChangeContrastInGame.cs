@@ -20,6 +20,15 @@ public class ChangeContrastInGame : MonoBehaviour
             objects[i].ChangeContrast();
         }
 
+        if (globalVariableManager.GetContrastStatus())
+        {
+            FindAnyObjectByType<CheckIfContrast>().ChangeToContrast();
+        }
+        else
+        {
+            FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
+        }
+
         GameObject.FindGameObjectWithTag("Player")
         .GetComponent<PlayerMovement>()
         .animator
@@ -44,6 +53,15 @@ public class ChangeContrastInGame : MonoBehaviour
             {
                 objects[i].ChangeToNoContrast();
             }
+        }
+
+        if (globalVariableManager.GetContrastStatus())
+        {
+            FindAnyObjectByType<CheckIfContrast>().ChangeToContrast();
+        }
+        else
+        {
+            FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
         }
 
         GameObject.FindGameObjectWithTag("Player")

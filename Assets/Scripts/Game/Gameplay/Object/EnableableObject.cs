@@ -4,6 +4,33 @@ public class EnableableObject : MonoBehaviour, IGameDataManager
 {
     public bool isEnabled;
 
+    public bool GetEnabledStatus()
+    {
+        return isEnabled;
+    }
+
+    public void Enable()
+    {
+        isEnabled = true;
+        if (gameObject.GetComponent<ChangeImageContrast>() != null)
+        {
+            var gvm = new GlobalVariableManager();
+            if (gvm.GetContrastStatus())
+            {
+               gameObject.GetComponent<ChangeImageContrast>().ChangeToContrast(); 
+            }
+            else
+            {
+                gameObject.GetComponent<ChangeImageContrast>().ChangeToNoContrast(); 
+            }
+        }
+    }
+
+    public void Disable()
+    {
+        isEnabled = false;
+    }
+
     public void LoadData(GameData data)
     {
         if (data.enabledGameObjects.ContainsKey(this.gameObject.tag))

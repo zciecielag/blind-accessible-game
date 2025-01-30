@@ -16,7 +16,7 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour
     private void OnEnable()
     {
         gameObject.GetComponent<AudioSource>().Play();
-        gameObject.GetComponent<EnableableObject>().isEnabled = true;
+        gameObject.GetComponent<EnableableObject>().Enable();
         Debug.Log(gameObject.name + " got enabled");
         fadeInOut = FindFirstObjectByType<FadeInOut>();
     }
@@ -38,7 +38,7 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (gameObject.GetComponent<EnableableObject>().isEnabled && conditionalObjectTag != null 
+        if (gameObject.GetComponent<EnableableObject>().GetEnabledStatus() && conditionalObjectTag != null 
         && conditionalObjectTag == InventoryManager.Instance.currentlyHeldObject.tag)
         {
             gameObject.GetComponent<AudioSource>().Stop();
@@ -50,7 +50,7 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour
             }
 
             GameSceneManager.Instance.ChangeName(sceneName);
-            gameObject.GetComponent<EnableableObject>().isEnabled = false;
+            gameObject.GetComponent<EnableableObject>().Disable();
 
             if (activateObjects != null)
             {
@@ -59,7 +59,7 @@ public class SwitchSceneCompleteQuestWithCondition : MonoBehaviour
                     a.SetActive(true);
                     if (a.GetComponent<EnableableObject>() != null)
                     {
-                        a.GetComponent<EnableableObject>().isEnabled = true;
+                        a.GetComponent<EnableableObject>().Enable();
                     }
                 }
             }
