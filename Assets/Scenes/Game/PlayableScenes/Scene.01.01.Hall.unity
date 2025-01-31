@@ -303,6 +303,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []
@@ -1324,7 +1325,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119506058}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2e28065838fbb348b3709986d87b446, type: 3}
   m_Name: 
@@ -1479,6 +1480,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []
@@ -9107,7 +9109,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133712977}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2e28065838fbb348b3709986d87b446, type: 3}
   m_Name: 
@@ -9308,6 +9310,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []
@@ -13462,6 +13465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fafd23e61c9b14980e68cba38e7569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryItem: {fileID: 0}
 --- !u!1 &1537903212
 GameObject:
   m_ObjectHideFlags: 0
@@ -13766,6 +13770,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 1260689236}
   deactivateObjects: []
@@ -17620,6 +17625,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 1840031002}
   unchangedSprite: {fileID: 6901358285369026516, guid: 7e8a75f645ee80b4e9323a85c111b361, type: 3}
   changedSprite: {fileID: -971567149743060422, guid: c3f26a121eccde4499be6761f06d5c08, type: 3}
+  changedSpriteContrast: {fileID: -8720390306805000572, guid: 7b2246c9dbdaa9a459a9bc770c872e7b, type: 3}
   activateObjects:
   - {fileID: 2051311318}
   deactivateObjects: []
@@ -18587,6 +18593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unchangedSprite: {fileID: 6901358285369026516, guid: 7e8a75f645ee80b4e9323a85c111b361, type: 3}
   changedSprite: {fileID: -971567149743060422, guid: c3f26a121eccde4499be6761f06d5c08, type: 3}
+  changedSpriteContrast: {fileID: -8720390306805000572, guid: 7b2246c9dbdaa9a459a9bc770c872e7b, type: 3}
   isChanged: 0
 --- !u!114 &1840031007
 MonoBehaviour:
@@ -18600,7 +18607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7538b196ea0e9d44abb3938580173322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contrastSprite: {fileID: -8720390306805000572, guid: 7b2246c9dbdaa9a459a9bc770c872e7b, type: 3}
+  contrastSprite: {fileID: -829607230467061116, guid: f39a7abfef2265e4793df8eeed43fcb6, type: 3}
   noContrastSprite: {fileID: 6901358285369026516, guid: 7e8a75f645ee80b4e9323a85c111b361, type: 3}
   targetSpriteRenderer: {fileID: 1840031003}
 --- !u!1 &1844477716
@@ -20427,6 +20434,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []

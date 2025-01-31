@@ -38,6 +38,18 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
         inventoryText.text = "Brak";
     }
 
+    public void ChangeItemContrast()
+    {
+        if (currentlyHeldObject != null)
+        {
+            if (currentlyHeldObject.GetComponent<ChangeImageContrast>() != null)
+            {
+                currentlyHeldObject.GetComponent<ChangeImageContrast>().ChangeContrast();
+                inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
+            }
+        } 
+    }
+
     public void LoadData(GameData data)
     {
         this.currentlyHeldObject = data.currentlyHeldObject;
@@ -49,6 +61,10 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
         
         if (currentlyHeldObject != null)
         {
+            if (currentlyHeldObject.GetComponent<ChangeImageContrast>() != null)
+            {
+                currentlyHeldObject.GetComponent<ChangeImageContrast>().ChangeContrast();
+            }
             inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
             inventoryText.text = currentlyHeldObject.name;
         } 

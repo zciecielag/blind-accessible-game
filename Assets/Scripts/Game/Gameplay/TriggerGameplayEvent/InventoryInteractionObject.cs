@@ -12,6 +12,7 @@ public class InventoryInteractionObject : MonoBehaviour
     public GameObject objectBeingChanged;
     public Sprite unchangedSprite;
     public Sprite changedSprite;
+    public Sprite changedSpriteContrast;
 
     public GameObject[] activateObjects;
     public GameObject[] deactivateObjects;
@@ -19,6 +20,7 @@ public class InventoryInteractionObject : MonoBehaviour
     public GameObject confirmInteractionButton;
 
     public bool addOrUse;
+    GlobalVariableManager gvm = new GlobalVariableManager();
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -100,7 +102,15 @@ public class InventoryInteractionObject : MonoBehaviour
 
         if (objectBeingChanged != null && changedSprite != null)
         {
-            objectBeingChanged.GetComponent<SpriteRenderer>().sprite = changedSprite;
+            if (gvm.GetContrastStatus())
+            {
+                objectBeingChanged.GetComponent<SpriteRenderer>().sprite = changedSpriteContrast;
+            }
+            else
+            {
+                objectBeingChanged.GetComponent<SpriteRenderer>().sprite = changedSprite;
+            }
+            
             if (objectBeingChanged.GetComponent<ChangeSpriteOnLoad>() != null)
             {
                 objectBeingChanged.GetComponent<ChangeSpriteOnLoad>().Change(changedSprite);

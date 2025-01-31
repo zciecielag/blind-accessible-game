@@ -17,7 +17,6 @@ public class ActManager : MonoBehaviour, IGameDataManager
         this.currentActId = data.currentActId;
         this.currentQuestId = data.currentSubQuestId;
         this.allActs = QuestData.allActs;
-        Debug.Log(data.currentSceneName);
         AcquireQuest(this.currentActId, this.currentQuestId);
     }
 
@@ -34,10 +33,6 @@ public class ActManager : MonoBehaviour, IGameDataManager
 
     public void AcquireQuest(int actId, int questId)
     {
-        Debug.Log(actId);
-        Debug.Log(questId);
-        Debug.Log(currentActId);
-        Debug.Log(currentQuestId);
         for (int i = 0; i < allActs.Count; i++)
         {
             if (actId == allActs[i].id)
