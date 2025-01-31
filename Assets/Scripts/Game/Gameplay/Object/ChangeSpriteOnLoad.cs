@@ -4,19 +4,36 @@ public class ChangeSpriteOnLoad : MonoBehaviour, IGameDataManager
 {
     public Sprite unchangedSprite;
     public Sprite changedSprite;
+    public Sprite changedSpriteContrast;
     public bool isChanged;
+
+    GlobalVariableManager gvm = new GlobalVariableManager();
 
     private void Start()
     {
         if (isChanged)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = changedSprite;
+            if (gvm.GetContrastStatus())
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = changedSpriteContrast;
+            }
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = changedSprite;
+            }
         }
     }
 
     public void Change(Sprite spriteToChange)
     {
-        this.changedSprite = spriteToChange;
+        if (gvm.GetContrastStatus())
+        {
+            this.changedSprite = changedSpriteContrast;
+        }
+        else
+        {
+            this.changedSprite = spriteToChange;
+        }
         isChanged = true;
     }
 

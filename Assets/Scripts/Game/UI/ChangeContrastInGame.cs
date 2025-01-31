@@ -5,6 +5,7 @@ public class ChangeContrastInGame : MonoBehaviour
 {
     private GlobalVariableManager globalVariableManager = new GlobalVariableManager();
     private ChangeImageContrast[] objects;
+    public GameObject inventoryItem;
 
     void Start()
     {
@@ -13,6 +14,15 @@ public class ChangeContrastInGame : MonoBehaviour
 
     public void SwitchToContrast()
     {
+        if (GameObject.FindGameObjectWithTag("Player") != null 
+        && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>() != null)
+        {
+            GameObject.FindGameObjectWithTag("Player")
+            .GetComponent<PlayerMovement>()
+            .animator
+            .SetBool("Contrast", globalVariableManager.GetContrastStatus());
+        }
+
         objects = FindObjectsByType<ChangeImageContrast>(FindObjectsSortMode.None);
 
         for (int i = 0; i < objects.Length; i++)
@@ -29,11 +39,6 @@ public class ChangeContrastInGame : MonoBehaviour
             FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
         }
 
-        GameObject.FindGameObjectWithTag("Player")
-        .GetComponent<PlayerMovement>()
-        .animator
-        .SetBool("Contrast", globalVariableManager.GetContrastStatus());
-
         Debug.Log("Contrast value is: " + globalVariableManager.GetContrastStatus());
 
     }
@@ -43,6 +48,14 @@ public class ChangeContrastInGame : MonoBehaviour
         objects = FindObjectsByType<ChangeImageContrast>(FindObjectsSortMode.None);
         globalVariableManager.SetContrastStatus(!globalVariableManager.GetContrastStatus());
 
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>() != null)
+        {
+            GameObject.FindGameObjectWithTag("Player")
+            .GetComponent<PlayerMovement>()
+            .animator
+            .SetBool("Contrast", globalVariableManager.GetContrastStatus());
+        }
+        
         for (int i = 0; i < objects.Length; i++)
         {
             if (globalVariableManager.GetContrastStatus())
@@ -64,10 +77,10 @@ public class ChangeContrastInGame : MonoBehaviour
             FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
         }
 
-        GameObject.FindGameObjectWithTag("Player")
-        .GetComponent<PlayerMovement>()
-        .animator
-        .SetBool("Contrast", globalVariableManager.GetContrastStatus());
+        if (InventoryManager.Instance != null)
+        {
+            InventoryManager.Instance.ChangeItemContrast();
+        }
 
         Debug.Log("Contrast value was changed to: " + globalVariableManager.GetContrastStatus());
     }

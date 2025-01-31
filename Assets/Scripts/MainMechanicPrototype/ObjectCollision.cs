@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
 
 public class ObjectCollision : MonoBehaviour
 {
@@ -16,8 +17,10 @@ public class ObjectCollision : MonoBehaviour
     public GameObject tryAgainPanel;
     public GameObject gameCompletedPanel;
     public int completionScore;
-    public int scoreC = 0;
+    private int scoreC = 0;
     public GameObject addObject;
+
+    public GameObject debugCompleteGame;
 
 
     private void Start()
@@ -25,15 +28,19 @@ public class ObjectCollision : MonoBehaviour
         coinCollected = GetComponent<AudioSource>();
         pressInput = FindFirstObjectByType<GrabObject>();
         HealthManager.health = 3;
+
+        if (debugCompleteGame != null) 
+        {
+            debugCompleteGame.GetComponent<Button>().onClick.AddListener(CompleteDebug);
+        }
     }
 
-    void Update()
+    private void CompleteDebug()
     {
-        if (scoreC == completionScore)
-        {
-            StartCoroutine(WaitAndCompleteGame());
-            scoreC = 0;
-        }
+        scoreC = completionScore;
+        scoreT.text = scoreC.ToString();
+        StartCoroutine(WaitAndCompleteGame());
+        scoreC = 0;
     }
 
     private void OnTriggerStay2D(Collider2D other)

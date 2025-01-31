@@ -2620,7 +2620,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302808258}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2e28065838fbb348b3709986d87b446, type: 3}
   m_Name: 
@@ -2775,6 +2775,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []
@@ -4752,6 +4753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fafd23e61c9b14980e68cba38e7569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryItem: {fileID: 0}
 --- !u!4 &551864483
 Transform:
   m_ObjectHideFlags: 0
@@ -13179,6 +13181,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []
@@ -15822,6 +15825,7 @@ MonoBehaviour:
   objectBeingChanged: {fileID: 0}
   unchangedSprite: {fileID: 0}
   changedSprite: {fileID: 0}
+  changedSpriteContrast: {fileID: 0}
   activateObjects:
   - {fileID: 0}
   deactivateObjects: []
