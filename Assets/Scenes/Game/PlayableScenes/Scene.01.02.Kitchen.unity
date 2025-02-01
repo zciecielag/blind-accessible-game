@@ -1297,8 +1297,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -5455636417756725786, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1800,8 +1800,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1878398965820589095, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1966,8 +1966,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -4780177331702791066, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2389,8 +2389,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 9068249596526497873, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2507,8 +2507,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -9141356920826016398, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8390,8 +8390,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 3203400805533635631, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8972,8 +8972,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 3928881748540514113, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9210,8 +9210,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -4788156495114150691, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13662,8 +13662,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 848309299042173597, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14063,8 +14063,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1526252065
-  m_SortingLayer: 3
+  m_SortingLayerID: 1431754527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 3898153763674491809, guid: 0170fa1d83859ad4995bcba40e58a3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -18441,7 +18441,6 @@ GameObject:
   - component: {fileID: 6855875485557438446}
   - component: {fileID: 5434842158707933068}
   - component: {fileID: 2517777295958675285}
-  - component: {fileID: 8989524622111518875}
   m_Layer: 5
   m_Name: BackButton (2)
   m_TagString: Untagged
@@ -21132,7 +21131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 201087798948429024}
   - component: {fileID: 5184886553483772032}
-  - component: {fileID: 5184886553483772033}
   m_Layer: 5
   m_Name: SFXVolSlider
   m_TagString: Untagged
@@ -21242,7 +21240,6 @@ GameObject:
   - component: {fileID: 5392546832068113316}
   - component: {fileID: 3977200599406111847}
   - component: {fileID: 6475130490762783149}
-  - component: {fileID: 6475130490762783150}
   m_Layer: 5
   m_Name: SFXVolumeText
   m_TagString: Untagged
@@ -22934,7 +22931,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3848881198064007209}
   - component: {fileID: 3913262303256224722}
-  - component: {fileID: 4863002852267043958}
   m_Layer: 5
   m_Name: MusicVolSlider
   m_TagString: Untagged
@@ -22942,63 +22938,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4863002852267043958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4863002852267043957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: 
-  m_NameLabel: {fileID: 0}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 0
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 4
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ReadPercentages: 1
-  m_Increments: 5
-  m_IncrementInPercent: 1
-  m_WholeNumbersOnly: 1
 --- !u!224 &4875032900089523692
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23395,63 +23334,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5184886553483772033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3232515387623790327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: 
-  m_NameLabel: {fileID: 0}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 0
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 4
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ReadPercentages: 1
-  m_Increments: 5
-  m_IncrementInPercent: 1
-  m_WholeNumbersOnly: 1
 --- !u!1 &5217653097542405373
 GameObject:
   m_ObjectHideFlags: 0
@@ -23565,7 +23447,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8114250084254629301}
   - component: {fileID: 9016571395927091198}
-  - component: {fileID: 9016571395927091199}
   m_Layer: 5
   m_Name: NarratorVolSlider
   m_TagString: Untagged
@@ -24133,7 +24014,6 @@ GameObject:
   - component: {fileID: 4072723272889057280}
   - component: {fileID: 8926147658172574501}
   - component: {fileID: 2981291637823642151}
-  - component: {fileID: 8926147658172574502}
   m_Layer: 5
   m_Name: MusicVolumeText
   m_TagString: Untagged
@@ -24343,59 +24223,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6475130490762783150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3254986366244601831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: Efekty
-  m_NameLabel: {fileID: 3254986366244601831}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 1
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 2
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &6484615411065805666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26155,7 +25982,6 @@ GameObject:
   - component: {fileID: 1083350579226597615}
   - component: {fileID: 1941457848963716632}
   - component: {fileID: 8252939735662221782}
-  - component: {fileID: 8353105480736599390}
   m_Layer: 5
   m_Name: NarratorVolumeText
   m_TagString: Untagged
@@ -26163,59 +25989,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8353105480736599390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8353105480736599389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: Narrator
-  m_NameLabel: {fileID: 8353105480736599389}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 1
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 2
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &8357449553697179487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26661,59 +26434,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6282627736052766050}
   m_CullTransparentMesh: 1
---- !u!114 &8926147658172574502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6282627736052766050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: Muzyka
-  m_NameLabel: {fileID: 6282627736052766050}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 1
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 2
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &8963675107396110911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26820,59 +26540,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -426}
   m_SizeDelta: {x: 525.8, y: 142.5539}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8989524622111518875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230460282594091953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: "Powr\xF3t"
-  m_NameLabel: {fileID: 8028008243949647286}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 1
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 1
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &9016571395927091198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26936,63 +26603,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9016571395927091199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5520891078079426581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: 
-  m_NameLabel: {fileID: 0}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 0
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 4
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ReadPercentages: 1
-  m_Increments: 5
-  m_IncrementInPercent: 1
-  m_WholeNumbersOnly: 1
 --- !u!1 &9021623858547696364
 GameObject:
   m_ObjectHideFlags: 0
