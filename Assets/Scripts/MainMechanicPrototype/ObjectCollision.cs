@@ -22,7 +22,6 @@ public class ObjectCollision : MonoBehaviour
 
     public GameObject debugCompleteGame;
 
-
     private void Start()
     {
         coinCollected = GetComponent<AudioSource>();
@@ -39,6 +38,7 @@ public class ObjectCollision : MonoBehaviour
     {
         scoreC = completionScore;
         scoreT.text = scoreC.ToString();
+        StopAllCoroutines();
         StartCoroutine(WaitAndCompleteGame());
         scoreC = 0;
     }
@@ -55,6 +55,7 @@ public class ObjectCollision : MonoBehaviour
                 Destroy(other.gameObject);
                 if (scoreC == completionScore)
                 {
+                    StopAllCoroutines();
                     StartCoroutine(WaitAndCompleteGame());
                     scoreC = 0;
                 }
@@ -67,6 +68,7 @@ public class ObjectCollision : MonoBehaviour
             Destroy(other.gameObject);
             if(HealthManager.health <= 0)
             {
+                StopAllCoroutines();
                 StartCoroutine(WaitAndRestart());
                 scoreC = 0;
             }
@@ -84,7 +86,7 @@ public class ObjectCollision : MonoBehaviour
         if (tryAgainPanel != null)
         {
             tryAgainPanel.SetActive(true);
-            yield return new WaitForSeconds(4.0f);
+            yield return new WaitForSeconds(5.0f);
             tryAgainPanel.SetActive(false);
         }
         
@@ -98,7 +100,7 @@ public class ObjectCollision : MonoBehaviour
         if (gameCompletedPanel != null)
         {
             gameCompletedPanel.SetActive(true);
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(3.0f);
             gameCompletedPanel.SetActive(false);
         }
 

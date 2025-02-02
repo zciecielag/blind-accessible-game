@@ -2580,6 +2580,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1189031089}
+        m_TargetAssemblyTypeName: ChangeContrastInGame, Assembly-CSharp
+        m_MethodName: SwitchToContrast
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &808358992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3619,6 +3631,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157023790}
   m_CullTransparentMesh: 1
+--- !u!1 &1189031088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189031090}
+  - component: {fileID: 1189031089}
+  m_Layer: 0
+  m_Name: Contrast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1189031089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189031088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fafd23e61c9b14980e68cba38e7569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1189031090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189031088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.9171605, y: -0.8160261, z: 0.23528227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1228002964
 GameObject:
   m_ObjectHideFlags: 0
@@ -5389,7 +5445,6 @@ GameObject:
   - component: {fileID: 1993379146}
   - component: {fileID: 1993379145}
   - component: {fileID: 1993379144}
-  - component: {fileID: 1993379147}
   - component: {fileID: 1993379149}
   m_Layer: 5
   m_Name: SwitchContrastButton
@@ -5474,6 +5529,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1189031089}
+        m_TargetAssemblyTypeName: ChangeContrastInGame, Assembly-CSharp
+        m_MethodName: ToggleContrast
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1993379145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5512,18 +5579,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993379141}
   m_CullTransparentMesh: 1
---- !u!114 &1993379147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993379141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7ce8755508b8644b242a825f48dee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1993379149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6008,3 +6063,4 @@ SceneRoots:
   - {fileID: 1888384682}
   - {fileID: 2017501925}
   - {fileID: 92361801}
+  - {fileID: 1189031090}
