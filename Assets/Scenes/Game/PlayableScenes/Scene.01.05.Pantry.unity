@@ -4375,7 +4375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fafd23e61c9b14980e68cba38e7569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryItem: {fileID: 0}
 --- !u!4 &551864483
 Transform:
   m_ObjectHideFlags: 0
@@ -15440,6 +15439,7 @@ GameObject:
   - component: {fileID: 1799081956}
   - component: {fileID: 1799081957}
   - component: {fileID: 1799081955}
+  - component: {fileID: 1799081958}
   m_Layer: 0
   m_Name: SpawnPoint1
   m_TagString: PANTRYfromKITCHEN
@@ -15536,6 +15536,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+--- !u!114 &1799081958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799081953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f29b5b86dfb5fd4799983a70ffd13f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1800064971
 GameObject:
   m_ObjectHideFlags: 0

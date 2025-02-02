@@ -20,10 +20,6 @@ public class GameDataManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
-        {
-            Debug.Log("Warning! More than one GDM instance.");
-        }
         this.gameDataManagers = FindGameDataManagers();
         Instance = this;
     }
@@ -33,13 +29,6 @@ public class GameDataManager : MonoBehaviour
         this.fileDataManager = new FileDataManager(Application.persistentDataPath, fileName);
         LoadGame();
         checkIfCanBeEnableds = FindObjectsByType<CheckIfCanBeEnabled>(FindObjectsSortMode.None);
-        if (checkIfCanBeEnableds != null)
-        {
-            foreach (CheckIfCanBeEnabled a in checkIfCanBeEnableds)
-            {
-                a.Check();
-            }
-        }
     }
 
     public void NewGame()
@@ -62,6 +51,14 @@ public class GameDataManager : MonoBehaviour
         foreach(IGameDataManager gameDataManager in gameDataManagers)
         {
             gameDataManager.LoadData(gameData);
+        }
+
+        if (checkIfCanBeEnableds != null)
+        {
+            foreach (CheckIfCanBeEnabled a in checkIfCanBeEnableds)
+            {
+                a.Check();
+            }
         }
     }
 
