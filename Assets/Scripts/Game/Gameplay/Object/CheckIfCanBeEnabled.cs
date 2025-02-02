@@ -45,5 +45,9 @@ public class CheckIfCanBeEnabled : MonoBehaviour
 
             objectToEnable.SetActive(true);
         }
+        else
+        {
+            Debug.Log("Can't enable" + gameObject.name + "yet");
+        }
     }
 }
