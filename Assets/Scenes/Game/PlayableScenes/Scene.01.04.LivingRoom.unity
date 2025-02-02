@@ -5122,9 +5122,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1431754527
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 1526252065
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.21875, y: 0.50024426, z: 0}
   m_MaxChunkCount: 16
@@ -14373,7 +14373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fafd23e61c9b14980e68cba38e7569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryItem: {fileID: 0}
 --- !u!1 &1817555029
 GameObject:
   m_ObjectHideFlags: 0

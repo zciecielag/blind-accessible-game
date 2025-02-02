@@ -27,7 +27,8 @@ public class CheckIfOnPlayableArea : MonoBehaviour
             GameController.Instance.objectsScrolled++;
             if (GameController.Instance.objectsScrolled == GameController.Instance.totalObjects)
             {
-                GameController.Instance.objectsScrolled = 0;           
+                GameController.Instance.objectsScrolled = 0;       
+                StopAllCoroutines();    
                 StartCoroutine(WaitAndRestart());
             }
         }
@@ -42,7 +43,7 @@ public class CheckIfOnPlayableArea : MonoBehaviour
         if (tryAgainPanel != null)
         {
             tryAgainPanel.SetActive(true);
-            yield return new WaitForSeconds(4.0f);
+            yield return new WaitForSeconds(5.0f);
             tryAgainPanel.SetActive(false);
         }
         

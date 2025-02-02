@@ -5,7 +5,7 @@ public class ChangeContrastInGame : MonoBehaviour
 {
     private GlobalVariableManager globalVariableManager = new GlobalVariableManager();
     private ChangeImageContrast[] objects;
-    public GameObject inventoryItem;
+    private ChangeButtonContrast[] buttons;
 
     void Start()
     {
@@ -25,20 +25,35 @@ public class ChangeContrastInGame : MonoBehaviour
 
         objects = FindObjectsByType<ChangeImageContrast>(FindObjectsSortMode.None);
 
-        for (int i = 0; i < objects.Length; i++)
+        if (objects != null)
         {
-            objects[i].ChangeContrast();
+            for (int i = 0; i < objects.Length; i++)
+            {
+                objects[i].ChangeContrast();
+            }
         }
 
-        if (globalVariableManager.GetContrastStatus())
+        buttons = FindObjectsByType<ChangeButtonContrast>(FindObjectsSortMode.None);
+        if (buttons != null)
         {
-            FindAnyObjectByType<CheckIfContrast>().ChangeToContrast();
-        }
-        else
-        {
-            FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].changeContrast();
+            }
         }
 
+        if (FindAnyObjectByType<CheckIfContrast>() != null)
+        {
+            if (globalVariableManager.GetContrastStatus())
+            {
+                FindAnyObjectByType<CheckIfContrast>().ChangeToContrast();
+            }
+            else
+            {
+                FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
+            }
+        }
+        
         Debug.Log("Contrast value is: " + globalVariableManager.GetContrastStatus());
 
     }
@@ -48,33 +63,52 @@ public class ChangeContrastInGame : MonoBehaviour
         objects = FindObjectsByType<ChangeImageContrast>(FindObjectsSortMode.None);
         globalVariableManager.SetContrastStatus(!globalVariableManager.GetContrastStatus());
 
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>() != null)
+        
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            GameObject.FindGameObjectWithTag("Player")
-            .GetComponent<PlayerMovement>()
-            .animator
-            .SetBool("Contrast", globalVariableManager.GetContrastStatus());
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>() != null)
+            {
+                GameObject.FindGameObjectWithTag("Player")
+                .GetComponent<PlayerMovement>()
+                .animator
+                .SetBool("Contrast", globalVariableManager.GetContrastStatus());
+            }
         }
         
-        for (int i = 0; i < objects.Length; i++)
+        if (objects != null)
         {
-            if (globalVariableManager.GetContrastStatus())
+            for (int i = 0; i < objects.Length; i++)
             {
-                objects[i].ChangeToContrast();
-            }
-            else
-            {
-                objects[i].ChangeToNoContrast();
+                if (globalVariableManager.GetContrastStatus())
+                {
+                    objects[i].ChangeToContrast();
+                }
+                else
+                {
+                    objects[i].ChangeToNoContrast();
+                }
             }
         }
 
-        if (globalVariableManager.GetContrastStatus())
+        buttons = FindObjectsByType<ChangeButtonContrast>(FindObjectsSortMode.None);
+        if (buttons != null)
         {
-            FindAnyObjectByType<CheckIfContrast>().ChangeToContrast();
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].changeContrast();
+            }
         }
-        else
+        
+        if (FindAnyObjectByType<CheckIfContrast>() != null)
         {
-            FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
+            if (globalVariableManager.GetContrastStatus())
+            {
+                FindAnyObjectByType<CheckIfContrast>().ChangeToContrast();
+            }
+            else
+            {
+                FindAnyObjectByType<CheckIfContrast>().ChangeToNoContrast();
+            }
         }
 
         if (InventoryManager.Instance != null)

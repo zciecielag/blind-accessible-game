@@ -10,15 +10,6 @@ public class ChangeImageContrast : MonoBehaviour
 
     private GlobalVariableManager globalVariableManager = new GlobalVariableManager();
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
-
     public void ChangeContrast()
     {
         if (targetSpriteRenderer != null && contrastSprite != null && noContrastSprite != null)

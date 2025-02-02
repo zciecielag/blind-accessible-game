@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ef3e6eb1ca1f74399a6c77116d3a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEnabled: 0
+  isEnabled: 1
 --- !u!1 &118921311
 GameObject:
   m_ObjectHideFlags: 0
@@ -12327,7 +12327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fafd23e61c9b14980e68cba38e7569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryItem: {fileID: 0}
 --- !u!1 &1537903212
 GameObject:
   m_ObjectHideFlags: 0
