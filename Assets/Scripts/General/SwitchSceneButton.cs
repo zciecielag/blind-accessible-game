@@ -16,6 +16,7 @@ public class SwitchSceneButton : MonoBehaviour
 
     void loadScene()
     {
+        Debug.Log("clicking");
         StartCoroutine(sceneLoadAndButtonSound()); 
     }
 

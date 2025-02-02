@@ -111,11 +111,15 @@ public class PauseMenu : MonoBehaviour
     }
     public void ReturnToMenu()
     {
+        Time.timeScale = 1f;
+        GameDataManager.Instance.SaveGame();
         SceneManager.LoadScene("GameMainMenu");
     }
 
     public void QuitGame()
     {
+        Time.timeScale = 1f;
+        GameDataManager.Instance.SaveGame();
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #else
