@@ -14675,8 +14675,9 @@ MonoBehaviour:
   dialogueLines:
   - "Znale\u017Ali\u015Bmy klucz!"
   - "Tylko dlaczego by\u0142 na drzewie..."
-  - "Wygl\u0105da na to, \u017Ce {DZIECKO} znowu bawi\u0142 si\u0119 na zewn\u0105trz."
-  - Ale z niego rozrabiaka.
+  - "Wygl\u0105da na to, \u017Ce c\xF3rka Polarnych znowu bawi\u0142a si\u0119 na
+    zewn\u0105trz."
+  - Ale z niej rozrabiaka.
   - "Zobaczmy, czy mo\u017Cemy teraz otworzy\u0107 spi\u017Carni\u0119 w kuchni!"
   textSpeed: 0.05
   index: 0

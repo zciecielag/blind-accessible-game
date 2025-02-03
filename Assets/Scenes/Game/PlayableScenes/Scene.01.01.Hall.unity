@@ -13907,7 +13907,7 @@ MonoBehaviour:
     w g\xF3r\u0119!"
   - "Proste, co nie? Reszta kierunk\xF3w dzia\u0142a tak samo."
   - "Spr\xF3buj samemu! Przejd\u017A si\u0119 do szafki."
-  - "Znajduje si\u0119 ona w lewym g\xF3rnym rogu i wydaje d\u017Awi\u0119k {d\u017Awi\u0119k}. "
+  - "Znajduje si\u0119 ona w lewym g\xF3rnym rogu i wydaje d\u017Awi\u0119k. "
   - "Ten d\u017Awi\u0119k b\u0119dzie oznacza\u0142 przedmioty, przy kt\xF3rych mo\u017Cesz
     co\u015B zrobi\u0107."
   textSpeed: 0.069
@@ -17859,6 +17859,7 @@ MonoBehaviour:
   audioSource: {fileID: 2534287496213903074}
   activateObjects: []
   spawnPointTag: LRfromHALL
+  disableOnUse: 0
 --- !u!61 &1889621648
 BoxCollider2D:
   m_ObjectHideFlags: 0
