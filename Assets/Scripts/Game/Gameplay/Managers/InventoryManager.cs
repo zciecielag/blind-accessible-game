@@ -65,8 +65,11 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
             {
                 currentlyHeldObject.GetComponent<ChangeImageContrast>().ChangeContrast();
             }
-            inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
-            inventoryText.text = currentlyHeldObject.name;
+            if (inventoryItem != null && inventoryText != null)
+            {
+                inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
+                inventoryText.text = currentlyHeldObject.name;
+            }
         } 
     }
 
@@ -81,9 +84,9 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
 
     public void SaveData(ref GameData data)
     {
-        data.currentlyHeldObject = this.currentlyHeldObject;
         if (this.currentlyHeldObject != null)
         {
+            data.currentlyHeldObject = this.currentlyHeldObject;
             data.currentlyHeldObjectTag = this.currentlyHeldObject.tag;
         } else
         {

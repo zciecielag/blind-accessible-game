@@ -9,6 +9,7 @@ public class SwitchSceneOnCollide : MonoBehaviour
     FadeInOut fadeInOut;
     public GameObject[] activateObjects;
     public string spawnPointTag;
+    public bool disableOnUse;
 
     private void Start()
     {
@@ -23,6 +24,10 @@ public class SwitchSceneOnCollide : MonoBehaviour
         }
         audioSource.Play();
         yield return new WaitForSeconds(1);
+        if (disableOnUse)
+        {
+            this.gameObject.GetComponent<EnableableObject>().Disable();
+        }
         GameSceneManager.Instance.ChangeName(sceneToLoad);
         PlayerSpawnPoint.Instance.ChangeSpawnPoint(spawnPointTag);
         GameDataManager.Instance.SaveGame();
