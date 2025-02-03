@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5625637fe03bd0f4fb99e9d0ab83ea0e
+guid: 96a2c856e99c72a4e948d033e9ffed5a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1835116892081733501
-    second: mleko_0
+      213: -4494389355541516267
+    second: dywan3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,19 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mleko_0
+      name: dywan3_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 22
-        height: 31
+        width: 26
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3804626d8ea5886e0800000000000000
-      internalID: -1835116892081733501
+      spriteID: 510b6a481b8b0a1c0800000000000000
+      internalID: -4494389355541516267
       vertices: []
       indices: 
       edges: []
@@ -174,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mleko_0: -1835116892081733501
+      dywan3_0: -4494389355541516267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
