@@ -75,7 +75,7 @@ public class InventoryManager : MonoBehaviour, IGameDataManager
 
     public void ShowInventory()
     {
-        if (currentlyHeldObject != null)
+        if (currentlyHeldObject != null && inventoryItem != null && inventoryText != null)
         {
             inventoryItem.GetComponent<Image>().sprite = currentlyHeldObject.GetComponent<SpriteRenderer>().sprite;
             inventoryText.text = currentlyHeldObject.name;

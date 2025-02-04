@@ -12080,7 +12080,7 @@ MonoBehaviour:
     przy wej\u015Bciu do pokoju."
   - "Aby us\u0142ysze\u0107 je jeszcze raz kliknij przycisk \"W jakim pokoju jestem?\"
     po prawej stronie ekranu."
-  textSpeed: 0.08
+  textSpeed: 0.06
   index: 0
 --- !u!114 &1349551806
 MonoBehaviour:
@@ -20875,9 +20875,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 73183275297677529}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 0
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: -80
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -21830,9 +21830,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4014723080452487444}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 0
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: -80
+  m_Value: -0.28
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -25432,9 +25432,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6095664927225020880}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 0
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: -80
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
