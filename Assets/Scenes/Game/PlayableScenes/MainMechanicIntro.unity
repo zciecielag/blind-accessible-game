@@ -145,17 +145,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154447120}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 77.23047}
+  m_LocalScale: {x: 0.79, y: 0.79, z: 0.79}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 972039516}
-  m_Father: {fileID: 862166381}
+  m_Father: {fileID: 565003100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -821.74, y: 409.48}
+  m_AnchoredPosition: {x: -934, y: 425}
   m_SizeDelta: {x: 315.01, y: 107.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154447122
@@ -491,7 +491,7 @@ MonoBehaviour:
     i lew\u0105 stron\u0119 ekranu."
   - "Spadaj\u0105ce przedmioty wydaj\u0105 z siebie charakterystyczny d\u017Awi\u0119k. 
     Masz trzy \u017Cycia"
-  textSpeed: 0.05
+  textSpeed: 0.048
   index: 0
 --- !u!114 &556990217
 MonoBehaviour:
@@ -625,6 +625,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 154447121}
   - {fileID: 556990214}
   - {fileID: 1977140196}
   m_Father: {fileID: 0}
@@ -932,7 +933,7 @@ MonoBehaviour:
   m_margin: {x: -140.50359, y: 34.16991, z: 0, w: 48.86023}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &799730765
@@ -1038,7 +1039,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1584223975}
-  - {fileID: 154447121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1868,7 +1868,7 @@ MonoBehaviour:
   dialogueText: {fileID: 799730764}
   dialogueLines:
   - "Jeste\u015B na torze po lewej stronie. Kliknij w ekran, aby rozpocz\u0105\u0107 "
-  textSpeed: 0.05
+  textSpeed: 0.047
   index: 0
 --- !u!114 &1977140199
 MonoBehaviour:

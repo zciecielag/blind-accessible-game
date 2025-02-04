@@ -108,7 +108,7 @@ public class ObjectCollision : MonoBehaviour
         {
             gameCompletedPanel.SetActive(true);
             Time.timeScale = 0f;
-            float pauseEndTime = Time.realtimeSinceStartup + 3.0f;
+            float pauseEndTime = Time.realtimeSinceStartup + 7.0f;
             while (Time.realtimeSinceStartup < pauseEndTime)
             {
                 yield return 0;
